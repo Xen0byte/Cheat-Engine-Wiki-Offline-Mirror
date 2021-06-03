@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:14:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Help File:ASM Basics 2 - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Help_File:ASM_Basics_2","wgTitle":"Help File:ASM Basics 2","wgCurRevisionId":4362,"wgRevisionId":0,"wgArticleId":966,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Help_File:ASM_Basics_2","wgRelevantArticleId":966,"wgRequestId":"3d7e6f0e429586f2f8fbe56a","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loadc219.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Help_File_ASM_Basics_2 rootpage-Help_File_ASM_Basics_2 skin-vector action-edit">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">View source for Help File:ASM Basics 2</h1>			<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">← <a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2" title="Help File:ASM Basics 2">Help File:ASM Basics 2</a></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="https://wiki.cheatengine.org/index.php?title=Special:Preferences" title="Special:Preferences">user preferences</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:Help]]
+[[Category:Tutorial]]
+[[Category:Assembler]]
+'''Originally posted by ''DABhand'' '''
+
+
+== FLOATS ==
+
+
+Ok whats a Float all about, well its simple, a float uses REAL values, what is a REAL value?
+
+
+A REAL value is a number which is not an integer, i.e. it contains numbers after a decimal
+point, like for example a float opcode can work out 5 divided by 4 and give the answer 1.25,
+also a REAL value can contain NEGATIVE numbers also like -3.567
+
+
+An integer with the same math problem will report 1 as the quotient with a remainder of 1. So
+you can see Floats are very usefull indeed :)
+
+
+Why are we talking about floats? Some games and indeed applications will use float values to
+either work out monetary values or even in a game like percentage values and so forth.
+
+
+Both my latest trainers for Act of War and Settlers 5 (Die Siedler 5) use float values.
+
+
+
+=== FLOAT OPCODES ===
+
+
+Here is a list of opcodes and what they do :)
+
+
+  FLD [source]               Pushes a Float Number from the source onto the top of
+                             the FPU Stack.
+
+  FST [destination]          Copies a Float Number from the top of the FPU Stack
+                             into the destination.
+
+  FSTP [destination]         Pops a Float Number from the top of the FPU Stack
+                             into the destination.
+
+  FLDZ                       Pushes +0.0 on top of FPU Stack
+
+  FLD1                       Pushes +1.0 on top of FPU Stack
+
+  FLDPI                      Pushes PI on the top of FPU Stack
+
+  FILD [source]              Pushes an integer from the source to the top of the
+                             FPU Stack.
+
+  FIST [destination]         Copies an integer from the top of the FPU Stack to
+                             the destination.
+
+  FISTP [destination]        Pops an integer from the top of FPU Stack into the
+                             destination.
+
+  FCHS                       Compliments the sign-bit of a float value located on
+                             the top of the FPU Stack or ST(0) Register.
+
+  FNOP                       Performs no FPU Operation.[It's a 2 byte instruction
+                             unlike that of NOP which is a 1 byte instruction.]
+
+  FABS                       Replaces the float value on the top of the stack with
+                             it's absolute value.
+
+  FADD [operand]             Adds the value of the operand with the value located
+                             on the top of the FPU Stack and store the result on
+                             the top of the FPU Stack.
+
+  FCOS/FSIN                  Replaces the value on the top of the FPU Stack with
+                             it's cosine/sine value.
+
+  FDIV [operand]             Divide the value on the top of the FPU Stack with the
+                             operand and store the result on the top of FPU Stack.
+
+  FMUL [operand]             Multiply the value on the top of the FPU Stack with
+                             the operand and store the result on top of FPU Stack.
+
+  FSUB [operand]             Subtract operand value from the value on top of FPU
+                             Stack and store the result on top of FPU Stack.
+
+  FXCHST (index)             Exchanges values between top of FPU Stack and the
+                             ST(index) register.
+
+  FCOM                       Compares the float value located on top if FPU Stack
+                             with the operand located in memory or the FPU Stack.
+
+  FCOMP                      Same as FCOM but pops the float value from the top of
+                             the FPU Stack.
+
+  FNSTSW AX                  Store FPU Status Word in AX. (Used for Conditions)
+
+
+Hope thats explanatory enough :)
+
+
+Before I show an example or two, lets talk about Stacks. What are they?
+
+
+
+== STACKS ==
+
+
+Well a stack is used for a temporary location for values, a game or application may
+want to use a register for something else but want to keep the previous value for
+future reference, so the program will PUSH a value onto the stack for later
+retrieval.
+
+
+The stack is 8 small stacks in the 1, so look at it as a small filing
+cabinet in a way. Any of these values can be retrieved by calling for the stack and
+its position, like the following
+
+
+  st(0) - always the top of the stack
+  st(1) - next after top
+  st(2) - 2nd from the top
+  ..
+  st(7) - Bottom of the stack
+
+
+So when you want to get a value you can if you know where it is stored, it does
+become a little complicated if you keep PUSH'ing values to the top of the stack as
+the previous value is moved down 1. So to take a value we just POP it back.
+
+
+So remember
+
+PUSH - Places a value on a stack
+POP  - Removes a value from the stack
+
+
+But those opcodes are handy for integer values, what about floats?
+
+
+The next section will show you.
+
+
+
+== FLOAT EXAMPLES ==
+
+
+
+OK how to PUSH and POP values from the stack, its not difficult, heres a few
+examples :)
+
+
+'''Example 1'''
+
+Say we have a value in a known address which is a REAL value (so float) and want
+to add a value to it? For arguments sake lets say the register EAX contains the
+address 450000h which contains money in a game and we want to add a value from
+revenue which resides in an address contained in register EBX at 450008h and
+then send back to the original address?
+
+
+Here is how
+
+
+  FLD [eax]   - This opcode PUSH's the value at the address 450000h contained in
+                EAX and pushes it to the top of the stack
+
+  FADD [ebx]  - This then adds the value at the address 450008h contained in EBX
+                with the value at the top of the stack, then replaces the value
+                at the top of the stack with the new value from the FADD opcode.
+
+  FSTP [eax]  - This then POP's the value on top of the stack to the address 450000h
+                contained in the register EAX, where your old money value was and
+                replaces with new one.
+
+
+
+'''Example 2'''
+
+Say now we want to calculate a Health Points value after taking damage, but wait!
+The damage is a float value but health is integer :o So how does this work out??
+Its not difficult ill show you how :) Again we will use the last registers for
+this example, EAX (450000h) contains our Health integer value and and EBX (450008h)
+contains our damage float value.
+
+
+Here it is
+
+
+  FILD (EAX)  - This opcode PUSH's an integer value to the top of the stack from the
+                address 450000h contained in EAX.
+
+  FSUB (EBX)  - This subtracts the value at address 450008h (float) contained in EBX
+                from the value at the top of the stack.
+
+  FISTP (EAX) - This opcode POP's an integer value from the the top of the stack to
+                the address 450000h contained in EAX. If the REAL value was 1.50 or
+                higher it will send as an integer of 2, if 1.49 or lower then it will
+                send as 1.
+
+
+Great huh :) See its not that difficult to understand :)
+
+
+
+'''Example 3'''
+
+This one is a toughy, we have a game but one of the addresses in the EAX register is
+needed for later on, but we also need the EAX register to work out a new ammo value,
+and no other register is free to send the address to, omg what to do what to do!!
+
+Dont worry, believe in the stacks :) The following will contain POP and PUSH command :)
+
+So for this example, EAX contains the value 800000h, the ammo value is contained
+at the address 450000h and the EBX contains the address 450008h which contains the
+either positive or negative number to be added to the ammo amount, if negative a shot
+was fired, if positive then a reload of the weapon or ammo picked up.
+
+
+  PUSH EAX         - This opcode PUSH's the value of EAX (notice without the [ ] it moves
+                     the value in EAX to the stack but if it had the [ ] it would move
+                     the value contained at the address of the value in EAX). In this
+                     case 800000h is PUSH'd on top of the stack.
+
+  MOV EAX, 450000h - This opcode moves the value 450000h into the register EAX, which
+                     replaces the old 800000h value.
+
+  FILD [EAX]       - This opcode as you know will PUSH the value at the address contained
+                     in the register EAX, see the difference its using the [ ] so the
+                     game will look at the address 450000h and take the value there, and
+                     the PUSH to the top of the stack.
+
+  FADD [EBX]       - This again is self explanatory now, it adds the value at address
+                     450008h with the value on the stack, if it was a negative number it
+                     will decrease the value, if positive increase it, just basic maths :)
+
+  FISTP [EAX]      - Again this POP's an integer value from top of stack to the memory
+                     location contained in EAX, which is 450000h.
+
+  CALL 46AEFF      - What the hell is this??? I hear you say, wait a bit ill tell you
+                     just after :)
+
+  POP EAX          - This opcode POP's the original 800000h back into the register EAX, so
+                     the game hasnt lost that value.
+
+
+OK, the CALL opcode, its a handy opcode for the fact that if your program or game uses
+a routine to work out something but is always used it would be messy code if we were to
+keep manually typing it out not to mention a much bigger file.
+
+
+The CALL opcode, calls the opcodes at a certain address to work out the same function
+it does later on, so you only need to have that 1 set of opcodes for the entire program
+or game, you just CALL it, saves time and space.
+
+
+At the end of these opcodes from a CALL will be an opcode call RET (return) it will make
+the program or game go back to where it left off, in this case to the POP EAX opcode.
+
+
+
+Thats end of day 2 :)
+
+
+Hope you understood and it helped you see how things work.
+
+
+Any questions just post and ill answer when available :)
+
+
+Next time I will talk about different Jumps and Compares :)
+
+
+After that Ill show you how to code inject to make a trainer :D But as I said learn these
+well and you will understand what im talking about when code injecting ;)
+
+== Links ==
+* [[Cheat Engine:Help File|Help File]]
+
+* [[Help_File:ASM_Basics_1|Back]]
+
+* [[Help_File:ASM_Basics_3|Next]]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2" title="Help File:ASM Basics 2">Help File:ASM Basics 2</a>.</p>
+<br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2">https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Help+File%3AASM+Basics+2&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Help+File%3AASM+Basics+2&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Help_File:ASM_Basics_2&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2">Read</a></span></li><li id="ca-edit" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&amp;action=edit" title="Edit this page">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Help_File:ASM_Basics_2" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Help_File:ASM_Basics_2" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":375});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_2&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:14:26 GMT -->
+</html>

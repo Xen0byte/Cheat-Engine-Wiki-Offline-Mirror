@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:CodeInjection_Integers&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:06:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Code Injection - Working with Integers - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorial:CodeInjection_Integers","wgTitle":"Tutorial:CodeInjection Integers","wgCurRevisionId":6957,"wgRevisionId":6957,"wgArticleId":1861,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial","Auto Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorial:CodeInjection_Integers","wgRelevantArticleId":1861,"wgRequestId":"10ab05b9b66e48284f70931d","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6525.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector"/>
+<script async="" src="load61a1.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index50d4.html?title=Tutorial:CodeInjection_Integers&amp;action=edit"/>
+<link rel="edit" title="Edit" href="index50d4.html?title=Tutorial:CodeInjection_Integers&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_CodeInjection_Integers rootpage-Tutorial_CodeInjection_Integers skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Code Injection - Working with Integers</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+This tutorial builds on the topic of Code Injection:
+</p>
+<ul><li><a href="index42df.html?title=Tutorials:Auto_Assembler:Injection_basic" title="Tutorials:Auto Assembler:Injection basic">Code Injection - Basic injection</a></li>
+<li><a href="index3572.html?title=Tutorials:Auto_Assembler:Injection_full" title="Tutorials:Auto Assembler:Injection full">Code Injection - Full injection</a></li>
+<li><a href="indexc649.html?title=Tutorial:CodeInjection_EditableValues" title="Tutorial:CodeInjection EditableValues">Code Injection - Adding Editable Values</a></li>
+<li><a class="mw-selflink selflink">Code Injection - Working with Integers</a></li>
+<li><a href="index7f80.html?title=Tutorial:CodeInjection_Floats" title="Tutorial:CodeInjection Floats">Code Injection - Working with Floats</a></li></ul>
+<p><br />
+Let's say you have an integer and some code that increases the value.
+</p>
+<pre>add [eax+10],ecx
+</pre>
+<blockquote>
+<p>What if what writes to the value is only a <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">MOV</a>. Try to find a spot above the write instruction that has an <a href="index9004-2.html?title=Assembler:Commands:ADD" title="Assembler:Commands:ADD">ADD</a> (or a <a href="index3ee2.html?title=Assembler:Commands:SUB" title="Assembler:Commands:SUB">SUB</a> depending on what you want to do).
+</p>
+<pre>add ecx,ebx
+//...
+mov [eax+10],ecx
+</pre>
+</blockquote>
+<p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Hardcoded_value"><span class="tocnumber">1</span> <span class="toctext">Hardcoded value</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Editable_value"><span class="tocnumber">2</span> <span class="toctext">Editable value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Adding_a_Multiplier"><span class="tocnumber">3</span> <span class="toctext">Adding a Multiplier</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Fractional_Multiplier"><span class="tocnumber">4</span> <span class="toctext">Fractional Multiplier</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Calculate_a_value_for_a_Multiplier"><span class="tocnumber">5</span> <span class="toctext">Calculate a value for a Multiplier</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_Also"><span class="tocnumber">6</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Hardcoded_value">Hardcoded value</span></h2>
+<p>We could just hardcode a value for this.
+</p>
+<pre>add dword ptr [eax+10],(int)100 // #100 //// "#" is a short hand for integer
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Editable_value">Editable value</span></h2>
+<p>We could use a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a>, giving it some memory. And optionally <a href="index9f4d.html?title=Auto_Assembler:registerSymbol" title="Auto Assembler:registerSymbol">register</a> it so the label can be used on the table as an address.
+</p>
+<pre>//...
+alloc(someMem, 0x400)
+//...
+label(someSymbol)
+registerSymbol(someSymbol)
+//...
+someMem:
+  //...
+  mov ecx,[someSymbol]
+  add [eax+10],ecx
+  //...
+  jmp return
+  //...
+  someSymbol:
+    dd (int)100
+//...
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Adding_a_Multiplier">Adding a Multiplier</span></h2>
+<p>We could add an editable value like above but use <a href="index3218.html?title=Assembler:Commands:IMUL" title="Assembler:Commands:IMUL">IMUL</a> to add a multiplier to the script.
+</p>
+<pre>//...
+alloc(someMem, 0x400)
+//...
+label(someSymbol)
+registerSymbol(someSymbol)
+//...
+someMem:
+  //...
+  imul ecx,[someSymbol]
+  add [eax+10],ecx
+  //...
+  jmp return
+  //...
+  someSymbol:
+    dd (int)10
+//...
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Fractional_Multiplier">Fractional Multiplier</span></h2>
+<p>But what if we wanted to be able to multiply by a fractional number (i.e.: "0.5"). Well this can take a bit more, but we can use <a href="indexed3e.html?title=Assembler:Commands:CVTSI2SS" title="Assembler:Commands:CVTSI2SS">CVTSI2SS</a> and <a href="indexeb0a.html?title=Assembler:Commands:CVTSS2SI&amp;action=edit&amp;redlink=1" class="new" title="Assembler:Commands:CVTSS2SI (page does not exist)">CVTSS2SI</a> to convert the value from an integer to a float and back a gain. Then we can just use <a href="indexb21a.html?title=Assembler:Commands:MULSS" title="Assembler:Commands:MULSS">MULSS</a> to do the multiplying, but we will need an <a href="indexb4c4.html?title=Assembler#Structure" title="Assembler">XMM</a> <a href="indexb4c4.html?title=Assembler#Registers" title="Assembler">registry</a> to work with. So we will need some extra memory and use <a href="index138d.html?title=Assembler:Commands:MOVUPS&amp;action=edit&amp;redlink=1" class="new" title="Assembler:Commands:MOVUPS (page does not exist)">MOVUPS</a> to save and restore the XMM registry.
+</p>
+<pre>//...
+alloc(someMem, 0x400)
+//...
+label(someSymbol)
+registerSymbol(someSymbol)
+label(extraStuff)
+//...
+someMem:
+  //...
+  movups [extraStuff],xmm0 //// save
+  cvtsi2ss xmm0,ecx
+  mulss xmm0,[someSymbol]
+  cvtss2si ecx,xmm0
+  movups xmm0,[extraStuff] //// restore
+  //...
+  jmp return
+  //...
+  someSymbol:
+    dd (int)10
+  extraStuff:
+    dd 0 //// Data double-word (4 bytes)
+    dd 0
+    dq 0 //// Data quad-word (8 bytes)
+//...
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Calculate_a_value_for_a_Multiplier">Calculate a value for a Multiplier</span></h2>
+<p>Let's say we just can't find an <a href="index9004-2.html?title=Assembler:Commands:ADD" title="Assembler:Commands:ADD">ADD</a> or a <a href="index3ee2.html?title=Assembler:Commands:SUB" title="Assembler:Commands:SUB">SUB</a>, and all we have is a <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">MOV</a>.
+</p>
+<pre>mov [eax+10],ecx
+</pre>
+<p>We can just do some math in the script, to calculate a value for a multiplier.
+</p>
+<pre>//...
+alloc(someMem, 0x400)
+//...
+label(someSymbol)
+registerSymbol(someSymbol)
+//...
+someMem:
+  //...
+  sub ecx,[eax+10]
+  imul ecx,[someSymbol]
+  add ecx,[eax+10]
+  mov [eax+10],ecx
+  //...
+  jmp return
+  //...
+  someSymbol:
+    dd (int)10
+//...
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="index9328.html?title=Tutorials:Auto_Assembler:Basics" title="Tutorials:Auto Assembler:Basics">Auto Assembler Basics</a></li>
+<li><a href="index5062.html?title=Tutorials:Auto_Assembler:Templates" title="Tutorials:Auto Assembler:Templates">Auto Assembler Templates</a></li>
+<li><a href="index42df.html?title=Tutorials:Auto_Assembler:Injection_basic" title="Tutorials:Auto Assembler:Injection basic">Code Injection - Basic injection</a></li>
+<li><a href="index3572.html?title=Tutorials:Auto_Assembler:Injection_full" title="Tutorials:Auto Assembler:Injection full">Code Injection - Full injection</a></li>
+<li><a href="indexc649.html?title=Tutorial:CodeInjection_EditableValues" title="Tutorial:CodeInjection EditableValues">Code Injection - Adding Editable Values</a></li>
+<li><a class="mw-selflink selflink">Code Injection - Working with Integers</a></li>
+<li><a href="index7f80.html?title=Tutorial:CodeInjection_Floats" title="Tutorial:CodeInjection Floats">Code Injection - Working with Floats</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602162726
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.035 seconds
+Real time usage: 0.040 seconds
+Preprocessor visited node count: 107/1000000
+Preprocessor generated node count: 224/1000000
+Post‐expand include size: 1299/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1337/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    6.073      1 -total
+ 36.49%    2.216      2 Template:TutorialsCodeInjection
+ 32.11%    1.950      1 Template:TutorialsAA
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1861-0!canonical and timestamp 20210602162726 and revision id 6957
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index123c.html?title=Tutorial:CodeInjection_Integers&amp;oldid=6957">https://wiki.cheatengine.org/index.php?title=Tutorial:CodeInjection_Integers&amp;oldid=6957</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index4485.html?title=Category:Auto_Assembler" class="mw-redirect" title="Category:Auto Assembler">Auto Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="indexab43.html?title=Special:CreateAccount&amp;returnto=Tutorial%3ACodeInjection+Integers&amp;returntoquery=printable%3Dyes" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index947f.html?title=Special:UserLogin&amp;returnto=Tutorial%3ACodeInjection+Integers&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index9875.html?title=Tutorial:CodeInjection_Integers" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index9805.html?title=Talk:Tutorial:CodeInjection_Integers&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index9875.html?title=Tutorial:CodeInjection_Integers">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="index50d4.html?title=Tutorial:CodeInjection_Integers&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexd895.html?title=Tutorial:CodeInjection_Integers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexf1b1.html?title=Special:WhatLinksHere/Tutorial:CodeInjection_Integers" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index5158.html?title=Special:RecentChangesLinked/Tutorial:CodeInjection_Integers" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="index123c.html?title=Tutorial:CodeInjection_Integers&amp;oldid=6957" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index9eaa.html?title=Tutorial:CodeInjection_Integers&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 8 July 2020, at 09:15.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.035","walltime":"0.040","ppvisitednodes":{"value":107,"limit":1000000},"ppgeneratednodes":{"value":224,"limit":1000000},"postexpandincludesize":{"value":1299,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1337,"limit":5000000},"timingprofile":["100.00%    6.073      1 -total"," 36.49%    2.216      2 Template:TutorialsCodeInjection"," 32.11%    1.950      1 Template:TutorialsAA"]},"cachereport":{"timestamp":"20210602162726","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":355});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:CodeInjection_Integers&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:06:01 GMT -->
+</html>

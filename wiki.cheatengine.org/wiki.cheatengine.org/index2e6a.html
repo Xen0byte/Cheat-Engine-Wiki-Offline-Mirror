@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=autoAssemble by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:11:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Lua:autoAssemble - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lua:autoAssemble","wgTitle":"Lua:autoAssemble","wgCurRevisionId":6819,"wgRevisionId":6819,"wgArticleId":475,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Lua","Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Lua:autoAssemble","wgRelevantArticleId":475,"wgRequestId":"4ba45f8acfe0d759a866974e","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"autoAssemble","wgInternalRedirectTargetUrl":"/index.php?title=Lua:autoAssemble"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load13a5.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="indexad75.html?title=Lua:autoAssemble&amp;action=edit"/>
+<link rel="edit" title="Edit" href="indexad75.html?title=Lua:autoAssemble&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="indexab0c-2.html?title=Lua:autoAssemble"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Lua_autoAssemble rootpage-Lua_autoAssemble skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Lua:autoAssemble</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="index4d78.html?title=autoAssemble&amp;redirect=no" class="mw-redirect" title="autoAssemble">autoAssemble</a>)</span></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>function</b> autoAssemble(<i>AutoAssemblerScript</i>, <i>TargetSelf</i> OPTIONAL, <i>DisableInfo</i> OPTIONAL) <b>:</b> nil,errorstring <b>-</b> boolean, table
+</p><p><b>function</b> autoAssemble(<i>AutoAssemblerScript</i>, <i>DisableInfo</i> OPTIONAL) <b>:</b> nil,errorstring <b>-</b> boolean, table
+</p><p>runs the auto assembler with the given text. Returns true on success, with as secondary a table you can use when disabling (if <i>TargetSelf</i> is set it will assemble into Cheat Engine itself). If <i>DisableInfo</i> is provided the [Disable] section will be handled.
+</p><p>Tip: Use '&#91;&#91; &#93;&#93;' or '&#91;==&#91; &#93;==&#93;' quotes for multiline script.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Function_Parameters"><span class="tocnumber">1</span> <span class="toctext">Function Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Related_Functions"><span class="tocnumber">3.1</span> <span class="toctext">Related Functions</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Function_Parameters">Function Parameters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index4d71.html?title=Lua:autoAssemble&amp;action=edit&amp;section=1" title="Edit section: Function Parameters">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table width="85%" cellpadding="5%" cellspacing="0" border="0">
+<tbody><tr>
+<th align="left">Parameter
+</th>
+<th align="left">Type
+</th>
+<th style="width: 80%;background-color:white;" align="left">Description
+</th></tr>
+<tr>
+<td>AutoAssemblerScript
+</td>
+<td>string
+</td>
+<td>The script to run with Cheat Engine's auto assembler
+</td></tr>
+<tr>
+<td>TargetSelf
+</td>
+<td>boolean
+</td>
+<td>If set it will assemble into Cheat Engine itself
+</td></tr>
+<tr>
+<td>DisableInfo
+</td>
+<td>boolean
+</td>
+<td>If provided the [Disable] section will be handled
+</td></tr></tbody></table>
+<table width="85%" cellpadding="5%" cellspacing="0" border="0">
+<tbody><tr>
+<th align="left">Parameter
+</th>
+<th align="left">Type
+</th>
+<th style="width: 80%;background-color:white;" align="left">Description
+</th></tr>
+<tr>
+<td>AutoAssemblerScript
+</td>
+<td>string
+</td>
+<td>The script to run with Cheat Engine's auto assembler
+</td></tr>
+<tr>
+<td>DisableInfo
+</td>
+<td>boolean
+</td>
+<td>If provided the [Disable] section will be handled
+</td></tr></tbody></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index060e.html?title=Lua:autoAssemble&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  <span class="n">autoAssemble</span><span class="p">(</span><span class="s2">&quot;{$lua}</span><span class="se">\n</span><span class="s2"> print(&#39;Printed Form Auto Assembler Script!&#39;)&quot;</span><span class="p">)</span>
+
+
+  <span class="kd">local</span> <span class="n">scriptStr</span> <span class="o">=</span> <span class="s">[[</span>
+<span class="s">    alloc(memExample)</span>
+<span class="s">    label(returnHere)</span>
+
+<span class="s">    memExample:</span>
+<span class="s">      mov eax,123</span>
+<span class="s">      jmp returnHere</span>
+<span class="s">    &amp;nbsp;</span>
+<span class="s">    00400500:</span>
+<span class="s">      jmp memExample</span>
+<span class="s">      returnHere:</span>
+<span class="s"> ]]</span>
+
+  <span class="kr">if</span> <span class="n">autoAssemble</span><span class="p">(</span><span class="n">scriptStr</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The auto assembler script was successful.&#39;</span><span class="p">)</span>
+  <span class="kr">else</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There was an error with the auto assembler script.&#39;</span><span class="p">)</span>
+  <span class="kr">end</span>
+
+
+  <span class="kd">local</span> <span class="n">scriptStr</span> <span class="o">=</span> <span class="s">[==[</span>
+<span class="s">    alloc(memExample)</span>
+<span class="s">    label(returnHere)</span>
+<span class="s">     </span>
+<span class="s">    memExample:</span>
+<span class="s">      mov eax,123</span>
+<span class="s">      jmp returnHere</span>
+<span class="s">     </span>
+<span class="s">    00400500:</span>
+<span class="s">      jmp memExample</span>
+<span class="s">      returnHere:</span>
+<span class="s">  ]==]</span>
+  <span class="c1">---- Enable script</span>
+  <span class="kd">local</span> <span class="n">enabledOk</span><span class="p">,</span> <span class="n">disableInfo</span> <span class="o">=</span> <span class="n">autoAssemble</span><span class="p">(</span><span class="n">scriptStr</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">enabledOk</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The auto assembler script was enabled successfully.&#39;</span><span class="p">)</span>
+  <span class="kr">else</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There was an error enabling the auto assembler script.&#39;</span><span class="p">)</span>
+  <span class="kr">end</span>
+  <span class="c1">---- Disable script</span>
+  <span class="kd">local</span> <span class="n">disabledOk</span> <span class="o">=</span> <span class="n">autoAssemble</span><span class="p">(</span><span class="n">scriptStr</span><span class="p">,</span> <span class="n">disableInfo</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">disabledOk</span> <span class="kr">then</span>
+    <span class="n">disableInfo</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The auto assembler script was disabled successfully.&#39;</span><span class="p">)</span>
+  <span class="kr">else</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There was an error disabling the auto assembler script.&#39;</span><span class="p">)</span>
+  <span class="kr">end</span>
+
+
+  <span class="kd">local</span> <span class="n">scriptStr</span> <span class="o">=</span> <span class="s">[[</span>
+<span class="s">    alloc(memExample2)</span>
+<span class="s">    memExample2:</span>
+<span class="s">      dd (float)364.12458729</span>
+<span class="s">      dd (float)12.65594753</span>
+<span class="s">      dd (float)50.75331054</span>
+<span class="s">      dd 0</span>
+<span class="s">      // player base</span>
+<span class="s">      dq 0</span>
+<span class="s">      // map base</span>
+<span class="s">      dq 0</span>
+<span class="s">  ]]</span>
+ 
+  <span class="kr">if</span> <span class="ow">not</span> <span class="n">autoAssemble</span><span class="p">(</span><span class="n">scriptStr</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="kr">return</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;There was an error with the auto assembler script.&#39;</span>
+  <span class="kr">end</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index1147.html?title=Template:LuaSeeAlso&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="index3be2.html?title=Lua" title="Lua">Lua</a></li>
+<li><a href="index6160.html?title=Help_File:Script_engine" title="Help File:Script engine">Script engine</a></li></ul>
+<h3><span class="mw-headline" id="Related_Functions">Related Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index529f.html?title=Lua:autoAssemble&amp;action=edit&amp;section=3" title="Edit section: Related Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="index156c.html?title=Lua:autoAssembleCheck" title="Lua:autoAssembleCheck">autoAssembleCheck</a></li>
+<li><a href="indexecce.html?title=Lua:AOBScan" title="Lua:AOBScan">AOBScan</a></li>
+<li><a href="indexc7ff.html?title=Lua:disassemble" title="Lua:disassemble">disassemble</a></li>
+<li><a href="index29a9.html?title=Lua:getInstructionSize" title="Lua:getInstructionSize">getInstructionSize</a></li>
+<li><a href="index1c6e.html?title=Lua:getPreviousOpcode" title="Lua:getPreviousOpcode">getPreviousOpcode</a></li>
+<li><a href="index549a.html?title=Lua:allocateSharedMemory" title="Lua:allocateSharedMemory">allocateSharedMemory</a></li>
+<li><a href="index8ccb.html?title=Lua:mapMemory&amp;action=edit&amp;redlink=1" class="new" title="Lua:mapMemory (page does not exist)">mapMemory</a></li>
+<li><a href="index7a25.html?title=Lua:unmapMemory&amp;action=edit&amp;redlink=1" class="new" title="Lua:unmapMemory (page does not exist)">unmapMemory</a></li>
+<li><a href="index26fe.html?title=Lua:readBytes" title="Lua:readBytes">readBytes</a></li>
+<li><a href="index78c1.html?title=Lua:readPointer" title="Lua:readPointer">readPointer</a></li>
+<li><a href="index0693.html?title=Lua:writeBytes" title="Lua:writeBytes">writeBytes</a></li>
+<li><a href="indexc58f.html?title=Lua:readBytesLocal" title="Lua:readBytesLocal">readBytesLocal</a></li>
+<li><a href="index9cda.html?title=Lua:readPointerLocal" title="Lua:readPointerLocal">readPointerLocal</a></li>
+<li><a href="indexbc8a.html?title=Lua:writeBytesLocal" title="Lua:writeBytesLocal">writeBytesLocal</a></li>
+<li><a href="index8140.html?title=Lua:wordToByteTable" title="Lua:wordToByteTable">wordToByteTable</a></li>
+<li><a href="index9281.html?title=Lua:dwordToByteTable" title="Lua:dwordToByteTable">dwordToByteTable</a></li>
+<li><a href="index572b.html?title=Lua:qwordToByteTable" title="Lua:qwordToByteTable">qwordToByteTable</a></li>
+<li><a href="index0e2f.html?title=Lua:floatToByteTable" title="Lua:floatToByteTable">floatToByteTable</a></li>
+<li><a href="index6525.html?title=Lua:doubleToByteTable" title="Lua:doubleToByteTable">doubleToByteTable</a></li>
+<li><a href="index2113.html?title=Lua:stringToByteTable" title="Lua:stringToByteTable">stringToByteTable</a></li>
+<li><a href="index0cdb.html?title=Lua:wideStringToByteTable" title="Lua:wideStringToByteTable">wideStringToByteTable</a></li>
+<li><a href="index6ea1.html?title=Lua:byteTableToWord" title="Lua:byteTableToWord">byteTableToWord</a></li>
+<li><a href="index2311.html?title=Lua:byteTableToDword" title="Lua:byteTableToDword">byteTableToDword</a></li>
+<li><a href="indexc66a.html?title=Lua:byteTableToQword" title="Lua:byteTableToQword">byteTableToQword</a></li>
+<li><a href="indexc4b6.html?title=Lua:byteTableToFloat" title="Lua:byteTableToFloat">byteTableToFloat</a></li>
+<li><a href="index5198.html?title=Lua:byteTableToDouble" title="Lua:byteTableToDouble">byteTableToDouble</a></li>
+<li><a href="index62e4.html?title=Lua:byteTableToString" title="Lua:byteTableToString">byteTableToString</a></li>
+<li><a href="index5966.html?title=Lua:byteTableToWideString" title="Lua:byteTableToWideString">byteTableToWideString</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602161913
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.050 seconds
+Real time usage: 0.293 seconds
+Preprocessor visited node count: 25/1000000
+Preprocessor generated node count: 48/1000000
+Post‐expand include size: 91/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4708/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.009      1 Template:LuaSeeAlso
+100.00%    3.009      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:475-0!canonical and timestamp 20210602161912 and revision id 6819
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index8a7b.html?title=Lua:autoAssemble&amp;oldid=6819">https://wiki.cheatengine.org/index.php?title=Lua:autoAssemble&amp;oldid=6819</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index1b60.html?title=Category:Lua" title="Category:Lua">Lua</a></li><li><a href="index1c8c.html?title=Category:Assembler" title="Category:Assembler">Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index8878.html?title=Special:CreateAccount&amp;returnto=Lua%3AautoAssemble" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index0133.html?title=Special:UserLogin&amp;returnto=Lua%3AautoAssemble" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="indexab0c-2.html?title=Lua:autoAssemble" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="indexbbe1.html?title=Talk:Lua:autoAssemble&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="indexab0c-2.html?title=Lua:autoAssemble">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="indexad75.html?title=Lua:autoAssemble&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexca76.html?title=Lua:autoAssemble&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="index9835-2.html?title=Special:WhatLinksHere/Lua:autoAssemble" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="indexdfd7.html?title=Special:RecentChangesLinked/Lua:autoAssemble" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="index6ce2.html?title=Lua:autoAssemble&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="index8a7b.html?title=Lua:autoAssemble&amp;oldid=6819" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index7b78.html?title=Lua:autoAssemble&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 May 2019, at 04:35.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.050","walltime":"0.293","ppvisitednodes":{"value":25,"limit":1000000},"ppgeneratednodes":{"value":48,"limit":1000000},"postexpandincludesize":{"value":91,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4708,"limit":5000000},"timingprofile":["100.00%    3.009      1 Template:LuaSeeAlso","100.00%    3.009      1 -total"]},"cachereport":{"timestamp":"20210602161913","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":339});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=autoAssemble by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:11:25 GMT -->
+</html>

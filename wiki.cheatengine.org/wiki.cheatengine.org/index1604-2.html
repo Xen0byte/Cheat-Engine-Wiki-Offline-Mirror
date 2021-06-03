@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:39:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Creating a cheat table - Full guide - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Create_cheat_table_full","wgTitle":"Tutorials:Create cheat table full","wgCurRevisionId":6643,"wgRevisionId":6643,"wgArticleId":1316,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Create_cheat_table_full","wgRelevantArticleId":1316,"wgRequestId":"e02060db197a189d56dc6926","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loada260.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector"/>
+<script async="" src="load61a1.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="indexd434-2.html?title=Tutorials:Create_cheat_table_full&amp;action=edit"/>
+<link rel="edit" title="Edit" href="indexd434-2.html?title=Tutorials:Create_cheat_table_full&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Create_cheat_table_full rootpage-Tutorials_Create_cheat_table_full skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Creating a cheat table - Full guide</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+If you haven't done the Cheat Engine Tutorial then please do so as this tutorial builds on that and some (basic) things that are mentioned will not be mentioned here.
+</p>
+<ul><li><a href="indexda78.html?title=Tutorials:Cheat_Engine_Tutorial_Guide_x32" title="Tutorials:Cheat Engine Tutorial Guide x32">Tutorials:Cheat_Engine_Tutorial_Guide_x32</a></li>
+<li><a href="index60f0.html?title=Tutorials:Cheat_Engine_Tutorial_Guide_x64" title="Tutorials:Cheat Engine Tutorial Guide x64">Tutorials:Cheat_Engine_Tutorial_Guide_x64</a></li></ul>
+<p><br />
+The game I'll be using is <a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/Dishonored">Dishonored</a>, but pretty much any game will work. I pick this game because It's simple yet complex at the right levels, it loads quickly, and when paused in windowed mode it releases the mouse.
+</p><p><br />
+Tip: Edit the 'DishonoredEngine.ini' it'll be at 'My Documents/My Games/Dishonored/DishonoredGame/Config/'. Find the key 'bForceNoStartupMovies' and set it to true:
+</p>
+<pre>bForceNoStartupMovies=true</pre>
+<p><br />
+Tip: When starting a table put the game in windowed mode to stop screen flickering when shifting focus.
+</p><p>Tip: Make sure to always create a backup of saves, and keep an original save (before using Cheat Engine).
+</p><p><br />
+I'm starting out at the <i>Hound Pits Pub</i> and this is where I'm creating my good save. I have chosen to start a new game, unlock the <i>Blink</i> power, but not pick up any thing at the <i>Hound Pits Pub</i> upon arrival. Note: The <i>Hound Pits Pub</i> is the player safe location or home base.
+</p><p><br />
+I usually start with finding the player coordinates so let's start there. 
+</p>
+<ul><li><a href="index4f89.html?title=Tutorials:Create_cheat_table_full:coordinates" title="Tutorials:Create cheat table full:coordinates">Finding the player coordinates</a></li></ul>
+<p>Now After that we can find the player base.
+</p>
+<ul><li><a href="indexe605.html?title=Tutorials:Create_cheat_table_full:Finding_player_base" title="Tutorials:Create cheat table full:Finding player base">Finding the Player base</a></li></ul>
+<p><br />
+Now that we have a player base, let's find the player health address.
+</p>
+<ul><li><a href="indexb14b.html?title=Tutorials:Create_cheat_table_full:health" title="Tutorials:Create cheat table full:health">Finding the player health</a></li></ul>
+<p><br />
+Now that we seem to have a good base address and some values, try to find the <i>Mana</i> address your self.
+</p><p>Hint: It is in the same structure as health, oxygen, and coordinates.
+</p>
+<pre>[ptrCoordBase]+???</pre>
+<p><br />
+</p><p>So time for some real fun, on to the hooks and hacks.
+</p><p>So let's start with my favorite, a super speed hack.
+</p>
+<ul><li><a href="indexd721.html?title=Tutorials:Create_cheat_table_full:movement_speed" title="Tutorials:Create cheat table full:movement speed">Write a Super Speed hack</a></li></ul>
+<p><br />
+And just because they go to together like peanut-butter and jelly, next let's go for a super jump hack.
+</p>
+<ul><li><a href="indexd85c.html?title=Tutorials:Create_cheat_table_full:jump_height" title="Tutorials:Create cheat table full:jump height">Write a Super Jump hack</a></li></ul>
+<p><br />
+</p><p>Now let's work on a health hack, for this I find it's best to get around combatants so that we can test to see if the instruction the we hook also works on combatants' health.
+</p>
+<ul><li><a href="index8fd6.html?title=Tutorials:Create_cheat_table_full:health_hack" title="Tutorials:Create cheat table full:health hack">Write a Health Hack</a></li></ul>
+<p><br />
+So time to make some money for the player, on to a money hack.
+</p>
+<ul><li><a href="index4318.html?title=Tutorials:Create_cheat_table_full:money_hack" title="Tutorials:Create cheat table full:money hack">Write a Money Hack</a></li></ul>
+<p><br />
+Now after the money hack we have a way to get to the Runes, but I want an address for the Runes and Coins to add a once run script to just add some when I need them and even clear the number of Runes to get rid of any repetitive messages. So on to a Runes and Coins Hook.
+</p>
+<ul><li><a href="indexeafa.html?title=Tutorials:Create_cheat_table_full:runes_coins_hook" title="Tutorials:Create cheat table full:runes coins hook">Write a Money and Runes Hook</a></li></ul>
+<p><br />
+</p><p><br />
+</p><p><b>Work in progress, continuing later.</b>--<a href="index6167.html?title=User:TheyCallMeTim13" title="User:TheyCallMeTim13">TheyCallMeTim13</a> 02:47, 31 December 2017 (UTC)
+</p><p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Links">Links</span></h2>
+<ul><li><a href="index9dae.html?title=Tutorials" title="Tutorials">Tutorials</a>
+<ul><li><a class="mw-selflink selflink">Creating a cheat table - Full guide</a>
+<ul><li><a href="index4f89.html?title=Tutorials:Create_cheat_table_full:coordinates" title="Tutorials:Create cheat table full:coordinates">Finding the player coordinates</a></li>
+<li><a href="indexe605.html?title=Tutorials:Create_cheat_table_full:Finding_player_base" title="Tutorials:Create cheat table full:Finding player base">Finding the player base</a></li>
+<li><a href="indexb14b.html?title=Tutorials:Create_cheat_table_full:health" title="Tutorials:Create cheat table full:health">Finding the player health</a></li>
+<li><a href="indexd721.html?title=Tutorials:Create_cheat_table_full:movement_speed" title="Tutorials:Create cheat table full:movement speed">Write a Super Speed Hack</a></li>
+<li><a href="indexd85c.html?title=Tutorials:Create_cheat_table_full:jump_height" title="Tutorials:Create cheat table full:jump height">Write a Super Jump Hack</a></li>
+<li><a href="index8fd6.html?title=Tutorials:Create_cheat_table_full:health_hack" title="Tutorials:Create cheat table full:health hack">Write a Health Hack</a></li>
+<li><a href="index4318.html?title=Tutorials:Create_cheat_table_full:money_hack" title="Tutorials:Create cheat table full:money hack">Write a Money Hack</a></li>
+<li><a href="indexeafa.html?title=Tutorials:Create_cheat_table_full:runes_coins_hook" title="Tutorials:Create cheat table full:runes coins hook">Write a Money and Runes Hook</a></li></ul></li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602090940
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.034 seconds
+Preprocessor visited node count: 11/1000000
+Preprocessor generated node count: 70/1000000
+Post‐expand include size: 768/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 66/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.303      1 Template:Tutorials:Create_cheat_table_full:links
+100.00%    2.303      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1316-0!canonical and timestamp 20210602090940 and revision id 6643
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index0924.html?title=Tutorials:Create_cheat_table_full&amp;oldid=6643">https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full&amp;oldid=6643</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index12a1.html?title=Special:CreateAccount&amp;returnto=Tutorials%3ACreate+cheat+table+full&amp;returntoquery=printable%3Dyes" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="indexb7d6.html?title=Special:UserLogin&amp;returnto=Tutorials%3ACreate+cheat+table+full&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index7d3d.html?title=Tutorials:Create_cheat_table_full" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index90b0.html?title=Talk:Tutorials:Create_cheat_table_full&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index7d3d.html?title=Tutorials:Create_cheat_table_full">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="indexd434-2.html?title=Tutorials:Create_cheat_table_full&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexa14a.html?title=Tutorials:Create_cheat_table_full&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexaabf.html?title=Special:WhatLinksHere/Tutorials:Create_cheat_table_full" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index01c0.html?title=Special:RecentChangesLinked/Tutorials:Create_cheat_table_full" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="index0924.html?title=Tutorials:Create_cheat_table_full&amp;oldid=6643" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="indexecdf.html?title=Tutorials:Create_cheat_table_full&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 March 2019, at 15:07.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.034","ppvisitednodes":{"value":11,"limit":1000000},"ppgeneratednodes":{"value":70,"limit":1000000},"postexpandincludesize":{"value":768,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":66,"limit":5000000},"timingprofile":["100.00%    2.303      1 Template:Tutorials:Create_cheat_table_full:links","100.00%    2.303      1 -total"]},"cachereport":{"timestamp":"20210602090940","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":349});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:39:11 GMT -->
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:Code_Injection_and_the_auto_assembler&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:14:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Help File:Code Injection and the auto assembler - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Help_File:Code_Injection_and_the_auto_assembler","wgTitle":"Help File:Code Injection and the auto assembler","wgCurRevisionId":4356,"wgRevisionId":4356,"wgArticleId":971,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Help","Tutorial","Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Help_File:Code_Injection_and_the_auto_assembler","wgRelevantArticleId":971,"wgRequestId":"4d9048d932953ad22b9ef86e","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loada260.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector"/>
+<script async="" src="load61a1.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="indexc366.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;action=edit"/>
+<link rel="edit" title="Edit" href="indexc366.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Help_File_Code_Injection_and_the_auto_assembler rootpage-Help_File_Code_Injection_and_the_auto_assembler skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Help File:Code Injection and the auto assembler</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Originally posted by <i>scribly</i> </b>
+</p><p><br />
+</p><p>Lets say you've found the code that decreases your health 
+Problem is that it seems to also affect the health of your opponents, and somehow you can't seem to find the basepointer. 
+In those cases doing some code injection using CE's auto assembler is the easiest solution 
+</p><p>There are several ways code injection can help solve this problem. 
+One method is finding another code that accesses your health, but does it only for your own health. (e.g the code that is used to display your current health) 
+There inject some code that stores the address of your health to a address you can find back again (more on that later) 
+Then in the code that decreases your health inject some code that checks if the address changes is the address stored by the other routine, if it is, skip the code, otherwhise, just decrease the health, or even create a instant kill cheat by decreasing the health of opponents by a really big value. 
+</p><p>Now for the auto assemble script part: 
+lets say that at 00405000 is the code that reads your health: mov eax,[esi+ecx*4] 
+and at 00421000 is the code that decreases the health of enemies: mov [esi+ecx*4],edx 
+</p><p>First allocate some memory to place your code in, and to allocate space for variables, use alloc(name,size) for that. 
+Alloc allocates a region of memory with read,write and execute access. (be aware, this wont work in windows me, 98 or 95 so please upgrade if you are using those ancient os's) 
+</p><p>So: 
+</p><p>Code: 
+</p>
+<pre> alloc(injectHealthReader,1024) //creates a identifier called injecthealthreader that points to a block of 1024 bytes 
+ alloc(injectHealthWriter,1024) //2nd code cave to handle the code of the decrease health code, for easy management 
+ alloc(playerhealthaddress,4) //this will hold the address of health, a 4 byte value (pointer, in 64 bit this'll have to be 8 bytes) 
+</pre>
+<p><br />
+</p><p><br />
+Now, write your injecthealthreader routine to store the address, and place a jump to your original code as well. dont forget that when placing a jump to your code cave keep in mind that if the instruction was larger than a jump to nop the remaining bytes, and in case of the jump being bigger than the instruction also save the other instruction, AND nop incomplete bytes. Jumps are 5 bytes. 
+So in the case of "mov eax,[esi+ecx*4]" the bytecode is 8b 04 8e (3 bytes) so you'll also need to save the instruction after it. Let's say it's followed by a "mov ecx,[esi+edx*4+4]" , bytecode=8b 4c 8e 04 (4 bytes), so now we have 7 bytes to place our jump, thats more than enough. So we'll have to place 2 nops after the jump (7-5=2) 
+</p><p><br />
+Code: 
+</p>
+<pre> 00405000: 
+ jmp InjectHealthAddress  //jump to the codecave 
+ nop  //nops for the lost space 
+ nop 
+ returnHealthReader:  //this is the label that is used to return to the address 
+                      // (so you dont have to write down 00405007 when jumping back, just to make it easy....) 
+ &#160;
+ injectHealthReader: 
+ push eax //save eax, not really needed here since eax gets changed anyhow, but it's a good habbit to save and restore registers 
+ lea eax,[esi+ecx*4] //this instruction places the result of esi+ecx*4 into eax 
+ mov [playerhealthaddress],eax 
+ pop eax //restore the register, again, not needed here, but good habbit to do 
+ &#160;
+ originalhealthreadercode: //label defining the original code, can be used to jump into or just skip, not needed here 
+ mov eax,[esi+ecx*4]  //read health 
+ mov ecx,[esi+edx*4+4] //read something else, my gues, armor 
+ &#160;
+ jmp returnHealthReader //jump back to the original game code, when done successfull, it wont crash... 
+</pre>
+<p><br />
+</p><p>As you see to specify a exact address just type it in ended with a ':' . Everything you type in after that will get assembled on and after that address (the jump and nops in this case, and the definition of the returnHealthReader:, which is in it's own turn also a address specifier, but doesn't change the current address) 
+</p><p>This code introduces labels, they are basicly identifiers specifying a address where thay have been placed. 
+you can't just use a label though, you'll first have to declare it using the label(labelname) function. I usually declare labels right after the part where I alloc memory. 
+</p><p>so, right after the alloc I have this code to get the code above working: 
+Code: 
+</p>
+<pre> label(returnHealthReader) //tell the assembler than returnHealthReader is a valid identifier, so dont bug out 
+ label(originalhealthreadercode) //same as above 
+</pre>
+<p><br />
+</p><p>now when you run the game the address of your health will get stored into the location of playerhealthaddress. 
+You can already use this with cheat engine, because the auto assembler will tell you the address, but the allocation will change each time, so making a table for other people won't work, they'd have to fill in the address each time themselves. (I dont find that a problem but somehow some people do....) 
+</p><p><br />
+</p><p>So, let's automate it a little further and use the knowledge of your healthaddress to make yourself invulnerable, but not your oponents. 
+Just like the injection for the code that reads your health you can do the same for that that decreases health. 
+And you can put it in the same script as the injection for the reader, as you saw in the alloc part where I already allocated space for the injection for the health decreaser (so you dont have to edit the address the other script allocated) 
+</p><p>so, write scriptcode that places a jump over the code that decreases your health, in this case "mov [esi+ecx*4],edx" which has bytecode 89 14 8e (3 bytes), too small, so find a instruction before or after thats also suitable, in this case there's a sub edx,eax just before this instruction, its bytecode is 29 c2 (2 bytes) so a perfect fit (5 bytes, so no need to nop), and even easier to make a code injection for (else I'd have to use a label between the 2 instructions to just skip the original line, but this sub edx,eax line is used to decrease as well, and doesn't change any of the locator addresses, and useless for the rest, so it doesn't hurt to skip it as well) 
+</p><p>so to inject your routine that checks if this is your health or not and if so, dont decrease do: 
+</p><p>Code: 
+</p>
+<pre> 00421000: 
+ jmp injectHealthWriter 
+ returnHealthWriter: //just declare it here, it'll get address 00421005, so a jmp returnHealthWriter will get converted to jmp 00421005 
+ &#160;
+ &#160;
+ injectHealthWriter: 
+ //do a check if esi+ecx*4 matches the address stored in playerhealthaddress 
+ //if it matches, skip the original code, if it doesn't just execute it 
+ &#160;
+ //save the registers we use, and before I forget, do not touch esp between saving and restoring the registers unless 
+ //it's to read something(like parameters), in which case you'll have to adjust the offset 
+ //also, dont change the registers that you use to find the address 
+ push eax 
+ push ebx 
+ mov eax,[playerhealthaddress] 
+ lea ebx,[esi+ecx*4] 
+ cmp eax,ebx 
+ &#160;
+ je itstheplayer 
+ &#160;
+ //not the player 
+ pop ebx //I think I could have doen this before the je, but better safe than sorry 
+ pop eax 
+ jmp originaldecreasehealthcode 
+ &#160;
+ &#160;
+ itstheplayer: 
+ pop ebx //restore the registers, keep in mind to restore the registers in reverse order 
+ pop eax 
+ jmp returnHealthWriter //dont execute the original code, return imeadiatly 
+ &#160;
+ originaldecreasehealthcode: 
+ sub edx,eax 
+ mov [esi+ecx*4],edx 
+ jmp returnHealthWriter 
+ &#160;
+ &#160;
+ &#160;
+ again, I used a few labels to make it easier for me 
+ but, that also means I'd have to declare them, else the assembler will complain it doesn't recognize them 
+ so: 
+ Code: 
+ &#160;
+ label(returnHealthWriter) 
+ label(itstheplayer) 
+ label(originaldecreasehealthcode) 
+</pre>
+<p><br />
+and I prefer adding declarations at the top. 
+</p><p><br />
+</p><p><br />
+So, the complete auto assembler script would look like: 
+</p><p>Code: 
+</p>
+<pre> alloc(injectHealthReader,1024) //creates a identifier called injecthealthreader that points to a block of 1024 bytes 
+ alloc(injectHealthWriter,1024) //2nd code cave to handle the code of the decrease health code, for easy management 
+ alloc(playerhealthaddress,4) //this will hold the address of health, a 4 byte value (pointer, in 64 bit this'll have to be 8 bytes) 
+ label(returnHealthReader) //tell the assembler than returnHealthReader is a valid identifier, so dont bug out 
+ label(originalhealthreadercode) //same as above 
+ label(returnHealthWriter) 
+ label(itstheplayer) 
+ label(originaldecreasehealthcode) 
+ &#160;
+ &#160;
+ &#160;
+ //---------------------------------------- 
+ //              Healthreader 
+ //---------------------------------------- 
+ 00405000: 
+ jmp InjectHealthAddress  //jump to the codecave 
+ nop  //nops for the lost space 
+ nop 
+ returnHealthReader:  //this is the label that is used to return to the address (so you dont have to write down 00405007 when jumping back, just to make it easy....) 
+ &#160;
+ &#160;
+ injectHealthReader: 
+ push eax //save eax, not really needed here since eax gets changed anyhow, but it's a good habbit to save and restore registers 
+ lea eax,[esi+ecx*4] //this instruction places the result of esi+ecx*4 into eax 
+ mov [playerhealthaddress],eax 
+ pop eax //restore the register, again, not needed here, but good habbit to do 
+ &#160;
+ originalhealthreadercode: //label defining the original code, can be used to jump into or just skip, not needed here 
+ mov eax,[esi+ecx*4]  //read health 
+ mov ecx,[esi+edx*4+4] //read something else, my gues, armor 
+ &#160;
+ jmp returnHealthReader //jump back to the original game code, when done successfull, it wont crash... 
+ &#160;
+ &#160;
+ &#160;
+ //---------------------------------------- 
+ //           Health decreaser 
+ //---------------------------------------- 
+ &#160;
+ &#160;
+ &#160;
+ 00421000: 
+ jmp injectHealthWriter  //overwrite the original code with a jump. 
+ returnHealthWriter: //just declare it here, it'll get address 00421005, so a jmp returnHealthWriter will get converted to jmp 00421005 
+ &#160;
+ &#160;
+ injectHealthWriter: 
+ //do a check if esi+ecx*4 matches the address stored in playerhealthaddress 
+ //if it matches, skip the original code, if it doesn't just execute it 
+ &#160;
+ //save the registers we use, and before I forget, do not touch esp between saving and restoring the registers unless 
+ //it's to read something(like parameters), in which case you'll have to adjust the offset 
+ //also, dont change the registers that you use to find the address 
+ push eax 
+ push ebx 
+ mov eax,[playerhealthaddress] 
+ lea ebx,[esi+ecx*4] 
+ cmp eax,ebx 
+ &#160;
+ je itstheplayer 
+ &#160;
+ //not the player 
+ pop ebx //I think I could have doen this before the je, but better safe than sorry 
+ pop eax 
+ jmp originaldecreasehealthcode 
+ &#160;
+ &#160;
+ itstheplayer: 
+ pop ebx //restore the registers, keep in mind to restore the registers in reverse order 
+ pop eax 
+ jmp returnHealthWriter //dont execute the original code, return imeadiatly 
+ &#160;
+ originaldecreasehealthcode: 
+ sub edx,eax 
+ mov [esi+ecx*4],edx 
+ jmp returnHealthWriter 
+</pre>
+<p><br />
+</p><p><br />
+</p><p>Please be aware that I havn't tested this in ce yet, I've been writing this in notepad on a pc that doesnt have ce installed, so there may be a few syntax errors, and some of the code I've written can surely be optimised, but I hope you get the general idea. 
+</p><p>Also, there's a bug in ce 5.0 where you can't use small identiers that can apear in the name of another identifier. (e.g weirdmemlocxxx and memloc can't be used at the same time, because memloc fits in weirdmemlocxxx) 
+But if you use normal names for identifiers this wont couse a problem, and I recommend identifiers of more than 4 characters, else it may happen you get the name of a assembler instruction and accidentally overwrite that when used. 
+</p><p><br />
+</p>
+<hr />
+<p><br />
+The other method of using code injection is finding if there are differences between the player data and opponent data. 
+Lets say that if it's the player [esi+ecx*4+14] contains a 1 otherwhise a 0. you can then do a check if that is set or not, if so, skip, otherwhise, decrease health 
+</p><p>Code: 
+</p>
+<pre> alloc(injectHealthWriter,1024) //2nd code cave to handle the code of the decrease health code, for easy management 
+ label(returnHealthWriter) 
+ label(itstheplayer) 
+ label(originaldecreasehealthcode) 
+ &#160;
+ &#160;
+ //---------------------------------------- 
+ //           Health decreaser 
+ //---------------------------------------- 
+ &#160;
+ &#160;
+ &#160;
+ 00421000: 
+ jmp injectHealthWriter  //overwrite the original code with a jump. 
+ returnHealthWriter: //just declare it here, it'll get address 00421005, so a jmp returnHealthWriter will get converted to jmp 00421005 
+ &#160;
+ &#160;
+ injectHealthWriter: 
+ push eax 
+ mov eax,[esi+ecx*4+14] 
+ cmp eax,1 
+ je itstheplayer 
+ &#160;
+ //not the player 
+ pop eax 
+ jmp originaldecreasehealthcode 
+ &#160;
+ &#160;
+ itstheplayer: 
+ pop eax //restore the register 
+ jmp returnHealthWriter //dont execute the original code, return imeadiatly 
+ &#160;
+ originaldecreasehealthcode: 
+ sub edx,eax 
+ mov [esi+ecx*4],edx 
+ jmp returnHealthWriter
+</pre>
+<h2><span class="mw-headline" id="Links">Links</span></h2>
+<ul><li><a href="index6cb7.html?title=Cheat_Engine:Help_File" title="Cheat Engine:Help File">Help File</a></li></ul>
+<ul><li><a href="index59c4.html?title=Help_File:Searching_Tip" title="Help File:Searching Tip">Back</a></li></ul>
+<ul><li><a href="index156d.html?title=Help_File:Find_out_what_addresses_are_accessed_by_a_piece_of_code" title="Help File:Find out what addresses are accessed by a piece of code">Next</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602162944
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.026 seconds
+Real time usage: 0.028 seconds
+Preprocessor visited node count: 3/1000000
+Preprocessor generated node count: 8/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:971-0!canonical and timestamp 20210602162944 and revision id 4356
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="indexec26.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;oldid=4356">https://wiki.cheatengine.org/index.php?title=Help_File:Code_Injection_and_the_auto_assembler&amp;oldid=4356</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6a37.html?title=Category:Help" title="Category:Help">Help</a></li><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index1c8c.html?title=Category:Assembler" title="Category:Assembler">Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index390b.html?title=Special:CreateAccount&amp;returnto=Help+File%3ACode+Injection+and+the+auto+assembler&amp;returntoquery=printable%3Dyes" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index6eb2.html?title=Special:UserLogin&amp;returnto=Help+File%3ACode+Injection+and+the+auto+assembler&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index7cd7.html?title=Help_File:Code_Injection_and_the_auto_assembler" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index6958.html?title=Talk:Help_File:Code_Injection_and_the_auto_assembler&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index7cd7.html?title=Help_File:Code_Injection_and_the_auto_assembler">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="indexc366.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexb107.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexacfb.html?title=Special:WhatLinksHere/Help_File:Code_Injection_and_the_auto_assembler" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index780d.html?title=Special:RecentChangesLinked/Help_File:Code_Injection_and_the_auto_assembler" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="indexec26.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;oldid=4356" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="indexe938.html?title=Help_File:Code_Injection_and_the_auto_assembler&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 19 March 2017, at 22:42.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.026","walltime":"0.028","ppvisitednodes":{"value":3,"limit":1000000},"ppgeneratednodes":{"value":8,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210602162944","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":363});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:Code_Injection_and_the_auto_assembler&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:14:35 GMT -->
+</html>

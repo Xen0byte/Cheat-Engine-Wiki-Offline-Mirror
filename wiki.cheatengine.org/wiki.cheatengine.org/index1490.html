@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua:Class:MemoryRecord by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:56:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Lua:Class:MemoryRecord - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lua:Class:MemoryRecord","wgTitle":"Lua:Class:MemoryRecord","wgCurRevisionId":6823,"wgRevisionId":6823,"wgArticleId":535,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Lua"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Lua:Class:MemoryRecord","wgRelevantArticleId":535,"wgRequestId":"d5704880a427fd66b0281988","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load13a5.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="indexb85e.html?title=Lua:Class:MemoryRecord&amp;action=edit"/>
+<link rel="edit" title="Edit" href="indexb85e.html?title=Lua:Class:MemoryRecord&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Lua_Class_MemoryRecord rootpage-Lua_Class_MemoryRecord skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Lua:Class:MemoryRecord</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>MemoryRecord <b>class</b>: (<b>Inheritance</b>: <i><a href="index7f64.html?title=Lua:Class:Object" title="Lua:Class:Object">Object</a></i>)
+</p><p>The memory record objects are the entries you see in the address list.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Properties"><span class="tocnumber">1</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Methods"><span class="tocnumber">2</span> <span class="toctext">Methods</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Related_Functions"><span class="tocnumber">4.1</span> <span class="toctext">Related Functions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Related_Classes"><span class="tocnumber">4.2</span> <span class="toctext">Related Classes</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexdbd9.html?title=Lua:Class:MemoryRecord&amp;action=edit&amp;section=1" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl><dt>ID &#58; integer</dt>
+<dd>Unique ID.</dd></dl>
+<dl><dt>Index &#58; integer</dt>
+<dd>The index ID for this record. 0 is top. (ReadOnly)</dd></dl>
+<dl><dt>Description &#58; string- The description of the memory record.</dt></dl>
+<dl><dt>Address &#58; string</dt>
+<dd>Get/set the interpretable address string. Useful for simple address settings.</dd></dl>
+<dl><dt>OffsetCount &#58; integer</dt>
+<dd>The number of offsets. Set to 0 for a normal address.</dd></dl>
+<dl><dt>Offset[<i>index</i>] &#58; integer</dt>
+<dd>Array to access each offset.</dd></dl>
+<dl><dt>CurrentAddress &#58; integer</dt>
+<dd>The address the memoryrecord points to.</dd></dl>
+<dl><dt>Type &#58; integer</dt>
+<dd>The variable type of this record. See vtByte to vtCustom
+<ul><li>If the type is vtString then the following properties are available:
+<ul><li>String.Size: Number of characters in the string</li>
+<li>String.Unicode: boolean</li></ul></li>
+<li>If the type is vtBinary then the following properties are available
+<ul><li>Binary.Startbit: First bit to start reading from</li>
+<li>Binary.Size: Number of bits</li></ul></li>
+<li>If the type is vtByteArray then the following properties are available
+<ul><li>Aob.Size: Number of bytes</li></ul></li></ul></dd>
+<dd><b>From <i>defines.lua</i></b>:</dd></dl>
+<pre>vtByte=0
+vtWord=1
+vtDword=2
+vtQword=3
+vtSingle=4
+vtDouble=5
+vtString=6
+vtUnicodeString=7 --Only used by autoguess
+vtByteArray=8
+vtBinary=9
+vtAutoAssembler=11
+vtPointer=12 --Only used by autoguess and structures
+vtCustom=13
+vtGrouped=14
+</pre>
+<dl><dt>CustomTypeName &#58; string</dt>
+<dd>If the type is vtCustomType this will contain the name of the CustomType</dd></dl>
+<dl><dt>Script &#58; string</dt>
+<dd>If the type is vtAutoAssembler this will contain the auto assembler script</dd></dl>
+<dl><dt>Value &#58; string</dt>
+<dd>The value in stringform.</dd></dl>
+<dl><dt>Selected &#58; boolean</dt>
+<dd>Set to true if selected (ReadOnly)</dd></dl>
+<dl><dt>Active &#58; boolean</dt>
+<dd>Set to true to activate/freeze, false to deactivate/unfreeze</dd></dl>
+<dl><dt>Color &#58; integer</dt>
+<dd>The memory record's RBG color integer.</dd></dl>
+<dl><dt>ShowAsHex &#58; boolean</dt>
+<dd>Self explanatory</dd></dl>
+<dl><dt>ShowAsSigned &#58; boolean</dt>
+<dd>Self explanatory</dd></dl>
+<dl><dt>AllowIncrease &#58; boolean</dt>
+<dd>Allow value increasing, unfreeze will reset it to false</dd></dl>
+<dl><dt>AllowDecrease &#58; boolean</dt>
+<dd>Allow value decreasing, unfreeze will reset it to false</dd></dl>
+<dl><dt>Count &#58; integer</dt>
+<dd>Number of children</dd></dl>
+<dl><dt>Child[<i>index</i>] &#58; MemoryRecord</dt>
+<dd>Array to access the child records</dd></dl>
+<dl><dt>HotkeyCount &#58; integer</dt>
+<dd>Number of hotkeys attached to this memory record.</dd></dl>
+<dl><dt>Hotkey[<i>index</i>] &#58; <a href="index90db.html?title=Lua:Class:GenericHotkey&amp;action=edit&amp;redlink=1" class="new" title="Lua:Class:GenericHotkey (page does not exist)">GenericHotkey</a></dt>
+<dd>Array to index the hotkeys.</dd></dl>
+<dl><dt>Options &#58; string</dt>
+<dd>A string of the set "Group Config" options in the format '<b>[optionName,...]'</b></dd>
+<dd>Valid options are:</dd></dl>
+<pre>moHideChildren
+moActivateChildrenAsWell
+moDeactivateChildrenAsWell
+moRecursiveSetValue
+moAllowManualCollapseAndExpand
+moManualExpandCollapse
+</pre>
+<dl><dd>example: '[moHideChildren,moAllowManualCollapseAndExpand,moManualExpandCollapse]'</dd></dl>
+<dl><dt>Collapsed &#58; boolean</dt>
+<dd>only works when manual expand/collapse is set in group config options (<b>moManualExpandCollapse</b>)</dd></dl>
+<dl><dt>OnActivate &#58; function(<i>memoryrecord</i>, <i>before</i>, <i>currentstate</i>) &#58; boolean</dt>
+<dd>The function to call when the memoryrecord will change (or changed) Active to true.</dd>
+<dd>If before is true, not returning true will cause the activation to stop.</dd></dl>
+<dl><dt>OnDeactivate &#58; function(memoryrecord,before,currentstate) &#58; boolean</dt>
+<dd>The function to call when the memoryrecord will change (or changed) Active to false.</dd>
+<dd>If before is true, not returning true will cause the deactivation to stop.</dd></dl>
+<dl><dt>OnDestroy &#58; function</dt>
+<dd>Called when the memoryrecord is destroyed.</dd></dl>
+<dl><dt>DontSave &#58; boolean</dt>
+<dd>Don't save this memoryrecord and it's children</dd></dl>
+<dl><dt>DropDownLinked&#58; boolean</dt>
+<dd>if dropdown list refers to list of another memory record eg. (memrec name)</dd></dl>
+<dl><dt>DropDownLinkedMemrec&#58; string</dt>
+<dd>Description of linked memrec or emptystring if not linked</dd></dl>
+<dl><dt>DropDownList&#58; StringList</dt>
+<dd>list of "value:description" lines, lists are still separate objects when linked, read-write</dd></dl>
+<dl><dt>DropDownReadOnly&#58; boolean</dt>
+<dd>true if 'Disallow manual user input' is set</dd></dl>
+<dl><dt>DropDownDescriptionOnly&#58; boolean</dt>
+<dd>self explanatory</dd></dl>
+<dl><dt>DisplayAsDropDownListItem&#58; boolean</dt>
+<dd>self explanatory</dd></dl>
+<dl><dt>DropDownCount&#58; integer</dt>
+<dd>equivalent to .DropDownList.Count</dd></dl>
+<dl><dt>DropDownValue&#58; Array</dt>
+<dd>Array to access values in DropDownList (ReadOnly)</dd></dl>
+<dl><dt>DropDownDescription&#58; Array</dt>
+<dd>Array to access Descriptions in DropDownList (ReadOnly)</dd></dl>
+<h2><span class="mw-headline" id="Methods">Methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index2f89.html?title=Lua:Class:MemoryRecord&amp;action=edit&amp;section=2" title="Edit section: Methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl><dt>getDescription() &#58; string</dt>
+<dd>Returns the memory record's description.</dd></dl>
+<dl><dt>setDescription()</dt>
+<dd>Sets the memory record's description.</dd></dl>
+<dl><dt>getAddress() &#58; integer - (integer, table)</dt>
+<dd>Returns the interpretable addressstring of this record.</dd>
+<dd>If it is a pointer, it returns a second result as a table filled with the offsets</dd></dl>
+<dl><dt>setAddress(<i>string</i>)</dt>
+<dd>Sets the interpretable address string, and if offsets are provided make it a pointer</dd></dl>
+<dl><dt>getOffsetCount() &#58; integer</dt>
+<dd>Returns the number of offsets for this memoryrecord</dd></dl>
+<dl><dt>setOffsetCount(<i>integer</i>)</dt>
+<dd>Lets you set the number of offsets</dd></dl>
+<dl><dt>getOffset(<i>index</i>) &#58; integer</dt>
+<dd>Gets the offset at the given index</dd></dl>
+<dl><dt>setOffset(<i>index</i>, <i>value</i>)</dt>
+<dd>Sets the offset at the given index</dd></dl>
+<dl><dt>getCurrentAddress() &#58; integer</dt>
+<dd>Returns the current address as an integer (the final result of the interpretable address and pointer offsets)</dd></dl>
+<dl><dt>appendToEntry(<i>memrec</i>)</dt>
+<dd>Appends the current memory record to the given memory record</dd></dl>
+<dl><dt>getHotkey(<i>index</i>) &#58; <a href="index90db.html?title=Lua:Class:GenericHotkey&amp;action=edit&amp;redlink=1" class="new" title="Lua:Class:GenericHotkey (page does not exist)">GenericHotkey</a></dt>
+<dd>Returns the hotkey from the hotkey array</dd></dl>
+<dl><dt>getHotkeyByID(<i>integer</i>) &#58; <a href="index90db.html?title=Lua:Class:GenericHotkey&amp;action=edit&amp;redlink=1" class="new" title="Lua:Class:GenericHotkey (page does not exist)">GenericHotkey</a></dt>
+<dd>Returns the hotkey with the given id</dd></dl>
+<dl><dt>[<i>index</i>]&#160;</dt>
+<dd>MemoryRecord</dd>
+<dd>Same as 'Child[<i>index</i>]'</dd>
+<dd>Default accessor.</dd></dl>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index5bad.html?title=Lua:Class:MemoryRecord&amp;action=edit&amp;section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> <span class="kd">local</span> <span class="n">addressList</span> <span class="o">=</span> <span class="n">getAddressList</span><span class="p">()</span>
+ <span class="kd">local</span> <span class="n">mrHealth</span> <span class="o">=</span> <span class="n">addressList</span><span class="p">.</span><span class="n">getMemoryRecordByDescription</span><span class="p">(</span><span class="s1">&#39;Health&#39;</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="n">mrHealth</span><span class="p">.</span><span class="n">Description</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="n">mrHealth</span><span class="p">.</span><span class="n">Active</span> <span class="ow">and</span> <span class="s1">&#39;True&#39;</span> <span class="ow">or</span> <span class="s1">&#39;False&#39;</span><span class="p">)</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index1147.html?title=Template:LuaSeeAlso&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="index3be2.html?title=Lua" title="Lua">Lua</a></li>
+<li><a href="index6160.html?title=Help_File:Script_engine" title="Help File:Script engine">Script engine</a></li></ul>
+<h3><span class="mw-headline" id="Related_Functions">Related Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index8433-2.html?title=Lua:Class:MemoryRecord&amp;action=edit&amp;section=4" title="Edit section: Related Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="indexc896.html?title=Lua:getMainForm" title="Lua:getMainForm">getMainForm</a></li>
+<li><a href="index2b55.html?title=Lua:getAddressList" title="Lua:getAddressList">getAddressList</a></li></ul>
+<h3><span class="mw-headline" id="Related_Classes">Related Classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexd5e1.html?title=Lua:Class:MemoryRecord&amp;action=edit&amp;section=5" title="Edit section: Related Classes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="index6299.html?title=Lua:Class:Addresslist" title="Lua:Class:Addresslist">Addresslist</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602104241
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.040 seconds
+Real time usage: 0.279 seconds
+Preprocessor visited node count: 33/1000000
+Preprocessor generated node count: 56/1000000
+Post‐expand include size: 91/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1034/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.570      1 Template:LuaSeeAlso
+100.00%    2.570      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:535-0!canonical and timestamp 20210602104241 and revision id 6823
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="indexbcf0.html?title=Lua:Class:MemoryRecord&amp;oldid=6823">https://wiki.cheatengine.org/index.php?title=Lua:Class:MemoryRecord&amp;oldid=6823</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="index1b60.html?title=Category:Lua" title="Category:Lua">Lua</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index7059.html?title=Special:CreateAccount&amp;returnto=Lua%3AClass%3AMemoryRecord" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index5276.html?title=Special:UserLogin&amp;returnto=Lua%3AClass%3AMemoryRecord" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index1490.html?title=Lua:Class:MemoryRecord" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index500f.html?title=Talk:Lua:Class:MemoryRecord&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index1490.html?title=Lua:Class:MemoryRecord">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="indexb85e.html?title=Lua:Class:MemoryRecord&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="index4294.html?title=Lua:Class:MemoryRecord&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexb02f.html?title=Special:WhatLinksHere/Lua:Class:MemoryRecord" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="indexbac5.html?title=Special:RecentChangesLinked/Lua:Class:MemoryRecord" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="indexa1dd.html?title=Lua:Class:MemoryRecord&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="indexbcf0.html?title=Lua:Class:MemoryRecord&amp;oldid=6823" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index440b.html?title=Lua:Class:MemoryRecord&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 21 May 2019, at 16:01.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"0.279","ppvisitednodes":{"value":33,"limit":1000000},"ppgeneratednodes":{"value":56,"limit":1000000},"postexpandincludesize":{"value":91,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1034,"limit":5000000},"timingprofile":["100.00%    2.570      1 Template:LuaSeeAlso","100.00%    2.570      1 -total"]},"cachereport":{"timestamp":"20210602104241","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":353});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua:Class:MemoryRecord by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:56:45 GMT -->
+</html>

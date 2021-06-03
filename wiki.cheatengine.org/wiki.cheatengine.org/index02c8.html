@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:26:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Lua:registerAutoAssemblerCommand - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lua:registerAutoAssemblerCommand","wgTitle":"Lua:registerAutoAssemblerCommand","wgCurRevisionId":5616,"wgRevisionId":0,"wgArticleId":1545,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Lua:registerAutoAssemblerCommand","wgRelevantArticleId":1545,"wgRequestId":"94309ed069660a099d3bb2c4","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loadc219.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Lua_registerAutoAssemblerCommand rootpage-Lua_registerAutoAssemblerCommand skin-vector action-edit">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">View source for Lua:registerAutoAssemblerCommand</h1>			<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">← <a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand" title="Lua:registerAutoAssemblerCommand">Lua:registerAutoAssemblerCommand</a></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="https://wiki.cheatengine.org/index.php?title=Special:Preferences" title="Special:Preferences">user preferences</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:Lua]]
+'''function''' registerAutoAssemblerCommand(''Command'', ''Function'''(parameters, syntaxcheckonly)''' '')
+
+Registers an auto assembler command to call the specified function. The command will be replaced by the string this function returns when executed. The function can be called twice. Once for syntax check and symbol lookup (1), and the second time for actual execution by the assembler (2) if it has not been removed in phase 1.
+
+If the function returns nil, and as secondary parameter a string, this will make the auto assembler fail with that error.
+:Note: You will only get a message pop-up if the Auto Assembler is preforming a syntax check.
+
+The Auto Assembler form syntax highlighter will highlight the registered command.
+
+
+== Function Parameters ==
+{|width="85%" cellpadding="10%" cellpadding="5%" cellspacing="0" border="0"
+!align="left"|Parameter
+!align="left"|Type
+!style="width: 80%;background-color:white;" align="left"|Description
+|-
+|Command
+|String
+|The command string it self
+|-
+|Function
+|Function
+|The Lua function to be called when the command string is found in an Auto Assembler script
+|}
+
+
+=== Callback Function Parameters ===
+{|width="85%" cellpadding="10%" cellpadding="5%" cellspacing="0" border="0"
+!align="left"|Parameter
+!align="left"|Type
+!style="width: 80%;background-color:white;" align="left"|Description
+|-
+|parameters
+|String
+|This will be the string between parenthesis after the command string
+|-
+|syntaxcheckonly
+|Boolean
+|This will be ''true'' if the script is running though a syntax check
+|}
+
+==== Callback Function Return(s) ====
+{|width="85%" cellpadding="10%" cellpadding="5%" cellspacing="0" border="0"
+!align="left"|Parameter
+!align="left"|Type
+!style="width: 80%;background-color:white;" align="left"|Description
+|-
+|ReplaceString
+|String or Nil
+|This will replace the commands line in the Auto Assembler script, can be a multi-line string, if Nil the commands line is removed
+|-
+|ErrorMessage
+|String or Nil (OPTIONAL)
+|if the ''ReplaceString'' is nil and this is set to a string then, this will raise an error with the given error message for the command
+|}
+
+
+== Examples ==
+=== Example 1 ===
+&lt;!-- &lt;pre>
+local t = translate
+local LineEnd = '\r\n'
+local ExitOnSyntaxCheck = false
+
+local function registerLabel(parameters, syntaxcheck)
+    ---- registerLabel(name)
+    if ExitOnSyntaxCheck and syntaxcheck then return end
+    local le = LineEnd
+    local name = parameters
+    if name == nil then
+        return nil, t('Wrong number of parameters, no "name", for "registerLabel" custom AA command.')
+    end
+    local str = 'label(' .. name .. ')' .. le
+    str = str .. 'registerSymbol(' .. name .. ')'
+    return str
+end
+
+local function unregisterLabel(parameters, syntaxcheck)
+    ---- unregisterLabel(name)
+    if ExitOnSyntaxCheck and syntaxcheck then return end
+    local name = parameters
+    if name == nil then
+        return nil, t('Wrong number of parameters, no "name", for "unregisterLabel" custom AA command.')
+    end
+    local str = 'unregisterSymbol(' .. name .. ')'
+    return str
+end
+
+registerAutoAssemblerCommand('registerLabel', registerLabel)  ---- Register the command
+registerAutoAssemblerCommand('unregisterLabel', unregisterLabel)  ---- Register the command
+
+---- Usage in an Auto Assembler script
+----------------------------------------------------
+-- alloc(memTestMemory, 0x400)
+-- registerSymbol(memTestMemory)
+-- registerLabel(memTestMemoryEND)
+-- memTestMemory:
+--   db 90 90 90 90
+--   memTestMemoryEND:
+----------------------------------------------------
+&lt;/pre> -->
+&lt;p style="line-height:1.15em;white-space:pre;font-family:'Lucida Console';display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">&lt;span style="font-weight: 700;">local&lt;/span> t = translate
+&lt;span style="font-weight: 700;">local&lt;/span> LineEnd = &lt;span style="color: rgb(136, 0, 0);">'\r\n'&lt;/span>
+&lt;span style="font-weight: 700;">local&lt;/span> ExitOnSyntaxCheck = &lt;span style="font-weight: 700;">false&lt;/span>
+
+&lt;span style="font-weight: 700;">local&lt;/span> &lt;span style="font-weight: 700;">function&lt;/span> &lt;span style="color: rgb(136, 0, 0); font-weight: 700;">registerLabel&lt;/span>(parameters, syntaxcheck)
+    &lt;span style="color: rgb(136, 136, 136);">---- registerLabel(name)&lt;/span>
+    &lt;span style="font-weight: 700;">if&lt;/span> ExitOnSyntaxCheck &lt;span style="font-weight: 700;">and&lt;/span> syntaxcheck &lt;span style="font-weight: 700;">then&lt;/span> &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> le = LineEnd
+    &lt;span style="font-weight: 700;">local&lt;/span> name = parameters
+    &lt;span style="font-weight: 700;">if&lt;/span> name == &lt;span style="font-weight: 700;">nil&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Wrong number of parameters, no "name", for "registerLabel" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> str = &lt;span style="color: rgb(136, 0, 0);">'label('&lt;/span> .. name .. &lt;span style="color: rgb(136, 0, 0);">')'&lt;/span> .. le
+    str = str .. &lt;span style="color: rgb(136, 0, 0);">'registerSymbol('&lt;/span> .. name .. &lt;span style="color: rgb(136, 0, 0);">')'&lt;/span>
+    &lt;span style="font-weight: 700;">return&lt;/span> str
+&lt;span style="font-weight: 700;">end&lt;/span>
+
+&lt;span style="font-weight: 700;">local&lt;/span> &lt;span style="font-weight: 700;">function&lt;/span> &lt;span style="color: rgb(136, 0, 0); font-weight: 700;">unregisterLabel&lt;/span>(parameters, syntaxcheck)
+    &lt;span style="color: rgb(136, 136, 136);">---- unregisterLabel(name)&lt;/span>
+    &lt;span style="font-weight: 700;">if&lt;/span> ExitOnSyntaxCheck &lt;span style="font-weight: 700;">and&lt;/span> syntaxcheck &lt;span style="font-weight: 700;">then&lt;/span> &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> name = parameters
+    &lt;span style="font-weight: 700;">if&lt;/span> name == &lt;span style="font-weight: 700;">nil&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Wrong number of parameters, no "name", for "unregisterLabel" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> str = &lt;span style="color: rgb(136, 0, 0);">'unregisterSymbol('&lt;/span> .. name .. &lt;span style="color: rgb(136, 0, 0);">')'&lt;/span>
+    &lt;span style="font-weight: 700;">return&lt;/span> str
+&lt;span style="font-weight: 700;">end&lt;/span>
+
+registerAutoAssemblerCommand(&lt;span style="color: rgb(136, 0, 0);">'registerLabel'&lt;/span>, registerLabel)  &lt;span style="color: rgb(136, 136, 136);">---- Register the command&lt;/span>
+registerAutoAssemblerCommand(&lt;span style="color: rgb(136, 0, 0);">'unregisterLabel'&lt;/span>, unregisterLabel)  &lt;span style="color: rgb(136, 136, 136);">---- Register the command&lt;/span>
+
+&lt;span style="color: rgb(136, 136, 136);">---- Usage in an Auto Assembler script&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- alloc(memTestMemory, 0x400)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- registerSymbol(memTestMemory)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- registerLabel(memTestMemoryEND)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- memTestMemory:&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">--   db 90 90 90 90&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">--   memTestMemoryEND:&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+&lt;/p>
+
+=== Example 2 ===
+&lt;!-- &lt;pre>
+local t = translate
+local LineEnd = '\r\n'
+local ExitOnSyntaxCheck = false
+
+local function split(s, delimiter)
+    result = {}
+    for match in (s .. delimiter):gmatch('(.-)' .. delimiter) do
+        table.insert(result, match)
+    end
+    return result
+end
+
+
+function repeteBytes(parameters, syntaxcheck)
+    ---- repeteBytes(numberOfByte, arrayOfBytes)
+    if ExitOnSyntaxCheck and syntaxcheck then return end
+    local le = LineEnd
+    local args = split(parameters, ',')
+    local numberOfBytes = args[1]
+    if numberOfBytes == nil then
+        return nil, t('Wrong number of parameters, no "numberOfBytes", for "repeteBytes" custom AA command.')
+    end
+    local arrayOfBytes = args[2]
+    if arrayOfBytes == nil then
+        return nil, t('Wrong number of parameters, no "arrayOfBytes", for "repeteBytes" custom AA command.')
+    end
+    arrayOfBytes = arrayOfBytes:upper()
+    if arrayOfBytes:find('#') or arrayOfBytes:find('(INT)') 
+    or arrayOfBytes:find('(FLOAT)') or arrayOfBytes:find('(DOUBLE)') then
+        return nil, t('Wrong format of parameters, "arrayOfBytes" must be in hexadecimal format, for "repeteBytes" custom AA command.')
+    end
+    local bc = (#arrayOfBytes) / 2
+    numberOfBytes = numberOfBytes:upper():gsub('&amp;nbsp;', &amp;#39;&amp;#39;)
+    if numberOfBytes:sub(1, 5) == '(INT)' then
+        numberOfBytes = tonumber(numberOfBytes:sub(6))
+    elseif numberOfBytes:sub(1, 1) == '#' then
+        numberOfBytes = tonumber(numberOfBytes:sub(2))
+    elseif numberOfBytes:sub(1, 1) == '$' then
+        numberOfBytes = tonumber(numberOfBytes:sub(2), 16)
+    elseif numberOfBytes:sub(1, 2) == '0X' then
+        numberOfBytes = tonumber(numberOfBytes:sub(3), 16)
+    else
+        numberOfBytes = tonumber(numberOfBytes, 16)
+    end
+    if type(numberOfBytes) ~= 'number' then
+        return nil, t('Could not parse "numberOfBytes" for "repeteBytes" custom AA command.')
+    end
+    local str = &amp;#39;&amp;#39;
+    for i = 1, numberOfBytes / bc do
+        str = str .. 'db ' .. arrayOfBytes .. le
+    end
+    return str
+end
+
+registerAutoAssemblerCommand('repeteBytes', repeteBytes)  ---- Register the command
+
+---- Usage in an Auto Assembler script
+----------------------------------------------------
+-- alloc(memTestMemory, 0x400)
+-- registerSymbol(memTestMemory)
+-- memTestMemory:
+--  repeteBytes(0x64, 90 52)
+----------------------------------------------------
+
+---- Memory View Form copy of "memTestMemory"
+----------------------------------------------------
+-- 0032FFFE -                       - ?? 
+-- 0032FFFF -                       - ?? 
+-- memTestMemory- 90                - nop 
+-- 00330001 - 52                    - push edx
+-- 00330002 - 90                    - nop 
+-- 00330003 - 52                    - push edx
+-- 00330004 - 90                    - nop 
+-- ...
+-- 00330060 - 90                    - nop 
+-- 00330061 - 52                    - push edx
+-- 00330062 - 90                    - nop 
+-- 00330063 - 52                    - push edx
+-- 00330064 - 00 00                 - add [eax],al
+----------------------------------------------------
+&lt;/pre> -->
+&lt;p style="line-height:1.15em;white-space:pre;font-family:'Lucida Console';display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">&lt;span style="font-weight: 700;">local&lt;/span> t = translate
+&lt;span style="font-weight: 700;">local&lt;/span> LineEnd = &lt;span style="color: rgb(136, 0, 0);">'\r\n'&lt;/span>
+&lt;span style="font-weight: 700;">local&lt;/span> ExitOnSyntaxCheck = &lt;span style="font-weight: 700;">false&lt;/span>
+
+&lt;span style="font-weight: 700;">local&lt;/span> &lt;span style="font-weight: 700;">function&lt;/span> &lt;span style="color: rgb(136, 0, 0); font-weight: 700;">split&lt;/span>(s, delimiter)
+    result = {}
+    &lt;span style="font-weight: 700;">for&lt;/span> match &lt;span style="font-weight: 700;">in&lt;/span> (s .. delimiter):gmatch(&lt;span style="color: rgb(136, 0, 0);">'(.-)'&lt;/span> .. delimiter) &lt;span style="font-weight: 700;">do&lt;/span>
+        &lt;span style="color: rgb(57, 115, 0);">table&lt;/span>.insert(result, match)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">return&lt;/span> result
+&lt;span style="font-weight: 700;">end&lt;/span>
+
+
+&lt;span style="font-weight: 700;">function&lt;/span> &lt;span style="color: rgb(136, 0, 0); font-weight: 700;">repeteBytes&lt;/span>(parameters, syntaxcheck)
+    &lt;span style="color: rgb(136, 136, 136);">---- repeteBytes(numberOfByte, arrayOfBytes)&lt;/span>
+    &lt;span style="font-weight: 700;">if&lt;/span> ExitOnSyntaxCheck &lt;span style="font-weight: 700;">and&lt;/span> syntaxcheck &lt;span style="font-weight: 700;">then&lt;/span> &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> le = LineEnd
+    &lt;span style="font-weight: 700;">local&lt;/span> args = split(parameters, &lt;span style="color: rgb(136, 0, 0);">','&lt;/span>)
+    &lt;span style="font-weight: 700;">local&lt;/span> numberOfBytes = args[&lt;span style="color: rgb(136, 0, 0);">1&lt;/span>]
+    &lt;span style="font-weight: 700;">if&lt;/span> numberOfBytes == &lt;span style="font-weight: 700;">nil&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Wrong number of parameters, no "numberOfBytes", for "repeteBytes" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> arrayOfBytes = args[&lt;span style="color: rgb(136, 0, 0);">2&lt;/span>]
+    &lt;span style="font-weight: 700;">if&lt;/span> arrayOfBytes == &lt;span style="font-weight: 700;">nil&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Wrong number of parameters, no "arrayOfBytes", for "repeteBytes" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    arrayOfBytes = arrayOfBytes:upper():gsub(&lt;span style="color: rgb(136, 0, 0);">'0X'&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">&amp;#39;&amp;#39;&lt;/span>):gsub(&lt;span style="color: rgb(136, 0, 0);">'$'&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">&amp;#39;&amp;#39;&lt;/span>):gsub(&lt;span style="color: rgb(136, 0, 0);">'&amp;nbsp;'&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">&amp;#39;&amp;#39;&lt;/span>)
+    &lt;span style="font-weight: 700;">if&lt;/span> arrayOfBytes:find(&lt;span style="color: rgb(136, 0, 0);">'#'&lt;/span>) &lt;span style="font-weight: 700;">or&lt;/span> arrayOfBytes:find(&lt;span style="color: rgb(136, 0, 0);">'(INT)'&lt;/span>) 
+    &lt;span style="font-weight: 700;">or&lt;/span> arrayOfBytes:find(&lt;span style="color: rgb(136, 0, 0);">'(FLOAT)'&lt;/span>) &lt;span style="font-weight: 700;">or&lt;/span> arrayOfBytes:find(&lt;span style="color: rgb(136, 0, 0);">'(DOUBLE)'&lt;/span>) &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Wrong format of parameters, "arrayOfBytes" must be in hexadecimal format, for "repeteBytes" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> bc = (#arrayOfBytes) / &lt;span style="color: rgb(136, 0, 0);">2&lt;/span>
+    numberOfBytes = numberOfBytes:upper():gsub(&lt;span style="color: rgb(136, 0, 0);">'&amp;nbsp;'&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">&amp;#39;&amp;#39;&lt;/span>)
+    &lt;span style="font-weight: 700;">if&lt;/span> numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">1&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">5&lt;/span>) == &lt;span style="color: rgb(136, 0, 0);">'(INT)'&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        numberOfBytes = &lt;span style="color: rgb(57, 115, 0);">tonumber&lt;/span>(numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">6&lt;/span>))
+    &lt;span style="font-weight: 700;">elseif&lt;/span> numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">1&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">1&lt;/span>) == &lt;span style="color: rgb(136, 0, 0);">'#'&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        numberOfBytes = &lt;span style="color: rgb(57, 115, 0);">tonumber&lt;/span>(numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">2&lt;/span>))
+    &lt;span style="font-weight: 700;">elseif&lt;/span> numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">1&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">1&lt;/span>) == &lt;span style="color: rgb(136, 0, 0);">'$'&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        numberOfBytes = &lt;span style="color: rgb(57, 115, 0);">tonumber&lt;/span>(numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">2&lt;/span>), &lt;span style="color: rgb(136, 0, 0);">16&lt;/span>)
+    &lt;span style="font-weight: 700;">elseif&lt;/span> numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">1&lt;/span>, &lt;span style="color: rgb(136, 0, 0);">2&lt;/span>) == &lt;span style="color: rgb(136, 0, 0);">'0X'&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        numberOfBytes = &lt;span style="color: rgb(57, 115, 0);">tonumber&lt;/span>(numberOfBytes:sub(&lt;span style="color: rgb(136, 0, 0);">3&lt;/span>), &lt;span style="color: rgb(136, 0, 0);">16&lt;/span>)
+    &lt;span style="font-weight: 700;">else&lt;/span>
+        numberOfBytes = &lt;span style="color: rgb(57, 115, 0);">tonumber&lt;/span>(numberOfBytes, &lt;span style="color: rgb(136, 0, 0);">16&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">if&lt;/span> &lt;span style="color: rgb(57, 115, 0);">type&lt;/span>(numberOfBytes) ~= &lt;span style="color: rgb(136, 0, 0);">'number'&lt;/span> &lt;span style="font-weight: 700;">then&lt;/span>
+        &lt;span style="font-weight: 700;">return&lt;/span> &lt;span style="font-weight: 700;">nil&lt;/span>, t(&lt;span style="color: rgb(136, 0, 0);">'Could not parse "numberOfBytes" for "repeteBytes" custom AA command.'&lt;/span>)
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">local&lt;/span> str = &lt;span style="color: rgb(136, 0, 0);">&amp;#39;&amp;#39;&lt;/span>
+    &lt;span style="font-weight: 700;">for&lt;/span> i = &lt;span style="color: rgb(136, 0, 0);">1&lt;/span>, numberOfBytes / bc &lt;span style="font-weight: 700;">do&lt;/span>
+        str = str .. &lt;span style="color: rgb(136, 0, 0);">'db '&lt;/span> .. arrayOfBytes .. le
+    &lt;span style="font-weight: 700;">end&lt;/span>
+    &lt;span style="font-weight: 700;">return&lt;/span> str
+&lt;span style="font-weight: 700;">end&lt;/span>
+
+registerAutoAssemblerCommand(&lt;span style="color: rgb(136, 0, 0);">'repeteBytes'&lt;/span>, repeteBytes)  &lt;span style="color: rgb(136, 136, 136);">---- Register the command&lt;/span>
+
+&lt;span style="color: rgb(136, 136, 136);">---- Usage in an Auto Assembler script&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- alloc(memTestMemory, 0x400)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- registerSymbol(memTestMemory)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- memTestMemory:&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">--     repeteBytes(0x64, 90 52)&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+
+&lt;span style="color: rgb(136, 136, 136);">---- Memory View Form copy of "memTestMemory"&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 0032FFFE -                       - ?? &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 0032FFFF -                       - ?? &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- memTestMemory- 90                - nop &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330001 - 52                    - push edx&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330002 - 90                    - nop &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330003 - 52                    - push edx&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330004 - 90                    - nop &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- ...&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330060 - 90                    - nop &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330061 - 52                    - push edx&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330062 - 90                    - nop &lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330063 - 52                    - push edx&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">-- 00330064 - 00 00                 - add [eax],al&lt;/span>
+&lt;span style="color: rgb(136, 136, 136);">----------------------------------------------------&lt;/span>
+&lt;/p>
+
+
+{{LuaSeeAlso}}
+
+== Related Functions ==
+* [[Lua:unregisterAutoAssemblerCommand|unregisterAutoAssemblerCommand]]
+* [[Lua:registerAutoAssemblerPrologue|registerAutoAssemblerPrologue]]
+* [[Lua:unregisterAutoAssemblerPrologue|unregisterAutoAssemblerPrologue]]
+* [[Lua:registerAutoAssemblerTemplate|registerAutoAssemblerTemplate]]
+* [[Lua:unregisterAutoAssemblerTemplate|unregisterAutoAssemblerTemplate]]
+* [[Lua:generateCodeInjectionScript|generateCodeInjectionScript]]
+* [[Lua:generateAOBInjectionScript|generateAOBInjectionScript]]
+* [[Lua:generateFullInjectionScript|generateFullInjectionScript]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Template:LuaSeeAlso" title="Template:LuaSeeAlso">Template:LuaSeeAlso</a> (<a href="https://wiki.cheatengine.org/index.php?title=Template:LuaSeeAlso&amp;action=edit" title="Template:LuaSeeAlso">edit</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand" title="Lua:registerAutoAssemblerCommand">Lua:registerAutoAssemblerCommand</a>.</p>
+<br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand">https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Lua%3AregisterAutoAssemblerCommand&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Lua%3AregisterAutoAssemblerCommand&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Lua:registerAutoAssemblerCommand&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand">Read</a></span></li><li id="ca-edit" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&amp;action=edit" title="Edit this page">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Lua:registerAutoAssemblerCommand" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Lua:registerAutoAssemblerCommand" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":368});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua:registerAutoAssemblerCommand&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:26:03 GMT -->
+</html>

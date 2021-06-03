@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua_Basics by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:26:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Lua Basics - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Lua:Basics","wgTitle":"Tutorials:Lua:Basics","wgCurRevisionId":6976,"wgRevisionId":6976,"wgArticleId":1232,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial","Lua"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Lua:Basics","wgRelevantArticleId":1232,"wgRequestId":"b0ef2ecde384a5684f1de937","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Lua_Basics","wgInternalRedirectTargetUrl":"/index.php?title=Tutorials:Lua:Basics"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index975c.html?title=Tutorials:Lua:Basics&amp;action=edit"/>
+<link rel="edit" title="Edit" href="index975c.html?title=Tutorials:Lua:Basics&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="index4b35.html?title=Tutorials:Lua:Basics"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Lua_Basics rootpage-Tutorials_Lua_Basics skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Lua Basics</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="index7691.html?title=Lua_Basics&amp;redirect=no" class="mw-redirect" title="Lua Basics">Lua Basics</a>)</span></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+Lua interaction is done a few ways in Cheat Engine. 
+</p>
+<ol><li>You have the <i>Lua Engine</i> that you can access from the memory view form by selecting <i>Tools</i> then selecting <i>Lua Engine</i>. You can debug the scripts written here by setting a breakpoint by clicking next to the line numbers. This is mostly used for testing since it is not saved with the cheat table in any way. Also it is easy to do a lot of work and then have CE crash losing it all, so make sure to grab <a rel="nofollow" class="external text" href="http://www.cheatengine.org/forum/viewtopic.php?p=5714676">this</a> autorun script. One other useful feature is that you can return a table and CE will attempt to print it for you whereas lua's default for <b>print</b> is to do nothing and <b>tostring</b> just returns something like <i>table: 0000000004195640</i>
+<dl><dd><a href="index5164.html?title=File:Tutorials.LuaBasics.01.png" class="image"><img alt="Tutorials.LuaBasics.01.png" src="images/6/6d/Tutorials.LuaBasics.01.png" width="657" height="530" class="thumbborder" /></a></dd></dl></li>
+<li>There is a lua script associated with your cheat table that you access from the Cheat Engine main form menu by selecting <i>Table</i> then select <i>Show Cheat Table Lua Script</i>. This is the script that CE (settings dependent) prompts you to execute when you open a CT/CETrainer file with a lua script. You can also load and execute other lua scripts from here.
+<dl><dd><a href="index8832.html?title=File:Tutorials.LuaBasics.02.png" class="image"><img alt="Tutorials.LuaBasics.02.png" src="images/4/44/Tutorials.LuaBasics.02.png" width="635" height="353" class="thumbborder" /></a></dd></dl></li>
+<li>There is the <b>luaCall</b> <i>Auto Assembler</i> command, that you pass a single line Lua script to (you <i>can</i> use <b>;</b> for new lines!). You can open an auto assembler form from the memory viewer <i>Tools-&gt;Auto Assemble</i> menu option (shortcut `Ctrl+A`) or from the Cheat Engine main form by pressing <i>Ctrl+Alt+A</i>.
+<dl><dd><pre>luaCall(print('I have the power!'))</pre></dd></dl></li>
+<li>Then there is making use of the <a href="indexa2f5.html?title=Auto_Assembler:LUA_ASM" title="Auto Assembler:LUA ASM">{$lua}</a> tag in an <a href="indexc6a5.html?title=Cheat_Engine:Auto_Assembler" title="Cheat Engine:Auto Assembler">Auto Assembler</a> script. See previous <b>luaCall</b> description for how to open the AA form.
+<dl><dd><a href="indexc543.html?title=File:Tutorials.LuaBasics.04.png" class="image"><img alt="Tutorials.LuaBasics.04.png" src="images/0/08/Tutorials.LuaBasics.04.png" width="476" height="337" class="thumbborder" /></a></dd>
+<dd>Note this code is executed <i><b>before</b></i> any of the AA code, and that's for the following purpose:
+<dl><dd>If you return a string from the <a href="indexa2f5.html?title=Auto_Assembler:LUA_ASM" title="Auto Assembler:LUA ASM">{$lua}</a> tag it will be treated as Auto Assembly code in the location of that lua block. And yes, you can return a string that contains another lua block but you have to do something like <pre style="display:inline;padding:0">return "{$lua}\nprint('hi')\n{$asm}"</pre> since CE seems to want the {$...} tags without whitespace but actually having it without whitespace in a multiline string (<pre style="display:inline;padding:0">[[like this]]</pre>) causes the original lua block to be terminated prematurely :D</dd></dl></dd>
+<dd>With this (since CE 6.7) you have access to the <b>memrec</b> and <b>syntaxcheck</b> variables, <b>memrec</b> is the memory record the script is in (can be <b>nil</b> when assigning the script to the table or executing the code without assigning it) while <b>syntaxcheck</b> is <b>true</b> if Cheat Engine is running the script to check the syntax of the AA code (such as when editing the script) and <b>false</b> when it's actually enabling the memory record script.</dd></dl></li></ol>
+<blockquote><blockquote><pre>{$lua}
+-- code before either enable/disable section runs for both just like with AA code
+if syntaxcheck then return end
+if memrec then print(memrec.Description) end
+-- the check is not really necessary but it is technically correct to have it
+------------------------------ ENABLE ------------------------------
+-- yes [ENABLE]/[DISABLE] are valid inside of a lua block
+[ENABLE]
+------------------------------ DISABLE ------------------------------
+[DISABLE]
+</pre></blockquote></blockquote>
+<dl><dd><dl><dd><a href="indexc043.html?title=File:Tutorials.LuaBasics.06.png" class="image"><img alt="Tutorials.LuaBasics.06.png" src="images/d/de/Tutorials.LuaBasics.06.png" width="684" height="181" class="thumbborder" /></a></dd></dl></dd></dl>
+<p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Lua_Engine"><span class="tocnumber">1</span> <span class="toctext">Lua Engine</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Cheat_table_lua_script"><span class="tocnumber">2</span> <span class="toctext">Cheat table lua script</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Script_windows"><span class="tocnumber">3</span> <span class="toctext">Script windows</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Syntax_Highlighter"><span class="tocnumber">5.1</span> <span class="toctext">Syntax Highlighter</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Lua_Engine">Lua Engine</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexa680.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=1" title="Edit section: Lua Engine">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Lua Engine form contains a text box for lua's standard output (print calls use the standard output) as well as an interactive script box that you can directly execute lua script. You can open or save scripts from here.
+</p><p><a href="indexac79.html?title=File:Tutorials.LuaBasics.03.png" class="image"><img alt="Tutorials.LuaBasics.03.png" src="images/0/0d/Tutorials.LuaBasics.03.png" width="617" height="826" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Cheat_table_lua_script">Cheat table lua script</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index8443.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=2" title="Edit section: Cheat table lua script">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>From the Cheat Engine main form press <i>Ctrl+Alt+L</i>, to open the cheat table lua script form.
+</p><p><a href="indexaf6c.html?title=File:Tutorials.LuaBasics.05.png" class="image"><img alt="Tutorials.LuaBasics.05.png" src="images/8/80/Tutorials.LuaBasics.05.png" width="505" height="401" class="thumbborder" /></a>
+</p><p>This script is associated with the cheat table. By default when opening a cheat table file Cheat Engine will prompt you that the table has a table lua script and asking you if you want to execute it.
+</p><p>Note: You can change what Cheat Engine does with the <i>cheat table Lua script</i> in the Cheat Engine <i>general settings</i>.
+</p><p>From the cheat table lua script form menu you can select <i>file</i> then select <i>new window</i> to open new script windows.
+</p>
+<h2><span class="mw-headline" id="Script_windows">Script windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index6b72.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=3" title="Edit section: Script windows">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>You can debug the scripts written here by setting a breakpoint by clicking next to the line numbers. 
+</p><p>
+You can have as many script windows open as you want, simply click <i>File</i> then <i>New Window</i>.  If you save these scripts as lua files in the same directory as your cheat table or any directory included in the </p><pre style="display:inline;padding:0">package.path</pre><p> string. You can run them from other scripts using lua's <i>require</i>, which will only run a script the first time it's required (or if <i>package.loaded.filename</i> is set to <b>nil</b>), and <i>dofile</i>, which will run a script every time you call it. Note that you do not use the extension with <b>require</b>, ".lua" is assumed, but you do need it with <b>dofile</b>.
+</p><p>Code:
+</p>
+<p style="line-height:1.15em;white-space:pre;font-family:&#39;Lucida Console&#39;;display:block;overflow-x:auto;padding:0.5em;background:rgb(35, 36, 31);color:rgb(248, 248, 242);"><span style="color:rgb(166, 226, 46);">require</span><span style="color:rgb(248, 248, 242);">(<span style="color:rgb(230, 219, 116);">'Script1'</span>)</span>
+<span style="color:rgb(166, 226, 46);">dofile</span><span style="color:rgb(248, 248, 242);">(<span style="color:rgb(230, 219, 116);">'Script1.lua'</span>)</span>
+<span style="color:rgb(166, 226, 46);">require</span><span style="color:rgb(248, 248, 242);">(<span style="color:rgb(230, 219, 116);">'Script1'</span>)</span>
+</p>
+<p>Output:
+</p>
+<p style="line-height:1.15em;white-space:pre;font-family:&#39;Lucida Console&#39;;display:block;overflow-x:auto;padding:0.5em;background:rgb(35, 36, 31);color:rgb(248, 248, 242);">Script1 Executing... 
+Script1 Executing... 
+---
+---
+Script1 Executing... 
+</p>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index6b10.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="index3be2.html?title=Lua" title="Lua">Lua</a></li>
+<li><a href="index9dae.html?title=Tutorials" title="Tutorials">Tutorials</a></li>
+<li><a href="index9328.html?title=Tutorials:Auto_Assembler:Basics" title="Tutorials:Auto Assembler:Basics">Auto Assembler Basics</a></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index58d1.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://www.lua.org/">www.lua.org</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/rjpcomputing/luaforwindows">github.com/rjpcomputing/luaforwindows</a></li>
+<li><a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/Wikipedia:Lua">wikipedia.org/wiki/Wikipedia:Lua</a></li></ul>
+<ul><li><a rel="nofollow" class="external text" href="https://www.lua.org/start.html">lua.org - Getting started</a></li>
+<li><a rel="nofollow" class="external text" href="http://lua-users.org/wiki/TutorialDirectory">lua-users.org - Tutorial directory</a></li></ul>
+<h4><span class="mw-headline" id="Syntax_Highlighter">Syntax Highlighter</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index990a.html?title=Tutorials:Lua:Basics&amp;action=edit&amp;section=6" title="Edit section: Syntax Highlighter">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li><a rel="nofollow" class="external text" href="http://pinetools.com/syntax-highlighter">pinetools.com/syntax-highlighter</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602072316
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.073 seconds
+Real time usage: 0.108 seconds
+Preprocessor visited node count: 87/1000000
+Preprocessor generated node count: 170/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 709/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1232-0!canonical and timestamp 20210602072316 and revision id 6976
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index02b3.html?title=Tutorials:Lua:Basics&amp;oldid=6976">https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:Basics&amp;oldid=6976</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index1b60.html?title=Category:Lua" title="Category:Lua">Lua</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="indexae9e.html?title=Special:CreateAccount&amp;returnto=Tutorials%3ALua%3ABasics" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="indexa414-2.html?title=Special:UserLogin&amp;returnto=Tutorials%3ALua%3ABasics" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index4b35.html?title=Tutorials:Lua:Basics" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="indexfa3d.html?title=Talk:Tutorials:Lua:Basics&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index4b35.html?title=Tutorials:Lua:Basics">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="index975c.html?title=Tutorials:Lua:Basics&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="index2c71.html?title=Tutorials:Lua:Basics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="index0895.html?title=Special:WhatLinksHere/Tutorials:Lua:Basics" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index92fd.html?title=Special:RecentChangesLinked/Tutorials:Lua:Basics" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="index8e8c.html?title=Tutorials:Lua:Basics&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="index02b3.html?title=Tutorials:Lua:Basics&amp;oldid=6976" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index28aa.html?title=Tutorials:Lua:Basics&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 13 August 2020, at 01:54.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.073","walltime":"0.108","ppvisitednodes":{"value":87,"limit":1000000},"ppgeneratednodes":{"value":170,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":709,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210602072316","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":408});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua_Basics by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:26:32 GMT -->
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_2&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:40:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Auto Assembler - Example 2 - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Auto_Assembler:Example_2","wgTitle":"Tutorials:Auto Assembler:Example 2","wgCurRevisionId":6617,"wgRevisionId":6617,"wgArticleId":1804,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial","Auto Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Auto_Assembler:Example_2","wgRelevantArticleId":1804,"wgRequestId":"8ec191d7a592c0e9f965f648","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6525.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector"/>
+<script async="" src="load61a1.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index73cd.html?title=Tutorials:Auto_Assembler:Example_2&amp;action=edit"/>
+<link rel="edit" title="Edit" href="index73cd.html?title=Tutorials:Auto_Assembler:Example_2&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Auto_Assembler_Example_2 rootpage-Tutorials_Auto_Assembler_Example_2 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Auto Assembler - Example 2</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p><p>Let's look at that the following example.
+</p>
+<dl><dd>Note: All numbers in the <i>Auto Assembler</i> are read as <a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/Hexadecimal">hexadecimal</a> format by default, use <b>#</b> or <b>(int)</b> for decimal format (base 10).</dd>
+<dd>Note: Values written in a 0x* notation are in <a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/Hexadecimal">hexadecimal</a> format.</dd></dl>
+<p><a href="indexc884.html?title=File:AutoAssembler-Example-2.01.png" class="image"><img alt="AutoAssembler-Example-2.01.png" src="images/e/ea/AutoAssembler-Example-2.01.png" width="654" height="1230" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Main_section"><span class="tocnumber">1</span> <span class="toctext">Main section</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Enable_section"><span class="tocnumber">2</span> <span class="toctext">Enable section</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Disable_section"><span class="tocnumber">3</span> <span class="toctext">Disable section</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Main_section">Main section</span></h3>
+<dl><dt>1. {$STRICT}</dt>
+<dd>When <a href="index04ef.html?title=Auto_Assembler:STRICT" title="Auto Assembler:STRICT">{$STRICT}</a> is present in your script, Cheat Engine will not assume that an undefined symbol is a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a>, and will give you an error instead.</dd>
+<dd>Note that this is optional.</dd>
+<dt>3. define(address, GAME.exe+123ABC)</dt>
+<dd>This line <a href="index850e.html?title=Auto_Assembler:define" title="Auto Assembler:define">defines</a> or sets "address" to "GAME.exe+123ABC",</dd>
+<dd>i.e.: any where in this script we place "address" Cheat Engine will replace it with "GAME.exe+123ABC".</dd>
+<dt>4. define(bytes, 0F 2F 05 7C A4 6A FE)</dt>
+<dd>This line <a href="index850e.html?title=Auto_Assembler:define" title="Auto Assembler:define">defines</a> or sets "bytes" to "0F 2F 05 7C A4 6A FE",</dd>
+<dd>i.e.: any where in this script we place "bytes" Cheat Engine will replace it with "0F 2F 05 7C A4 6A FE".</dd></dl>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Enable_section">Enable section</span></h3>
+<dl><dt>8. [ENABLE]</dt>
+<dd>This line just denotes the start of the enable section.</dd>
+<dd>Note: Cheat Engine table scripts require an <b>enable</b> and <b>disable</b> section.</dd>
+<dt>9. alloc(memSomeHook, 0x400, address)</dt>
+<dd>This line <a href="indexcae6.html?title=Auto_Assembler:alloc" title="Auto Assembler:alloc">allocates</a> 0x400 bytes using the symbol "memSomeHook", near the address of <i>address</i> (which is "GAME.exe+123ABC").</dd></dl>
+<dl><dt>11. label(fltSomeHook)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "fltSomeHook".</dd>
+<dt>12. registerSymbol(fltSomeHook)</dt>
+<dd>This <a href="index9f4d.html?title=Auto_Assembler:registerSymbol" title="Auto Assembler:registerSymbol">registers the symbol</a> "fltSomeHook" with the user symbol list.</dd>
+<dd>A registered symbol can be used in the disable section and else where on the table.</dd>
+<dt>13. label(flgSomeHook)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "flgSomeHook".</dd>
+<dt>14. registerSymbol(flgSomeHook)</dt>
+<dd>This <a href="index9f4d.html?title=Auto_Assembler:registerSymbol" title="Auto Assembler:registerSymbol">registers the symbol</a> "flgSomeHook" with the user symbol list.</dd>
+<dt>15. label(ptrSomeHook)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "ptrSomeHook".</dd>
+<dt>16. registerSymbol(ptrSomeHook)</dt>
+<dd>This <a href="index9f4d.html?title=Auto_Assembler:registerSymbol" title="Auto Assembler:registerSymbol">registers the symbol</a> "ptrSomeHook" with the user symbol list.</dd></dl>
+<dl><dt>18. label(n_code)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "n_code".</dd>
+<dt>19. label(o_code)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "o_code".</dd>
+<dt>20. label(exit)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "exit".</dd>
+<dt>21. label(return)</dt>
+<dd>This creates a <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> using the symbol "return".</dd></dl>
+<dl><dt>23. memSomeHook&#8758;</dt>
+<dd>This places the symbol, here it denotes to start assembling at the address of <i>memSomeHook</i>.</dd>
+<dt>24. fltSomeHook&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>fltSomeHook</i>.</dd>
+<dt>25. dd (float)1</dt>
+<dd>This sets the <a href="index81eb.html?title=Tutorials:Value_types#Value_sizes" title="Tutorials:Value types">size</a> of the "fltSomeHook" as a <i>data double word</i> (4 bytes), with a float value of 1.</dd>
+<dt>26. flgSomeHook&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>flgSomeHook</i>.</dd>
+<dt>27. db 00</dt>
+<dd>This sets the <a href="index81eb.html?title=Tutorials:Value_types#Value_sizes" title="Tutorials:Value types">size</a> of the "flgSomeHook" as a <i>data byte</i>, with a value of 0.</dd>
+<dt>28. align 10</dt>
+<dd>This will <a href="index110c.html?title=Auto_Assembler:align" title="Auto Assembler:align">align</a> what comes after this line, it aligns at an address ending with 0x10, with the default padding byte of 0x0.</dd>
+<dt>29. ptrSomeHook&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>ptrSomeHook</i>.</dd>
+<dt>30. dq 0</dt>
+<dd>This sets the <a href="index81eb.html?title=Tutorials:Value_types#Value_sizes" title="Tutorials:Value types">size</a> of the "ptrSomeHook" as a <i>data quadword</i> (8 bytes), with a value of 0x0.</dd>
+<dd>Note: <i>ptrSomeHook</i> will be used as a base address and in 64 bit mode 8 bytes is needed, but in 32 bit mode only 4 bytes is needed.</dd>
+<dt>31. align 10 CC</dt>
+<dd>This will <a href="index110c.html?title=Auto_Assembler:align" title="Auto Assembler:align">align</a> what comes after this line, it aligns at an address ending with 0x10, with a padding byte of 0xCC.</dd>
+<dt>32. n_code&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>n_code</i>, this will be the start of the <i>new code</i>.</dd>
+<dt>33. mov [ptrSomeHook],rbx</dt>
+<dd>This will <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">move</a> the value of <a href="indexb4c4.html?title=Assembler#Structure" title="Assembler">RBX</a> into the <i>value at the address</i> (denoted by the <b>[</b> and <b>]</b>) of <i>ptrSomeHook</i>.</dd>
+<dt>34. cmp byte ptr [flgSomeHook],0</dt>
+<dd>This <a href="index379b.html?title=Assembler:Commands:CMP" title="Assembler:Commands:CMP">compares</a> a byte pointer value at the address of <i>flgSomeHook</i> to 0x0 (as an immediate).</dd>
+<dt>35. je o_code</dt>
+<dd>This will <a href="index6964.html?title=Assembler:Commands:JMP" title="Assembler:Commands:JMP">jump</a>, <a href="index6ac8.html?title=Assembler:Commands:JE" title="Assembler:Commands:JE">if equal</a> to the label <i>o_code</i>; i.e.: if the last compare equated to being <i>equal</i>.</dd>
+<dt>36. cmp byte ptr [flgSomeHook],1</dt>
+<dd>This <a href="index379b.html?title=Assembler:Commands:CMP" title="Assembler:Commands:CMP">compares</a> a byte pointer value at the address of <i>flgSomeHook</i> to 0x1.</dd>
+<dt>37. jne @f</dt>
+<dd>This will <a href="index6964.html?title=Assembler:Commands:JMP" title="Assembler:Commands:JMP">jump</a>, <a href="indexa38b.html?title=Assembler:Commands:JNE" title="Assembler:Commands:JNE">if not equal</a> forward to the next label (denoted by the "@f", as "@b" would be for a label back); i.e.: if the last compare equated to being <i>not equal</i>.</dd>
+<dt>38. movss xmm0,[fltSomeHook]</dt>
+<dd>This will <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">move</a> <a href="indexde6f.html?title=Assembler:Commands:MOVSS" title="Assembler:Commands:MOVSS">a <i>Scalar Single-Precision Floating-Point</i></a> of the <i>value at the address</i> of <i>fltSomeHook</i> into <a href="indexb4c4.html?title=Assembler#Structure" title="Assembler">XMM0</a>.</dd>
+<dt>39. jmp o_code</dt>
+<dd>This will <a href="index6964.html?title=Assembler:Commands:JMP" title="Assembler:Commands:JMP">jump</a> to the label <i>o_code</i>.</dd>
+<dt>40. @@&#8758;</dt>
+<dd>This denotes a generic label, it can't be used by name is only useful with "<i>@f</i>" and "<i>@b</i>".</dd>
+<dt>41. mov byte ptr [flgSomeHook],0</dt>
+<dd>This will <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">move</a> a byte value of 0x0 into the <i>value at the address</i> of <i>flgSomeHook</i>.</dd>
+<dt>42. o_code&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>o_code</i>, this will be the start of the <i>original code</i>.</dd>
+<dt>43. movss [rbx+10],xmm0</dt>
+<dd>This will <a href="index6d75.html?title=Assembler:Commands:MOV" title="Assembler:Commands:MOV">move</a> <a href="indexde6f.html?title=Assembler:Commands:MOVSS" title="Assembler:Commands:MOVSS">a <i>Scalar Single-Precision Floating-Point</i></a> of <a href="indexb4c4.html?title=Assembler#Structure" title="Assembler">XMM0</a> into the <i>value at the address</i> of <a href="indexb4c4.html?title=Assembler#Structure" title="Assembler">RBX</a> plus 0x10.</dd>
+<dt>44. exit&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>exit</i>, this will be the start of the <i>exit code</i>, note that the <i>exit</i> label is not used so it could be removed with the <a href="indexc24b.html?title=Auto_Assembler:label" title="Auto Assembler:label">label</a> declaration.</dd>
+<dt>45. jmp return</dt>
+<dd>This will <a href="index6964.html?title=Assembler:Commands:JMP" title="Assembler:Commands:JMP">jump</a> to the label <i>return</i>.</dd></dl>
+<p><br />
+</p>
+<dl><dt>50. address&#8758;</dt>
+<dd>This places the symbol, here it denotes to start assembling at the address of <i>address</i> (which is "GAME.exe+123ABC").</dd>
+<dt>51. jmp n_code</dt>
+<dd>This will <a href="index6964.html?title=Assembler:Commands:JMP" title="Assembler:Commands:JMP">jump</a> to the label <i>n_code</i>. This is the injection hook, as it hooks the code to do some thing else.</dd>
+<dd>Note that, in 64 bit mode, here is where the use of <i>AllocateNearThisAddress</i> with <a href="indexcae6.html?title=Auto_Assembler:alloc" title="Auto Assembler:alloc">alloc</a> helps to insure a 5 byte jump.</dd>
+<dt>52. nop</dt>
+<dd>This is a <a href="index2298.html?title=Assembler:Commands:NOP" title="Assembler:Commands:NOP">NOP</a> (no operation), here it is used a padding as the original instruction was more then 5 bytes</dd>
+<dt>54. return&#8758;</dt>
+<dd>This places the symbol, here it denotes the placement of <i>return</i>, this will be the <i>return</i> point.</dd></dl>
+<h3><span class="mw-headline" id="Disable_section">Disable section</span></h3>
+<dl><dt>59. [DISABLE]</dt>
+<dd>This line just denotes the start of the disable section.</dd></dl>
+<dl><dt>62. address&#8758;</dt>
+<dd>This places the symbol, here it denotes to start assembling at the address of <i>address</i> (which is "GAME.exe+123ABC").</dd>
+<dt>63. db bytes</dt>
+<dd>This denotes to start assembling data bytes using the symbol <i>bytes</i> (which is "0F 2F 05 7C A4 6A FE").</dd></dl>
+<dl><dt>65. unregisterSymbol(fltSomeHook)</dt>
+<dd>This <a href="index2187.html?title=Auto_Assembler:unregisterSymbol" title="Auto Assembler:unregisterSymbol">unregisters the symbol</a> "fltSomeHook" with the user symbol list.</dd>
+<dt>66. unregisterSymbol(flgSomeHook)</dt>
+<dd>This <a href="index2187.html?title=Auto_Assembler:unregisterSymbol" title="Auto Assembler:unregisterSymbol">unregisters the symbol</a> "flgSomeHook" with the user symbol list.</dd>
+<dt>67. unregisterSymbol(ptrSomeHook)</dt>
+<dd>This <a href="index2187.html?title=Auto_Assembler:unregisterSymbol" title="Auto Assembler:unregisterSymbol">unregisters the symbol</a> "ptrSomeHook" with the user symbol list.</dd>
+<dt>68. dealloc(memSomeHook)</dt>
+<dd>This <a href="indexb175.html?title=Auto_Assembler:dealloc" title="Auto Assembler:dealloc">deallocates</a> the memory at "memSomeHook".</dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="indexb4c4.html?title=Assembler" title="Assembler">Assembler</a></li>
+<li><a href="index28a4.html?title=Assembler:Commands" title="Assembler:Commands">Assembler Commands</a></li>
+<li><a href="indexc6a5.html?title=Cheat_Engine:Auto_Assembler" title="Cheat Engine:Auto Assembler">Auto Assembler</a></li>
+<li><a href="index5062.html?title=Tutorials:Auto_Assembler:Templates" title="Tutorials:Auto Assembler:Templates">Auto Assembler Templates</a></li>
+<li><a href="index42df.html?title=Tutorials:Auto_Assembler:Injection_basic" title="Tutorials:Auto Assembler:Injection basic">Code Injection Basic</a></li>
+<li><a href="index3572.html?title=Tutorials:Auto_Assembler:Injection_full" title="Tutorials:Auto Assembler:Injection full">Code Injection Full</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602033409
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.072 seconds
+Real time usage: 0.081 seconds
+Preprocessor visited node count: 20/1000000
+Preprocessor generated node count: 32/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1804-0!canonical and timestamp 20210602033409 and revision id 6617
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index417b.html?title=Tutorials:Auto_Assembler:Example_2&amp;oldid=6617">https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_2&amp;oldid=6617</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index4485.html?title=Category:Auto_Assembler" class="mw-redirect" title="Category:Auto Assembler">Auto Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index957f.html?title=Special:CreateAccount&amp;returnto=Tutorials%3AAuto+Assembler%3AExample+2&amp;returntoquery=printable%3Dyes" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index0ff5-3.html?title=Special:UserLogin&amp;returnto=Tutorials%3AAuto+Assembler%3AExample+2&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="indexe33e.html?title=Tutorials:Auto_Assembler:Example_2" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index11e9-2.html?title=Talk:Tutorials:Auto_Assembler:Example_2&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="indexe33e.html?title=Tutorials:Auto_Assembler:Example_2">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="index73cd.html?title=Tutorials:Auto_Assembler:Example_2&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexf62c.html?title=Tutorials:Auto_Assembler:Example_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexe926.html?title=Special:WhatLinksHere/Tutorials:Auto_Assembler:Example_2" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index35f1.html?title=Special:RecentChangesLinked/Tutorials:Auto_Assembler:Example_2" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="index417b.html?title=Tutorials:Auto_Assembler:Example_2&amp;oldid=6617" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index3fae.html?title=Tutorials:Auto_Assembler:Example_2&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 March 2019, at 15:07.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.072","walltime":"0.081","ppvisitednodes":{"value":20,"limit":1000000},"ppgeneratednodes":{"value":32,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210602033409","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":342});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_2&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:40:10 GMT -->
+</html>

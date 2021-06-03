@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<id>https://wiki.cheatengine.org/api.php?hidebots=1&amp;urlversion=1&amp;days=7&amp;limit=50&amp;action=feedrecentchanges&amp;feedformat=atom</id>
+	<title>Cheat Engine  - Recent changes [en]</title>
+	<link rel="self" type="application/atom+xml" href="https://wiki.cheatengine.org/api.php?hidebots=1&amp;urlversion=1&amp;days=7&amp;limit=50&amp;action=feedrecentchanges&amp;feedformat=atom"/>
+	<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges"/>
+	<updated>2021-06-02T16:26:45Z</updated>
+	<subtitle>Track the most recent changes to the wiki in this feed.</subtitle>
+	<generator>MediaWiki 1.32.0</generator>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:Mayur1984</id>
+		<title>User:Mayur1984</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:Mayur1984"/>
+		<updated>2021-05-29T07:43:25Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:Mayur1984&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:Mayur1984 (page does not exist)&quot;&gt;&lt;bdi&gt;Mayur1984&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>Mayur1984</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Sandbox&amp;diff=7071&amp;oldid=6691</id>
+		<title>Sandbox</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Sandbox&amp;diff=7071&amp;oldid=6691"/>
+		<updated>2021-05-28T01:54:37Z</updated>
+
+		<summary type="html">&lt;p&gt;‎&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;Test it out below!&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Older revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 01:54, 28 May 2021&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot; id=&quot;mw-diff-left-l52&quot; &gt;Line 52:&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 52:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;cRaIg WuZ hErE&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;cRaIg WuZ hErE&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;♥♥♥ Nathaniel Likes Yesenia :D ♥♥♥&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;♥♥♥ Nathaniel Likes Yesenia :D ♥♥♥ &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;&amp;lt;-- fake news&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{User Block: 192.168.1.241}}&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{User Block: 192.168.1.241}}&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:PluginVersion&amp;diff=7070&amp;oldid=0</id>
+		<title>Help File:PluginVersion</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:PluginVersion&amp;diff=7070&amp;oldid=0"/>
+		<updated>2021-05-28T01:51:37Z</updated>
+
+		<summary type="html">&lt;p&gt;Created page with &amp;quot;The PluginVersion lets you specify for which plugin version the dll was developed and what the name of that plugin is.       typedef struct _PluginVersion     {         unsign...&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;The PluginVersion lets you specify for which plugin version the dll was developed and what the name of that plugin is.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+    typedef struct _PluginVersion&lt;br /&gt;
+    {&lt;br /&gt;
+        unsigned int version;&lt;br /&gt;
+        char *pluginname;&lt;br /&gt;
+    } PluginVersion, *PPluginVersion;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+=== Members ===&lt;br /&gt;
+&lt;br /&gt;
+''version''&lt;br /&gt;
+&lt;br /&gt;
+Set this to the plugin version this dll is expecting. Cheat Engine will then try to provide your plugin with a compatible pointer/functionlists on initializePlugin.&lt;br /&gt;
+&lt;br /&gt;
+''pluginname''&lt;br /&gt;
+&lt;br /&gt;
+Set this to a 0-terminated string containing the name of the plugin shown to the user in the plugin menu in settings. Make sure this string is NOT stored on the stack as this pointer can be used at random times after return of the GetVersion function call.&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Talk:Help_File:PluginVersion&amp;diff=7069&amp;oldid=0</id>
+		<title>Talk:Help File:PluginVersion</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Talk:Help_File:PluginVersion&amp;diff=7069&amp;oldid=0"/>
+		<updated>2021-05-28T01:43:52Z</updated>
+
+		<summary type="html">&lt;p&gt;Created page with &amp;quot;All of the text on https://cheatengine.org/help/index.html is in &amp;lt;nowiki&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/nowiki&amp;gt;. I don&amp;#039;t know if this was intentional, but I&amp;#039;m going to treat it as a mistake, and use...&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;All of the text on https://cheatengine.org/help/index.html is in &amp;lt;nowiki&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/nowiki&amp;gt;. I don't know if this was intentional, but I'm going to treat it as a mistake, and use normal text. [[User:Hidden-r3d|Hidden-r3d]] ([[User talk:Hidden-r3d|talk]]) 21:43, 27 May 2021 (EDT)&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:InitializePlugin&amp;diff=7068&amp;oldid=7066</id>
+		<title>Help File:InitializePlugin</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:InitializePlugin&amp;diff=7068&amp;oldid=7066"/>
+		<updated>2021-05-28T01:39:18Z</updated>
+
+		<summary type="html">&lt;p&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Older revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 01:39, 28 May 2021&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot; id=&quot;mw-diff-left-l3&quot; &gt;Line 3:&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 3:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;     BOOL InitializePlugin(&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;     BOOL InitializePlugin(&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;         PExportedFunctions ef ,&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;         PExportedFunctions &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;''&lt;/ins&gt;ef&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;'' &lt;/ins&gt;,&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;         int pluginid&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;         int &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;''&lt;/ins&gt;pluginid&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;''&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;     );&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;     );&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:Hidden-r3d&amp;diff=7067&amp;oldid=0</id>
+		<title>User:Hidden-r3d</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:Hidden-r3d&amp;diff=7067&amp;oldid=0"/>
+		<updated>2021-05-28T01:31:41Z</updated>
+
+		<summary type="html">&lt;p&gt;Created page with &amp;quot;hi&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;hi&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:InitializePlugin&amp;diff=7066&amp;oldid=0</id>
+		<title>Help File:InitializePlugin</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:InitializePlugin&amp;diff=7066&amp;oldid=0"/>
+		<updated>2021-05-28T01:31:11Z</updated>
+
+		<summary type="html">&lt;p&gt;Created page with &amp;quot;The InitializePlugin routine is called when Cheat Engine is started and the plugin is enabled in the registry, or when the user enables it in settings and clicks ok.       BOO...&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;The InitializePlugin routine is called when Cheat Engine is started and the plugin is enabled in the registry, or when the user enables it in settings and clicks ok.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+    BOOL InitializePlugin(&lt;br /&gt;
+        PExportedFunctions ef ,&lt;br /&gt;
+        int pluginid&lt;br /&gt;
+    );&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+=== Parameters ===&lt;br /&gt;
+&lt;br /&gt;
+''ef''&lt;br /&gt;
+&lt;br /&gt;
+Address to a copy of CE's ExportedFunctions struct . Make a copy of this structure before returning from the InitializePlugin function.&lt;br /&gt;
+&lt;br /&gt;
+''pluginid''&lt;br /&gt;
+&lt;br /&gt;
+The pluginid for your plugin for as long as it is active. This ID is used to register callbacks.&lt;br /&gt;
+&lt;br /&gt;
+=== Return Value ===&lt;br /&gt;
+&lt;br /&gt;
+Return value has to be TRUE&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+It is recommended to register the callback functions in this routine and save ExportedFunctions for later usage. For more information about the callbacks see the relevant help topics&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:DisablePlugin&amp;diff=7065&amp;oldid=0</id>
+		<title>Help File:DisablePlugin</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:DisablePlugin&amp;diff=7065&amp;oldid=0"/>
+		<updated>2021-05-28T01:26:27Z</updated>
+
+		<summary type="html">&lt;p&gt;Created page with &amp;quot;The DisablePlugin routine is a routine that will get called when Cheat Engine closes or when the user deselects the plugin in settings.        BOOL DisablePlugin(void)    Retu...&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;The DisablePlugin routine is a routine that will get called when Cheat Engine closes or when the user deselects the plugin in settings.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+    BOOL DisablePlugin(void)&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Return Value&lt;br /&gt;
+&lt;br /&gt;
+Return value has to be TRUE&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:GetVersion&amp;diff=7064&amp;oldid=7061</id>
+		<title>Help File:GetVersion</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:GetVersion&amp;diff=7064&amp;oldid=7061"/>
+		<updated>2021-05-28T01:23:08Z</updated>
+
+		<summary type="html">&lt;p&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Older revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 01:23, 28 May 2021&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;4&quot; class=&quot;diff-multi&quot; lang=&quot;en&quot;&gt;(2 intermediate revisions by the same user not shown)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot; id=&quot;mw-diff-left-l2&quot; &gt;Line 2:&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 2:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;BOOL GetVersion(&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt; &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;PPluginVersion pv,                            //pointer to structure you have to fill in&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;    &lt;/ins&gt;BOOL GetVersion(&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;int sizeofpluginversion                        //size of pluginversion&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;        &lt;/ins&gt;PPluginVersion pv,                            //pointer to structure you have to fill in&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt;−&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;);&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;        &lt;/ins&gt;int sizeofpluginversion                        //size of pluginversion&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;    &lt;/ins&gt;);&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Parameters&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Parameters&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;pv&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;pv&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;                 Pointer to a PluginVersion struct that you'll have to fill in.&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;                 Pointer to a PluginVersion struct that you'll have to fill in.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;sizeofpluginversion&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;sizeofpluginversion&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Size of the PluginVersion struct provided in the pv parameter. You can use this to make sure that your plugin version is compatible with the current implementation of Cheat Engine's plugin system.&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Size of the PluginVersion struct provided in the pv parameter. You can use this to make sure that your plugin version is compatible with the current implementation of Cheat Engine's plugin system.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Currently, it should be 8.&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Currently, it should be 8.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Return Value&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Return Value&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&lt;td class='diff-marker'&gt;+&lt;/td&gt;&lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&lt;ins style=&quot;font-weight: bold; text-decoration: none;&quot;&gt;&lt;/ins&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Return value has to be TRUE&lt;/div&gt;&lt;/td&gt;&lt;td class='diff-marker'&gt; &lt;/td&gt;&lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Return value has to be TRUE&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=Help_File:GetVersion&amp;diff=7061&amp;oldid=0</id>
+		<title>Help File:GetVersion</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=Help_File:GetVersion&amp;diff=7061&amp;oldid=0"/>
+		<updated>2021-05-28T01:19:51Z</updated>
+
+		<summary type="html">&lt;p&gt;copy/pasted from: https://cheatengine.org/help/getversion.htm&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;New page&lt;/b&gt;&lt;/p&gt;&lt;div&gt;The GetVersion routine is a routine that will get called when the dll is queried for the first time.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+BOOL GetVersion(&lt;br /&gt;
+PPluginVersion pv,                            //pointer to structure you have to fill in&lt;br /&gt;
+int sizeofpluginversion                        //size of pluginversion&lt;br /&gt;
+);&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Parameters&lt;br /&gt;
+pv&lt;br /&gt;
+                Pointer to a PluginVersion struct that you'll have to fill in.&lt;br /&gt;
+&lt;br /&gt;
+sizeofpluginversion&lt;br /&gt;
+Size of the PluginVersion struct provided in the pv parameter. You can use this to make sure that your plugin version is compatible with the current implementation of Cheat Engine's plugin system.&lt;br /&gt;
+Currently, it should be 8.&lt;br /&gt;
+&lt;br /&gt;
+Return Value&lt;br /&gt;
+Return value has to be TRUE&lt;/div&gt;</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:Hidden-r3d</id>
+		<title>User:Hidden-r3d</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:Hidden-r3d"/>
+		<updated>2021-05-28T01:07:04Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:Hidden-r3d&quot; class=&quot;mw-userlink&quot; title=&quot;User:Hidden-r3d&quot;&gt;&lt;bdi&gt;Hidden-r3d&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>Hidden-r3d</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:BerryMcCafferty</id>
+		<title>User:BerryMcCafferty</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:BerryMcCafferty"/>
+		<updated>2021-05-27T22:19:42Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:BerryMcCafferty&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:BerryMcCafferty (page does not exist)&quot;&gt;&lt;bdi&gt;BerryMcCafferty&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>BerryMcCafferty</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:Kei</id>
+		<title>User:Kei</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:Kei"/>
+		<updated>2021-05-27T13:36:22Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:Kei&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:Kei (page does not exist)&quot;&gt;&lt;bdi&gt;Kei&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>Kei</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:BimaSaputra</id>
+		<title>User:BimaSaputra</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:BimaSaputra"/>
+		<updated>2021-05-27T05:37:47Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:BimaSaputra&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:BimaSaputra (page does not exist)&quot;&gt;&lt;bdi&gt;BimaSaputra&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>BimaSaputra</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:HayleyG239577</id>
+		<title>User:HayleyG239577</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:HayleyG239577"/>
+		<updated>2021-05-27T00:23:34Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:HayleyG239577&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:HayleyG239577 (page does not exist)&quot;&gt;&lt;bdi&gt;HayleyG239577&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>HayleyG239577</name></author>
+		
+	</entry>
+	<entry>
+		<id>https://wiki.cheatengine.org/index.php?title=User:RalphGifford460</id>
+		<title>User:RalphGifford460</title>
+		<link rel="alternate" type="text/html" href="https://wiki.cheatengine.org/index.php?title=User:RalphGifford460"/>
+		<updated>2021-05-26T20:04:09Z</updated>
+
+		<summary type="html">&lt;p&gt;User account &lt;a href=&quot;/index.php?title=User:RalphGifford460&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new mw-userlink&quot; title=&quot;User:RalphGifford460 (page does not exist)&quot;&gt;&lt;bdi&gt;RalphGifford460&lt;/bdi&gt;&lt;/a&gt; was created&lt;/p&gt;
+</summary>
+		<author><name>RalphGifford460</name></author>
+		
+	</entry>
+</feed>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&oldid=4848 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 20:23:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Creating a cheat table - Money and Runes Hook - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Create_cheat_table_full:runes_coins_hook","wgTitle":"Tutorials:Create cheat table full:runes coins hook","wgCurRevisionId":4848,"wgRevisionId":4848,"wgArticleId":1466,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Create_cheat_table_full:runes_coins_hook","wgRelevantArticleId":1466,"wgRequestId":"b8b53ff9905cb168491f6d73","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Create_cheat_table_full_runes_coins_hook rootpage-Tutorials_Create_cheat_table_full_runes_coins_hook skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Creating a cheat table - Money and Runes Hook</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:42, 31 December 2017 by <a href="https://wiki.cheatengine.org/index.php?title=User:TheyCallMeTim13" class="mw-userlink" title="User:TheyCallMeTim13"><bdi>TheyCallMeTim13</bdi></a> <span class="mw-usertoollinks">(<a href="https://wiki.cheatengine.org/index.php?title=User_talk:TheyCallMeTim13&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:TheyCallMeTim13 (page does not exist)">talk</a> | <a href="https://wiki.cheatengine.org/index.php?title=Special:Contributions/TheyCallMeTim13" class="mw-usertoollinks-contribs" title="Special:Contributions/TheyCallMeTim13">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;diff=prev&amp;oldid=4848" title="Tutorials:Create cheat table full:runes coins hook">diff</a>) <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;direction=prev&amp;oldid=4848" title="Tutorials:Create cheat table full:runes coins hook">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+This page is a sub page of: <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full" title="Tutorials:Create cheat table full">Creating a cheat table - Full guide</a>
+</p><p>Now after a restart, this is what my table looks like.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.01.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.01.png" src="https://wiki.cheatengine.org/images/5/51/Tutorials.Dishonored.MoneyRunesHook.01.png" width="876" height="717" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Step_1"><span class="tocnumber">1</span> <span class="toctext">Step 1</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Step_2"><span class="tocnumber">2</span> <span class="toctext">Step 2</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Step_3"><span class="tocnumber">3</span> <span class="toctext">Step 3</span></a></li>
+<li class="toclevel-1"><a href="#Links"><span class="tocnumber">4</span> <span class="toctext">Links</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Step_1">Step 1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit&amp;section=1" title="Edit section: Step 1">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>So let's start with seeing what accesses the Coins address and have a look at the instruction that fires when we enter the player menu (not pause menu).
+</p><p><br />
+Now let's look at what addresses this instruction accesses.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.02.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.02.png" src="https://wiki.cheatengine.org/images/8/84/Tutorials.Dishonored.MoneyRunesHook.02.png" width="814" height="467" class="thumbborder" /></a>
+</p><p><br />
+Now lets dissect the structure so select both addresses and right click then select <i>Open dissect data with selected addresses</i>. Then select the new window option and then just yes or OK to the rest of the prompts.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.03.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.03.png" src="https://wiki.cheatengine.org/images/1/1e/Tutorials.Dishonored.MoneyRunesHook.03.png" width="479" height="283" class="thumbborder" /></a>
+</p><p><br />
+So let's inspect the structure.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.04.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.04.png" src="https://wiki.cheatengine.org/images/f/f9/Tutorials.Dishonored.MoneyRunesHook.04.png" width="881" height="985" class="thumbborder" /></a>
+</p><p>Looking at the structure we can see that Runes are just a few items below the coins, and item structure is only 0xC (12) bytes in size. So no real Id here but look how every Item has a pointer just above the value, I'll bet this points to the items object structure or even it's parent structure ether way lets look there. So just click the little arrow pointing at the pointer address on the left at the very top of the list.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.05.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.05.png" src="https://wiki.cheatengine.org/images/a/a1/Tutorials.Dishonored.MoneyRunesHook.05.png" width="881" height="1566" class="thumbborder" /></a>
+</p><p>And here I see what looks like class structures to me. See how even our coins and runes share the same function table, this is probable part of some kind of world object or dynamic object class of the game or engine. And this "+5C" looks like a good identifier to try, note that I say try, The first one doesn't always work. But I will go ahead and tell you that this one worked one the first version of the game, the latest version on stream, and even the non-steam version.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Step_2">Step 2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit&amp;section=2" title="Edit section: Step 2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>So now that we have an identifier let's write the hook. But before you start reading the code I suggest that you try and write this one for your self (I know learn best this way), then see how it compares to mine.
+</p><p><br />
+</p><p>Here is my working script.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.06.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.06.png" src="https://wiki.cheatengine.org/images/1/17/Tutorials.Dishonored.MoneyRunesHook.06.png" width="935" height="1823" class="thumbborder" /></a>
+</p><p>And the results on my table.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.07.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.07.png" src="https://wiki.cheatengine.org/images/1/1c/Tutorials.Dishonored.MoneyRunesHook.07.png" width="876" height="149" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Step_3">Step 3</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit&amp;section=3" title="Edit section: Step 3">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Now let's setup that add runes and coins scripts I talked about.
+</p><p>So for this we could do it with a thread in auto assembler script or we can use Lua, so let's try both.
+</p><p><br />
+For the AA script we just need some memory to use for the code and a return for a call that will be made on our memory.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.08.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.08.png" src="https://wiki.cheatengine.org/images/7/79/Tutorials.Dishonored.MoneyRunesHook.08.png" width="593" height="579" class="thumbborder" /></a>
+</p><p><br />
+But I really use Lua for this, and here you will see why.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.MoneyRunesHook.09.png" class="image"><img alt="Tutorials.Dishonored.MoneyRunesHook.09.png" src="https://wiki.cheatengine.org/images/c/c9/Tutorials.Dishonored.MoneyRunesHook.09.png" width="569" height="267" class="thumbborder" /></a>
+</p><p>Just one line of code for it, but you can bet that in memory they may look the same.
+</p><p><br />
+But remember that Lua is a tool in the tool box, and even though you have a great hammer it will make for terrible tin snips. So always look for the best tool for the job.
+</p><p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Links">Links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Tutorials:Create_cheat_table_full:links&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials" title="Tutorials">Tutorials</a>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full" title="Tutorials:Create cheat table full">Creating a cheat table - Full guide</a>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:coordinates" title="Tutorials:Create cheat table full:coordinates">Finding the player coordinates</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:Finding_player_base" title="Tutorials:Create cheat table full:Finding player base">Finding the player base</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health" title="Tutorials:Create cheat table full:health">Finding the player health</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:movement_speed" title="Tutorials:Create cheat table full:movement speed">Write a Super Speed Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:jump_height" title="Tutorials:Create cheat table full:jump height">Write a Super Jump Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack" title="Tutorials:Create cheat table full:health hack">Write a Health Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:money_hack" title="Tutorials:Create cheat table full:money hack">Write a Money Hack</a></li>
+<li><a class="mw-selflink selflink">Write a Money and Runes Hook</a></li></ul></li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602121130
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.072 seconds
+Real time usage: 0.125 seconds
+Preprocessor visited node count: 18/1000000
+Preprocessor generated node count: 42/1000000
+Post‐expand include size: 768/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.335      1 Template:Tutorials:Create_cheat_table_full:links
+100.00%    2.335      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1466-0!canonical and timestamp 20210602121129 and revision id 4848
+ -->
+</div><br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;oldid=4848">https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;oldid=4848</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.cheatengine.org/index.php?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.cheatengine.org/index.php?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Tutorials%3ACreate+cheat+table+full%3Arunes+coins+hook&amp;returntoquery=oldid%3D4848" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Tutorials%3ACreate+cheat+table+full%3Arunes+coins+hook&amp;returntoquery=oldid%3D4848" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Tutorials:Create_cheat_table_full:runes_coins_hook" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Tutorials:Create_cheat_table_full:runes_coins_hook" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;oldid=4848&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;oldid=4848" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 31 December 2017, at 15:42.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.072","walltime":"0.125","ppvisitednodes":{"value":18,"limit":1000000},"ppgeneratednodes":{"value":42,"limit":1000000},"postexpandincludesize":{"value":768,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    2.335      1 Template:Tutorials:Create_cheat_table_full:links","100.00%    2.335      1 -total"]},"cachereport":{"timestamp":"20210602121130","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":365});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook&oldid=4848 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 20:23:43 GMT -->
+</html>

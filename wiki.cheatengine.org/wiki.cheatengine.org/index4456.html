@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_3 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:22:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Help File:ASM Basics 3 - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Help_File:ASM_Basics_3","wgTitle":"Help File:ASM Basics 3","wgCurRevisionId":4361,"wgRevisionId":4361,"wgArticleId":967,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Help","Tutorial","Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Help_File:ASM_Basics_3","wgRelevantArticleId":967,"wgRequestId":"b1b9e5b245e61a34d5b6acb9","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="indexb2cb.html?title=Help_File:ASM_Basics_3&amp;action=edit"/>
+<link rel="edit" title="Edit" href="indexb2cb.html?title=Help_File:ASM_Basics_3&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Help_File_ASM_Basics_3 rootpage-Help_File_ASM_Basics_3 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Help File:ASM Basics 3</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Originally posted by <i>DABhand</i> </b>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#CONDITIONALS_AND_JUMPS"><span class="tocnumber">1</span> <span class="toctext">CONDITIONALS AND JUMPS</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Flag_registers"><span class="tocnumber">2</span> <span class="toctext">Flag registers</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Jumps"><span class="tocnumber">3</span> <span class="toctext">Jumps</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Links"><span class="tocnumber">4</span> <span class="toctext">Links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="CONDITIONALS_AND_JUMPS">CONDITIONALS AND JUMPS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexe11c.html?title=Help_File:ASM_Basics_3&amp;action=edit&amp;section=1" title="Edit section: CONDITIONALS AND JUMPS">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Ok this will be the last one for a while to show you, as they get more and more advanced.
+</p><p>Learning the 3 days very well, should well be enough to do easy and simple trainers and
+how to find the values.
+</p><p>First I want to talk about Flags, what the hell are flags???
+</p><p>Well its not that difficult to understand.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Flag_registers">Flag registers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index87e5.html?title=Help_File:ASM_Basics_3&amp;action=edit&amp;section=2" title="Edit section: Flag registers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The flag register has a set of flags which are set/unset depending on calculations or
+other events. Here is the more important ones.
+</p><p><br />
+</p>
+<pre> ZF (Zero flag)
+</pre>
+<p>This flag is set when the result of a calculation is zero (compare is actually a substraction
+without saving the results, but setting the flags only).
+</p>
+<pre> SF (Sign flag)
+</pre>
+<p>If set, the resulting number of a calculation is negative.
+</p>
+<pre> CF (Carry flag)
+</pre>
+<p>The carry flag contains the left-most bit after calculations.
+</p>
+<pre> OF (Overflow flag)
+</pre>
+<p>Indicates an overflow of a calculation, i.e. the result does not fit in the destination.
+</p><p><br />
+There is other flags some which you will never use so I wont talk about them.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Jumps">Jumps</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index647d.html?title=Help_File:ASM_Basics_3&amp;action=edit&amp;section=3" title="Edit section: Jumps">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Heres a list of the Opcodes for Jumps
+</p><p><br />
+</p>
+<pre> Opcode                  Meaning                                                                Condition
+ JA                           Jump if above                                                       CF=0 &amp; ZF=0
+ JAE                         Jump if above or equal                                       CF=0
+ JB                           Jump if below                                                       CF=1
+ JBE                         Jump if below or equal                                        CF=1 or ZF=1
+ JC                           Jump if carry                                                         CF=1
+ JCXZ                      Jump if CX=0                                                        register CX=0
+ JE                           (is the same as JZ) Jump if equal     ZF=1
+ JG                           Jump if greater (signed)                     ZF=0 &amp; SF=OF
+ JGE                        Jump if greater or equal (signed)      SF=OF
+ JL                            Jump if less (signed)                                           SF!=OF
+ JLE                         Jump if less or equal (signed)                           ZF=1 or SF!=OF
+ JMP                        Unconditional Jump                                             -
+ JNA                        Jump if not above                                                CF=1 or ZF=1
+ JNAE                      Jump if not above or equal                                 CF=1
+ JNB                        Jump if not below                                                 CF=0
+ JNBE                      Jump if not below or equal                 CF=1 &amp; ZF=0
+ JNC                        Jump if not carry                                  CF=0
+ JNE                        Jump if not equal                                 ZF=0
+ JNG                        Jump if not greater (signed)                               ZF=1 or SF!=OF
+ JNGE                     Jump if not greater or equal (signed)               SF!=OF
+ JNL                         Jump if not less (signed)                    SF=OF
+ JNLE                      Jump if not less or equal (signed)     ZF=0 &amp; SF=OF
+ JNO                        Jump if not overflow (signed)                             OF=0
+ JNP                        Jump if no parity                                   PF=0
+ JNS                        Jump if not signed (signed)                                SF=0
+ JNZ                         Jump if not zero                                   ZF=0
+ JO                           Jump if overflow (signed)                   OF=1
+ JP                           Jump if parity                                                        PF=1
+ JPE                         Jump if parity even                                              PF=1
+ JPO                        Jump if paity odd                                 PF=0
+ JS                           Jump if signed (signed)                      SF=1
+ JZ                           Jump if zero                                                          ZF=1
+</pre>
+<p><br />
+As you can see, jumps have conditions set to them from a previous calculation, test or compare.
+</p><p><br />
+Look at this example
+</p><p><br />
+</p>
+<pre> TEST EAX,EBX
+ JE   004822FFh
+ MOV  EAX,EBX
+ JMP  004822FFh
+</pre>
+<p><br />
+This little example basically tests two values to see if they are equal, if so the program
+will move the value 1 into the Zero Flag (ZF), thus allowing the conditional jump (JE) to
+goto a memory location to execute opcodes there.
+</p><p>Now if it wasnt equal, the program will move 0 into ZF, and will skip the JE instruction, then
+move the value in the EBX register to the EAX register, forcing to be equal then doing an
+unconditional jump (JMP) to the same memory location.
+</p><p>Games can use this, some games have a real address for values and a (what I like to call)
+ghost address, the ghost address is where the value to be shown on the game is used, but
+if a check like above exists, no matter what you force into that address will revert back
+to the real one.
+</p><p>Im sure anyone trying to scan memory addresses for a game may have came up against this at
+one point.
+</p><p>Other opcode that can be used is
+</p><p><br />
+</p>
+<pre> CMP register, register/value                              - Compare two values and move 0 or 1 into appropriate Flags.
+</pre>
+<p><br />
+</p><p>Ok thats enough for now, ive taught you basic ASM opcodes, floats and Conditional Jumps.
+</p><p><br />
+This should be all you need to train a game&#160;:)
+</p>
+<h2><span class="mw-headline" id="Links">Links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index16ed-2.html?title=Help_File:ASM_Basics_3&amp;action=edit&amp;section=4" title="Edit section: Links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="index6cb7.html?title=Cheat_Engine:Help_File" title="Cheat Engine:Help File">Help File</a></li></ul>
+<ul><li><a href="index249d.html?title=Help_File:ASM_Basics_2" title="Help File:ASM Basics 2">Back</a></li></ul>
+<ul><li><a href="index27bc.html?title=Help_File:Cheat_Engine_specific" title="Help File:Cheat Engine specific">Next</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602162940
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 0.028 seconds
+Preprocessor visited node count: 15/1000000
+Preprocessor generated node count: 20/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:967-0!canonical and timestamp 20210602162940 and revision id 4361
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="index2c51.html?title=Help_File:ASM_Basics_3&amp;oldid=4361">https://wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_3&amp;oldid=4361</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6a37.html?title=Category:Help" title="Category:Help">Help</a></li><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index1c8c.html?title=Category:Assembler" title="Category:Assembler">Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index3256.html?title=Special:CreateAccount&amp;returnto=Help+File%3AASM+Basics+3" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index320a.html?title=Special:UserLogin&amp;returnto=Help+File%3AASM+Basics+3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index4456.html?title=Help_File:ASM_Basics_3" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="indexc4e1.html?title=Talk:Help_File:ASM_Basics_3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index4456.html?title=Help_File:ASM_Basics_3">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="indexb2cb.html?title=Help_File:ASM_Basics_3&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="index48e8.html?title=Help_File:ASM_Basics_3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexa9e2.html?title=Special:WhatLinksHere/Help_File:ASM_Basics_3" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="indexacfc.html?title=Special:RecentChangesLinked/Help_File:ASM_Basics_3" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="indexa3de.html?title=Help_File:ASM_Basics_3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="index2c51.html?title=Help_File:ASM_Basics_3&amp;oldid=4361" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index3f28.html?title=Help_File:ASM_Basics_3&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 19 March 2017, at 22:43.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"0.028","ppvisitednodes":{"value":15,"limit":1000000},"ppgeneratednodes":{"value":20,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210602162940","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":486});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Help_File:ASM_Basics_3 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:22:20 GMT -->
+</html>

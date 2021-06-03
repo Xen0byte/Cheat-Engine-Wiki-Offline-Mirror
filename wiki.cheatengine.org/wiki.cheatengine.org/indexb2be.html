@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Lua:Setup_Auto_Attach&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:06:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Setup a Lua auto attach script - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Lua:Setup_Auto_Attach","wgTitle":"Tutorials:Lua:Setup Auto Attach","wgCurRevisionId":5767,"wgRevisionId":5767,"wgArticleId":1177,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial","Lua"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Lua:Setup_Auto_Attach","wgRelevantArticleId":1177,"wgRequestId":"99baf36c6cd732768d1b8d60","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loada260.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector"/>
+<script async="" src="load61a1.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index552f.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;action=edit"/>
+<link rel="edit" title="Edit" href="index552f.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Lua_Setup_Auto_Attach rootpage-Tutorials_Lua_Setup_Auto_Attach skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Setup a Lua auto attach script</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<h2><span class="mw-headline" id="How_to_setup_a_Lua_auto_attach_script">How to setup a Lua auto attach script</span></h2>
+<p><b>On the Cheat Engine main form press <i>Ctrl+Alt+L</i></b> to open the cheat table Lua script form.
+</p><p>Now let's add the Lua script to auto attach to the process.
+</p>
+<pre>getAutoAttachList().add("Tutorial-i386.exe")</pre>
+<p>yep, that's probably all you need, it's what Cheat Engine generates for the trainers it makes. However, if you need more control for some reason, you can do it yourself with a timer and <b>openProcess</b>
+</p><p><br />
+</p>
+<p class="hljs" style="white-space:pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(39, 40, 34); color: rgb(221, 221, 221);">PROCESS_NAME = <span class="hljs-string" style="color: rgb(166, 226, 46);">'Tutorial-i386.exe'</span>
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">--------</span>
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">-------- Auto Attach</span>
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">--------</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">local</span> autoAttachTimer = <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">nil</span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- variable to hold timer object</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">local</span> autoAttachTimerInterval = <span class="hljs-number">1000</span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Timer intervals are in milliseconds</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">local</span> autoAttachTimerTicks = <span class="hljs-number">0</span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- variable to count number of times the timer has run</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">local</span> autoAttachTimerTickMax = <span class="hljs-number">5000</span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Set to zero to disable ticks max</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">local</span> <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">function</span> <span class="hljs-title" style="color: rgb(166, 226, 46); font-weight: 700;">autoAttachTimer_tick</span><span class="hljs-params">(timer)</span></span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Timer tick call back</span>
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Destroy timer if max ticks is reached</span>
+	<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">if</span> autoAttachTimerTickMax &gt; <span class="hljs-number">0</span> <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">and</span> autoAttachTimerTicks &gt;= autoAttachTimerTickMax <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">then</span>
+		timer.destroy()
+	<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">end</span>
+        <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Check if process is running</span>
+	<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">if</span> getProcessIDFromProcessName(PROCESS_NAME) ~= <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">nil</span> <span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">then</span>
+		timer.destroy() <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Destroy timer</span>
+		openProcess(PROCESS_NAME) <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Open the process</span>
+	<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">end</span>
+	autoAttachTimerTicks = autoAttachTimerTicks + <span class="hljs-number">1</span> <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Increase ticks</span>
+<span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">end</span>
+autoAttachTimer = createTimer(getMainForm()) <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Create timer with the main form as it's parent</span>
+autoAttachTimer.Interval = autoAttachTimerInterval <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Set timer interval</span>
+autoAttachTimer.OnTimer = autoAttachTimer_tick <span class="hljs-comment" style="color: rgb(117, 113, 94);">---- Set timer tick call back</span></p>
+<p><b>Set the process name to the process you are attaching to</b>, use the full process name from the process list.
+</p><p><b>Launch the process</b> then <b>click <i>execute script</i> in the cheat table Lua script form</b>.
+</p><p><a href="index2efc.html?title=File:Tutorials.Lua.AutoAttachScript.01.png" class="image"><img alt="Tutorials.Lua.AutoAttachScript.01.png" src="images/8/86/Tutorials.Lua.AutoAttachScript.01.png" width="640" height="309" class="thumbborder" /></a>
+</p><p><br />
+You should see the process name at the top of the Cheat Engine form.
+</p><p><a href="index9ca8.html?title=File:Tutorials.Lua.AutoAttachScript.02.png" class="image"><img alt="Tutorials.Lua.AutoAttachScript.02.png" src="images/2/2a/Tutorials.Lua.AutoAttachScript.02.png" width="636" height="61" class="thumbborder" /></a>
+</p><p><br />
+Now when ever the cheat table is opened Cheat Engine will attempt to run the <i>cheat table Lua script</i> which will start the auto attach timer. By default Cheat Engine will ask to run the <i>cheat table Lua script</i>.
+</p><p>Note: You can change what Cheat Engine does with the <i>cheat table Lua script</i> in the Cheat Engine <i>general settings</i>.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="index9dae.html?title=Tutorials" title="Tutorials">Tutorials</a></li></ul>
+<h4><span class="mw-headline" id="Syntax_Highlighter">Syntax Highlighter</span></h4>
+<ul><li><a rel="nofollow" class="external text" href="http://pinetools.com/syntax-highlighter">pinetools.com/syntax-highlighter</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602061319
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.061 seconds
+Real time usage: 0.074 seconds
+Preprocessor visited node count: 69/1000000
+Preprocessor generated node count: 140/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 55/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1177-0!canonical and timestamp 20210602061319 and revision id 5767
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="indexb516.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;oldid=5767">https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:Setup_Auto_Attach&amp;oldid=5767</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index1b60.html?title=Category:Lua" title="Category:Lua">Lua</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="indexcfaf.html?title=Special:CreateAccount&amp;returnto=Tutorials%3ALua%3ASetup+Auto+Attach&amp;returntoquery=printable%3Dyes" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="indexa750.html?title=Special:UserLogin&amp;returnto=Tutorials%3ALua%3ASetup+Auto+Attach&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index70c9.html?title=Tutorials:Lua:Setup_Auto_Attach" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="indexa87d.html?title=Talk:Tutorials:Lua:Setup_Auto_Attach&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index70c9.html?title=Tutorials:Lua:Setup_Auto_Attach">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="index552f.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="indexb970.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="index76bb.html?title=Special:WhatLinksHere/Tutorials:Lua:Setup_Auto_Attach" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="indexd670-2.html?title=Special:RecentChangesLinked/Tutorials:Lua:Setup_Auto_Attach" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="indexb516.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;oldid=5767" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="indexfa95.html?title=Tutorials:Lua:Setup_Auto_Attach&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 5 February 2018, at 21:34.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.061","walltime":"0.074","ppvisitednodes":{"value":69,"limit":1000000},"ppgeneratednodes":{"value":140,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":55,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210602061319","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":359});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Lua:Setup_Auto_Attach&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:06:23 GMT -->
+</html>

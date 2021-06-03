@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&oldid=6970 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 18:01:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorials:Lua:ObjectOriented - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Lua:ObjectOriented","wgTitle":"Tutorials:Lua:ObjectOriented","wgCurRevisionId":6970,"wgRevisionId":6970,"wgArticleId":1894,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Lua:ObjectOriented","wgRelevantArticleId":1894,"wgRequestId":"10030d6494a613faf3575f4b","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Lua_ObjectOriented rootpage-Tutorials_Lua_ObjectOriented skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Tutorials:Lua:ObjectOriented</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 18:52, 18 July 2020 by <a href="https://wiki.cheatengine.org/index.php?title=User:Ajanuw" class="mw-userlink" title="User:Ajanuw"><bdi>Ajanuw</bdi></a> <span class="mw-usertoollinks">(<a href="https://wiki.cheatengine.org/index.php?title=User_talk:Ajanuw&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Ajanuw (page does not exist)">talk</a> | <a href="https://wiki.cheatengine.org/index.php?title=Special:Contributions/Ajanuw" class="mw-usertoollinks-contribs" title="Special:Contributions/Ajanuw">contribs</a>)</span> <span class="comment">(<a href="#Calling_Notation">→</a>‎<span dir="auto"><span class="autocomment">Calling Notation</span></span>)</span></div><div id="mw-revision-nav">(<a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;diff=prev&amp;oldid=6970" title="Tutorials:Lua:ObjectOriented">diff</a>) <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;direction=prev&amp;oldid=6970" title="Tutorials:Lua:ObjectOriented">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Calling_Notation"><span class="tocnumber">1</span> <span class="toctext">Calling Notation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Metatables"><span class="tocnumber">2</span> <span class="toctext">Metatables</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#index"><span class="tocnumber">2.1</span> <span class="toctext">__index</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#newindex"><span class="tocnumber">2.2</span> <span class="toctext">__newindex</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#call"><span class="tocnumber">2.3</span> <span class="toctext">__call</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#lt"><span class="tocnumber">2.4</span> <span class="toctext">__lt</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#other_operators"><span class="tocnumber">2.5</span> <span class="toctext">other operators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Address_Example"><span class="tocnumber">3</span> <span class="toctext">Address Example</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#String_helpers"><span class="tocnumber">3.1</span> <span class="toctext">String helpers</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Offsets"><span class="tocnumber">3.2</span> <span class="toctext">Offsets</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Reading_and_Writing_memory"><span class="tocnumber">3.3</span> <span class="toctext">Reading and Writing memory</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Calling_Notation">Calling Notation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=1" title="Edit section: Calling Notation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first thing to understand is that you can create functions on your tables.  Think of a simple table
+for a rectangle with a length and width and a function that calculates the area.  You can go ahead and
+run this script in CE (go to Memory Viewer and hit `CTRL+L` to open the Lua Engine)
+</p>
+<pre>local rect = { length = 7, width = 9 }
+function calculateArea(tbl)
+  return tbl.length * tbl.width
+end
+print('Width: '..tostring(calculateArea(rect)))</pre>
+<p><br />
+Let's look at creating the function *on the table*.  This helps avoid naming
+collisions and keeps the global namespace clean.  Here's an example up front
+showing how that works:
+</p>
+<pre>local rect = { length = 7, width = 9 }
+
+function rect.calculateArea(tbl) -- `.` specifies object as argument
+  return tbl.length * tbl.width
+end
+
+function rect:calculateArea2() -- `:` creates assumed 'self' first argument
+  return self.length * self.width
+end
+
+rect.calculateArea3 = function(tbl)
+  return tbl.length * tbl.width
+end
+
+
+-- need to pass table with `.`
+print('Area: '..tostring(rect.calculateArea(rect)))
+print('Area2: '..tostring(rect.calculateArea2(rect)))
+print('Area3: '..tostring(rect.calculateArea3(rect)))
+
+-- `:` passes rect as first arg
+print(':Area: '..tostring(rect:calculateArea()))
+print(':Area2: '..tostring(rect:calculateArea2()))
+print(':Area3: '..tostring(rect:calculateArea3()))
+
+-- you can pass other tables as arguments even though the function is
+-- on the `rect` table
+print('Other Area:'..tostring(rect.calculateArea({ length = 4, width = 3 }))) -- p
+print('Other Area2:'..tostring(rect.calculateArea2({ length = 4, width = 3 })))
+print('Other Area3:'..tostring(rect.calculateArea3({ length = 4, width = 3 })))
+</pre>
+<p>Using the `.` notation, you can see that the function exists as a property on the 
+table like any other table value like `length` and `width`.  Since it is a simple
+function, it's not really tied to operating on the table, it takes a parameter that we called
+`tbl` which should be the table to operate on.  When calling it with a `.`, we
+also need to pass the object to operate on because it is just a simple function.
+Although it exists on our table with length and width specified, there is no 
+real relation between it and the table.
+</p><p>Now look at `calculateArea2()`.  Here we use a `:` when specifying that the function
+exists on our `rect` table.  There are no arguments, but we use `self` inside of the
+function.  By using a `:` in the function declaration, LUA assumes there is an
+unspecified argument named `self` before any others.
+</p><p>And with `calculateArea3` we directly assign the function as a property on the
+table.  All three of these declarations are functionally the same.  The functions
+are simple properties on the `rect` table, they each take one argument, and they
+return the value of multiplying the `length` and `width` properties on that 
+argument.
+</p><p>Now look at the function calls where we use a `:`.  These don't pass any arguments.
+That is because when using a `:` when *calling* a function property, the table
+the function resides on is passed as the first argument.  This is the basis for
+creating methods on objects.
+</p>
+<h2><span class="mw-headline" id="Metatables">Metatables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=2" title="Edit section: Metatables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Here are some useful links for reference:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://lua-users.org/wiki/MetamethodsTutorial">MetamethodsTutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://nova-fusion.com/2011/06/30/lua-metatables-tutorial/">metatables tutorial</a></li></ul>
+<p>Metatables allow you to specify a second table that will handle certain actions performed
+on your table.  This is a mostly hidden reference, though you can access it with `getmetatable(tbl)`.
+This lets you define a table like a class with methods and default properties and assign
+it as a metatable to instances without setting the functions as properties on each instance.
+</p><p>It also allows you to do things like intercept calls to your table as a function and to
+overload operators.
+</p>
+<h3><span class="mw-headline" id="index">__index</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=3" title="Edit section: index">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The most useful element of a metatable is the `__index` property.  If specified as a table, then any
+calls to properties that don't exist on your instance will attempt to be accessed on that table.
+Here's an example where we setup `Rectangle` as a class with the `calculateArea` method.  By setting
+`Rectangle` as the metatable on our `rect` table, we can call `rect:calculateArea` and it will call
+`Rectangle.calculateArea(rect)`:
+</p>
+<pre>Rectangle = {}
+
+function Rectangle:calculateArea()
+  return self.length * self.width
+end
+
+local rect = { length = 7, width = 9 }
+setmetatable(rect, { __index = Rectangle })
+
+print('Area: '..tostring(rect:calculateArea()))
+</pre>
+<p>Another way to do it is to set it to a function.  This function will take the table instance
+you are accessing a property on and the property key as arguments and should return the value.
+This is only called when a key does not exist directly on the table itself.  A different way
+to accomplish the same thing as above would be to use a function that just returns the
+property value on the Rectangle table:
+</p>
+<pre>setmetatable(rect, { __index = function(tbl, key) return Rectangle[key] end })</pre>
+<h3><span class="mw-headline" id="newindex">__newindex</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=4" title="Edit section: newindex">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Similar is the metamethod `__newindex` which is called when setting a property on your table
+that doesn't already exist.  This is much like a property write accessor in object oriented
+languages.  It takes the table it's called on, the property key, and the value that is
+being set.  For instance, this would log any attempts to access non-existing properties on
+the rect object and not actually set them, preventing code from adding properties that
+don't exist:
+</p>
+<pre>Rectangle = {}
+
+function Rectangle:calculateArea()
+  return self.length * self.width
+end
+
+local rect = { length = 7, width = 9 }
+setmetatable(rect, {
+  __index = Rectangle,
+  __newindex =
+    function(tbl, key, value)
+      print('Rectangle: Attempt to set "'..key..'" property to '..tostring(value))
+    end
+  })
+
+rect.length = 3
+print('length changed: '..tostring(rect:calculateArea()))
+
+rect.nothing = 5
+print('rect.nothing was not set: '..tostring(rect.nothing))
+</pre>
+<h3><span class="mw-headline" id="call">__call</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=5" title="Edit section: call">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>`__call` can be set to a function when your table is used like a function.  This 
+lets you write clean code for creating a new instance of your `class` instead of
+manually setting the metatable for an object each time.  Here's an example that
+lets us create a new Rectangle by either calling `Rectangle.new(length, width)` or
+simply `Rectangle(length, width)`:
+</p>
+<pre>Rectangle = {}
+
+function Rectangle:calculateArea() return self.length * self.width end
+
+-- create a new instance and assign Rectangle as the metatable (like a class)
+function Rectangle.new(length, width)
+  local obj = { length = length, width = width }
+  setmetatable(obj, { __index = Rectangle })
+  return obj
+end
+
+-- allow Rectangle table to be called like a function
+setmetatable(Rectangle, {
+    __call = function(tbl, length, width)
+        -- tbl will be Rectangle
+        return Rectangle.new(length, width)
+      end
+  })
+
+local rect1 = Rectangle.new(7, 9)
+local rect2 = Rectangle(3, 4)
+
+print('rect1: '..tostring(rect1:calculateArea()))
+print('rect2: '..tostring(rect2:calculateArea()))
+</pre>
+<h3><span class="mw-headline" id="lt">__lt</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=6" title="Edit section: lt">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>__lt</b> is a function used for less than comparison, and for greater than comparison by
+reversing the arguments.  It is really useful for sorting arrays.  Here we sort the
+rectangles array based on their area:
+</p>
+<pre>Rectangle = {}
+
+function Rectangle:calculateArea() return self.length * self.width end
+
+function Rectangle.new(length, width)
+  local obj = { length = length, width = width }
+  setmetatable(obj, {
+      __index = Rectangle,
+      __lt = function(a, b) return a:calculateArea() &lt; b:calculateArea() end
+    })
+  return obj
+end
+
+setmetatable(Rectangle, {
+    __call = function(tbl, length, width)
+        -- tbl will be Rectangle
+        return Rectangle.new(length, width)
+      end
+  })
+
+local rectangles = { Rectangle(2, 5), Rectangle(7, 9), Rectangle(1, 3),
+  Rectangle(3, 4), Rectangle(9, 10), Rectangle(2, 1) }
+table.sort(rectangles)
+for i,v in ipairs(rectangles) do
+  print(tostring(i)..": "..tostring(v:calculateArea()).." in "..tostring(v.length).."x"..tostring(v.width))
+end
+</pre>
+<h3><span class="mw-headline" id="other_operators">other operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=7" title="Edit section: other operators">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><b>__add</b> - Changes the behavior of the '+' operator, i.e. 'rect1 + rect2'</li>
+<li><b>__sub</b> - Changes the behavior of the '-' operator, i.e. 'rect1 - rect2'</li>
+<li><b>__mul</b> - Changes the behavior of the '*' operator, i.e. 'rect1 * rect2'</li>
+<li><b>__div</b> - Changes the behavior of the '/' operator, i.e. 'rect1 / rect2'</li>
+<li><b>__mod</b> - Changes the behavior of the '%' operator, i.e. 'rect1&#160;% rect2'</li>
+<li><b>__unm</b> - Changes the behavior of the unary minus '-' operator, i.e. '-rect2'</li>
+<li><b>__le</b> - Changes the behavior of the '&lt;=' operator (and '&gt;=' by reversing args)</li>
+<li><b>__concat</b> - Changes the behavior of the '..' operator, i.e. 'rect1..rect2' or 'rect1..string'</li>
+<li><b>__eq</b> - Changes the behavior of the '==' operator (and '~='), i.e. 'rect1 == rect2'</li>
+<li><b>__tostring</b> - Not an operator, but can change the results when using print() or tostring(), i.e. 'print(rect1)'</li></ul>
+<p>For example you may want to override <b>__add</b> and return a new Rectangle object with the length and width of
+two rectangles added together, or to expand both the length and width when you add a number to it.
+You may want to override <b>__tostring</b> and the concat operator <b>..</b> so that you can easily print out your
+objects:
+</p>
+<pre>Rectangle = {}
+
+function Rectangle:calculateArea() return self.length * self.width end
+
+function Rectangle.new(length, width)
+  local obj = { length = length, width = width }
+  setmetatable(obj, {
+      __index = Rectangle,
+      __add = function(a, b)
+        if type(b) == 'number' then return Rectangle(a.length + b, a.width + b) end
+        return Rectangle(a.length + b.length, a.width + b.width)
+      end,
+      __concat = function(a, b)
+        return tostring(a)..tostring(b)
+      end,
+      __tostring = function(a)
+        return "[Rect("..tostring(a.length)..","..tostring(a.width)..")]"
+      end
+    })
+  return obj
+end
+
+setmetatable(Rectangle, {
+    __call = function(tbl, length, width)
+        -- tbl will be Rectangle
+        return Rectangle.new(length, width)
+      end
+  })
+
+local rect1 = Rectangle(3, 4)
+local rect2 = Rectangle(7, 9)
+local rectAdded = rect1 + rect2 -- add lengths and widths
+local rectExpanded = rect2 + 5 -- add 5 to length and width
+print('rectAdded is '..rectAdded..' and rectExpanded is '..rectExpanded)
+</pre>
+<h2><span class="mw-headline" id="Address_Example">Address Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=8" title="Edit section: Address Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Code: <a rel="nofollow" class="external free" href="https://gist.github.com/JasonGoemaat/6e879ba3cd46b79a2208093541bae331">https://gist.github.com/JasonGoemaat/6e879ba3cd46b79a2208093541bae331</a>
+</p><p>I've been frustrated with addresses in Cheat Engine so I created a class that helps me out.
+It makes it easy to handle reading memory values and adding offsets without having to remember
+what is a string and what is a number.  You can do something like this to change
+the health at offset 0x48 to a pointer stored in the global symbol 'playerptr' by a script:
+</p>
+<pre> local player = Address('[playerptr]')
+ player:offset(0x48).integer = 100
+</pre>
+<p>First we have code to create the class and allow you to create an instance with
+<b>Address.new(value)</b> or <b>Address(value)</b>:
+</p>
+<pre>local Address = {}
+
+--[[  Return either a number or null for an address.  If the address is
+      already a number, return it.  If a string, do a symbol lookup.
+--]]
+local ValueToNumber = function(value)
+  if type(value) == 'string' then value = getAddressSafe(value) end
+  if type(value) ~= 'number' then return nil end
+  return value
+end
+
+--[[  Constructor to return a new Address object given a value.
+      Usage:
+        local address1 = Address.new('[modifiers_ptr]+80')
+        local address2 = Address.new(0x717335200)
+--]]
+function Address.new(value)
+  local obj = {}
+  if type(value) == 'string' then
+    obj.symbol = value
+    value = getAddressSafe(value)
+  end
+  if type(value) ~= 'number' then return nil end
+  obj.address = value
+  obj.hex = string.format('%X', value)
+  return setmetatable(obj, Address)
+end
+
+--[[ Alternate constructor can be called just by Address()
+     Usage:
+        local address1 = Address('[modifiers_ptr]+80')
+        local address2 = Address(0x717335200)
+--]]
+setmetatable(Address, { __call = function(tbl, value) return Address.new(value) end })
+</pre>
+<p>These will create an object with numeric <b>address</b> and string <b>hex</b> properties,
+along with <b>symbol</b> for the original string passed if it was created using CE's
+string address interpretation.
+</p>
+<h3><span class="mw-headline" id="String_helpers">String helpers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=9" title="Edit section: String helpers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Next we override <b>___tostring</b> and <b>__concat</b> to make debuging easier:
+</p>
+<pre>--[[ For output as a string, just output hex value
+--]]
+function Address:__tostring()
+  return self.hex
+end
+
+--[[ For concatenation, mostly for debug purposes use hex value
+--]]
+function Address:__concat(a)
+  return tostring(self)..tostring(a)
+end
+</pre>
+<p>So you can do this:
+</p>
+<pre> local player = Address('[playerptr]')
+ print('player is address '..player)
+ -- output something like 'player is address 74821030'
+</pre>
+<h3><span class="mw-headline" id="Offsets">Offsets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=10" title="Edit section: Offsets">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Next I create an <b>offset</b> function and override <b>__add</b> to do the same thing.  These
+work with strings (converted to Address instances), Addresse instances, or just numbers.
+</p>
+<pre>--[[ Add an offset (number, Address, or string evaluated by CE) to the address
+     and return a new instance.
+--]]
+function Address:offset(value)
+  if type(value) == 'string' then value = Address(value) end
+  if type(value) == 'table' and value.address ~= nil then value = value.address end
+  if type(value) ~= 'number' then return nil end
+  return Address(self.address + value)
+end
+
+--[[ __add is an operator so you can do the following:
+       local address = Address('modifiers_ptr')
+       address = address + 0x1c
+--]]
+function Address:__add(value)
+  -- handle if we are the second operand, i.e. '0x18 + address'
+  if getmetatable(value) == Address then return value:offset(self) end
+  return self:offset(value)
+end
+</pre>
+<p>Sample usage:
+</p>
+<pre> local a1 = Address.new('[playerptr]')
+ print('health is at '..(a1 + 0x48))
+</pre>
+<h3><span class="mw-headline" id="Reading_and_Writing_memory">Reading and Writing memory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit&amp;section=11" title="Edit section: Reading and Writing memory">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Next I set <b>__index</b> and <b>__newindex</b> on the metatables to handle reading and
+writing simple types to the memory address:
+</p>
+<pre>--[[ __index method to access properties that aren't there
+--]]
+function Address:__index(key)
+  local original = key
+  key = key:lower()
+  if key == 'byte' then
+    local b = readBytes(self.address, 1)
+    return b
+  end
+  if key == 'smallinteger' then return readSmallInteger(self.address) end
+  if key == 'integer' then return readInteger(self.address) end
+  if key == 'qword' then return readQword(self.address) end
+  if key == 'pointer' then return readPointer(self.address) end
+  if key == 'float' then return readFloat(self.address) end
+  if key == 'double' then return readDouble(self.address) end
+  if key == 'string' then return readString(self.address, MAX_STRING_LENGTH) end
+  return getmetatable(self)[original]
+end
+
+--[[ __newindex method to write properties that aren't there, for writing
+     values to memory at the address
+--]]
+function Address:__newindex(key, value)
+  local original = key
+  key = key:lower()
+  if key == 'byte' then return writeBytes(self.address, 1, value) end
+  if key == 'smallinteger' then return writeSmallInteger(self.address, value) end
+  if key == 'integer' then return writeInteger(self.address, value) end
+  if key == 'qword' then return writeQword(self.address, value) end
+  if key == 'pointer' then return writePointer(self.address, value) end
+  if key == 'float' then return writeFloat(self.address, value) end
+  if key == 'double' then return writeDouble(self.address, value) end
+  if key == 'string' then return writeString(self.address, value) end
+  self[key] = value
+  return value
+end
+</pre>
+<p>Notice I use <b>key:lower()</b> so you can use any case with the property names, and you can access them like properties.
+For example to add 10 to the player's health you could do this:
+</p>
+<pre> local a1 = Address.new('[playerptr]')
+ local health = a1 + 0x48 -- will be an Address
+ health.integer = health.integer + 10
+</pre>
+<p>I also added some standard functions for arrays of bytes because they require the
+count as a parameter:
+</p>
+<pre>
+--[[ Function to read a number of bytes
+--]]
+function Address:readBytes(count)
+  return readBytes(self.address, count, true)
+end
+
+--[[ Function to write a number of bytes
+--]]
+function Address:writeBytes(bytes)
+  return readBytes(self.address, bytes)
+end
+
+--[[ Function to read a number of bytes as an AOB string
+--]]
+function Address:readAOB(count)
+  local bytes = readBytes(self.address, count, true)
+  local strings = {}
+  for i,b in ipairs(bytes) do
+    table.insert(strings, string.format('%02X', b))
+  end
+  return table.concat(strings, ' ')
+end
+</pre>
+
+<!-- 
+NewPP limit report
+Cached time: 20210601230528
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.036 seconds
+Real time usage: 0.037 seconds
+Preprocessor visited node count: 147/1000000
+Preprocessor generated node count: 308/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 8798/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1894-0!canonical and timestamp 20210601230528 and revision id 6970
+ -->
+</div><br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;oldid=6970">https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;oldid=6970</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Tutorials%3ALua%3AObjectOriented&amp;returntoquery=oldid%3D6970" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Tutorials%3ALua%3AObjectOriented&amp;returntoquery=oldid%3D6970" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Tutorials:Lua:ObjectOriented&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Tutorials:Lua:ObjectOriented" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Tutorials:Lua:ObjectOriented" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;oldid=6970&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;oldid=6970" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 July 2020, at 18:52.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.036","walltime":"0.037","ppvisitednodes":{"value":147,"limit":1000000},"ppgeneratednodes":{"value":308,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":8798,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210601230528","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":355});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Lua:ObjectOriented&oldid=6970 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 18:01:39 GMT -->
+</html>

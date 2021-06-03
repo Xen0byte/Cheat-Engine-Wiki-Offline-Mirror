@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 18:58:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Tutorial:LuaFormGUI - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorial:LuaFormGUI","wgTitle":"Tutorial:LuaFormGUI","wgCurRevisionId":6661,"wgRevisionId":0,"wgArticleId":1893,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorial:LuaFormGUI","wgRelevantArticleId":1893,"wgRequestId":"5444e57e4f9613063fc50e29","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loadc219.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_LuaFormGUI rootpage-Tutorial_LuaFormGUI skin-vector action-edit">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">View source for Tutorial:LuaFormGUI</h1>			<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">← <a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI" title="Tutorial:LuaFormGUI">Tutorial:LuaFormGUI</a></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="https://wiki.cheatengine.org/index.php?title=Special:Preferences" title="Special:Preferences">user preferences</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;!-- Tutorial:LuaFormGUI -->
+[[Category:Tutorial]]
+[[Category:Lua]]
+{{DISPLAYTITLE:Tutorial - Creating a Form - GUI}}
+Before starting any GUI layout I find it best to just draw a basic layout on some graph paper or in a drawing program. Since we're going to use the CE Form creation GUI, we don't need to be exact so just a basic drawing will work. One thing to keep in mind is resizing, so good use of panels and anchoring is the best way when using a GUI layout tool like CE's.&lt;br>
+[[File:LuaForm.Layout.01.png||Form layout|border]]
+
+But before starting a trainer we need to talk about what game we'll be make it for, for simplicity let's make one for the CE tutorial.
+
+&lt;br>
+== The form ==
+To start a new form, select ''Table'' then ''Create form''.&lt;br>
+[[File:LuaForm.Create.01.png||Table menu item|border]]
+
+You should see a new form and some tool windows that will open.&lt;br>
+[[File:LuaForm.Create.02.png||Form creation start|border]]
+
+So let's start with some of the form properties.
+; Caption
+: The control's text.
+: '''Value:''' My Cheats
+; DefaultMonitor
+: Not really sure what this does, but setting it to "dmMainForm" sounds good; and this doesn't seem to be required.
+: '''Value:''' dmMainForm
+; Height
+: The control's height (vertical size).
+: '''Value:''' 400
+; Name
+: The control's name
+: '''Value:''' CheatForm 
+; Position
+: The form's start position type.
+: '''Value:''' poMainFormCenter
+; Width
+: The control's width (horizontal size).
+: '''Value:''' 600
+
+[[File:LuaForm.Create.03.png||Form properties|border]]
+
+&lt;br>
+== Main panels ==
+So let's add some panels to start with. After adding two panels let's edit the first one. To add a control just use the ''Form Designer'' and hover over the buttons to find out what controls they'll add.
+; BevelOuter
+: Outer border bevel type, controls how the outer border looks.
+; '''Value:''' bvLowered
+; Caption
+: '''Value:''' 
+; Name
+: '''Value:''' ImagePanel
+; Width
+: '''Value:''' 200
+
+Now let's edit the second one.
+; Caption
+: '''Value:''' 
+; Name
+: '''Value:''' MainPanel
+
+So now let's setup the anchors for the ''ImagePanel''. This one I want to stay the same width when the form is resized so I will only anchor it to the form on the top, left, and bottom.
+
+To open the anchors form, select the control and click the '''Anchors'' property and then click the ''...'' button.&lt;br>
+[[File:LuaForm.Anchor.01.png||Open anchor form|border]]
+
+Let's setup the anchor form for the ''ImagePanel'' like this.&lt;br>
+[[File:LuaForm.Anchor.02.png||ImagePanel anchor form|border]]
+
+Now let's setup the anchor form for the ''MainPanel'' like this.&lt;br>
+[[File:LuaForm.Anchor.03.png||MainPanel anchor form|border]]
+
+You should have a form that looks like this (the red text is added in MS paint).&lt;br>
+[[File:LuaForm.Anchor.04.png||form|border]]
+
+=== Main image and about button ===
+So now let's add an Image and an about button, I will go ahead and add a button. But the image has an ''OnClick'' event that I will use to make it act like a button so the about button can be left out just anchor the bottom of the image to the ''ImagePanel''.
+
+So let's add the button and the image to the image panel. 
+
+For the button let's set it up like this.
+; Caption
+: '''Value:''' About
+; Name
+: '''Value:''' AboutButton
+And for the button let's setup the anchors like this.&lt;br>
+[[File:LuaForm.AboutButton.Anchor.01.png||AboutButton anchor form|border]]
+
+On the image we only need to set the name to start with.
+; Name
+: '''Value:''' MainIamge
+Let's set the anchors for the ''MainImage'' like this.&lt;br>
+[[File:LuaForm.MainImage.Anchor.01.png||MainImage anchor form|border]]
+
+Let's set the ''Picture'' property, select it and click the ''...'' button like before, and click the ''Load'' button to open an ''open file dialog''. Then just select an image form your file system, note that you may want to size the image to best fit the ''MainImage''. This will add the image data to the form data.
+
+=== Adding Events ===
+Now let's setup some ''OnClick'' events for the image and button. So on the ''Object Inspector'' form select the ''Events'' tab, then select the ''OnClick'' event and click the ''...'' button. This will create a function and bind the event to it.&lt;br>
+[[File:LuaForm.Events.01.png||Events tab|border]]
+
+It should open the Lua script form with a new function like this, depending on the controls name (and event).
+&lt;pre>function AboutButtonClick(sender)
+
+end&lt;/pre>
+
+Now for the ''MainImage'' use the ''OnClick'' event's drop-down to select the function you created for the ''AboutButton''. We'll add some code to this latter, after creating an about form.
+
+&lt;br>
+== Cheat Panels ==
+Now inside the ''MainPanel'' let's add some cheat panels.
+
+For the first one let's anchor it to the ''MaiPanel'' at the sides and top. Then set it up like this.
+; BevelOuter
+: '''Value:''' bvNone
+; Caption
+: '''Value:'''
+; Name
+: '''Value:''' Cheat1Panel
+[[File:LuaForm.CheatPanel.Anchor.01.png||Cheat Panel anchors|border]]
+
+Then let's add a toggle box and anchor it to all sides of the cheat panel. And set it up like this.
+; Caption
+: '''Value:''' Step 2 Hook
+; Name
+: '''Value:''' Cheat1ToggleBox
+[[File:LuaForm.CheatToggleBox.Anchor.01.png||Cheat toggle box anchors|border]]
+
+Now let's auto create a function for the ''OnChange'' event for the ''Cheat1ToggleBox''. Remember to do this you select the events tab then click the ''...'' button for the ''OnChange'' event. It should create a function like this.
+&lt;pre>function Cheat1ToggleBoxChange(sender)
+
+end&lt;/pre>
+
+=== Remaining cheat panels ===
+Now let's select the ''Cheat1Panel'' on the form, you may need to first select it in the ''Object Inspector'' form then click the control on the form. Then just press ''Ctrl+C'' to copy the control then click the ''MainPanel'' and press ''Ctrl+V'' to paste a copy. Then edit the properties for the panel and the toggle so the names are ''Cheat2Panel'' and ''Cheat2ToggleBox''; and the caption for the toggle box to ''"Step 3 Hook"''.
+
+Then select the ''Cheat2Panel'' in the ''Object Inspector'' and drag it to the ''MainPanel'' so it becomes nested under it as a child control.
+
+Then edit the anchors for the ''Cheat2Panel'', edit the top anchor like this.&lt;br>
+[[File:LuaForm.CheatPanel.Anchor.02.png||Cheat Panel anchors|borders]]
+
+Then set the ''OnChange'' event for the toggle box.
+
+Now just do this tell you get to ''Cheat7...'' and ''Step 8 Hook'', and just set the top anchor sibling to the previous cheat panel. So 2 to 1, 3 to 2, 4 to 3, and so on.
+
+=== Editable value ===
+Now let's setup a cheat panel like the others, but then disable the left anchor for the toggle box then click and drag the left side to make room for an edit box. Then add an edit box on the left of the ''Cheat8Panel'', and let's set the edit box name and text properties.
+; Name
+: '''Value:''' Cheat8Edit
+; Text
+: '''Value:''' 5000
+; Width
+: '''Value:''' 75
+
+Then anchor the edit box like the toggle box; to the top, right, and bottom. With to the cheat panel as the sibling.
+
+Then set the left anchor for the toggle box like this.&lt;br>
+[[File:LuaForm.CheatToggleBox.Anchor.02.png||Cheat toggle box anchors|border]]
+
+And then create an ''OnChange'' event for the toggle box.
+
+=== An "All Hooks" toggle box ===
+Now let's setup a cheat panel like the others, then set the names as ''CheatAll..''. And set the text for the toggle box to ''"All Hooks"'', and create an ''OnChange'' event for it.
+
+&lt;br>
+== More with the Form ==
+=== Form Constraints ===
+Now we can size the form the figure out what kind of minimum and maximum sizes to set for the form. Let's set the ''Constraints'' ''MinHeight'' and ''MinWidth''.&lt;br>
+[[File:LuaForm.Constraints.01.png||Form Constraints|border]]
+
+&lt;br>
+=== Form events ===
+Now let's add some events for the form; ''OnClose'', and ''FormShow''.
+&lt;pre>function FormShow(sender)
+
+end
+function FormClose(sender)
+  return caHide --Possible options: caHide, caFree, caMinimize, caNone
+end&lt;/pre>
+
+&lt;br>
+=== Saving the form ===
+Then on the form designer tool window select ''File''->''Save'' in the menu and save the form as ''"CheatForm.FRM"''. 
+
+Now close the tool windows and the form, and save the cheat table. Then select ''Table''->''CheatForm''->''Restore and show'', and it should show the form.&lt;br>
+[[File:LuaForm.Show.01.png||Show Form|border]]
+
+&lt;br>
+== Adding code for the cheat form ==
+Now for the fun part. Let's add some code to the events. You should have a script like this so far.
+&lt;pre>--
+---- Form
+function FormShow(sender)
+
+end
+
+function FormClose(sender)
+  return caHide --Possible options: caHide, caFree, caMinimize, caNone
+end
+
+
+---- About button
+function AboutButtonClick(sender)
+
+end
+
+---- All
+function CheatAllToggleBoxChange(sender)
+
+end
+
+---- Step 2
+function Cheat1ToggleBoxChange(sender)
+
+end
+
+---- Step 3
+function Cheat2ToggleBoxChange(sender)
+
+end
+
+---- Step 4
+function Cheat3ToggleBoxChange(sender)
+
+end
+
+---- Step 5
+function Cheat4ToggleBoxChange(sender)
+
+end
+
+---- Step 6
+function Cheat5ToggleBoxChange(sender)
+
+end
+
+---- Step 7
+function Cheat6ToggleBoxChange(sender)
+
+end
+
+---- Step 8
+function Cheat7ToggleBoxChange(sender)
+
+end
+
+---- Step 9
+function Cheat8ToggleBoxChange(sender)
+
+end
+&lt;/pre>
+
+Let's start by adding some variables and a function to help with enabling the cheats.
+&lt;pre>PROCESS_NAME = 'Tutorial-i386.exe'
+
+local AboutText = [[Author: TIMMY
+
+This is a tutorial cheat form made for the Cheat Engine tutorial ("Tutorial-i386.exe").
+]]
+
+local disableInfo = {}
+local autoAttachTimer = nil
+local autoAttachTimerInterval = 100
+local autoAttachTimerTicks = 0
+local autoAttachTimerTickMax = 5000
+
+local function enableCheat(sender, script)
+	local assembled = false
+	if sender.Checked then
+		assembled, disableInfo[sender.Name] = autoAssemble(script)
+		if not assembled then
+			-- disableInfo[sender.Name] = nil
+			sender.Checked = false
+		end
+	elseif disableInfo[sender.Name] ~= nil then
+		assembled, disableInfo[sender.Name] = autoAssemble(script, disableInfo[sender.Name])
+		if assembled then
+			disableInfo[sender.Name] = nil
+		end
+	end
+	return assembled
+end&lt;/pre>
+
+Now let's setup those form events.
+&lt;pre>--
+---- Form
+function FormShow(sender)
+	local function autoAttachTimer_tick(timer)
+		if autoAttachTimerTickMax > 0 and autoAttachTimerTicks >= autoAttachTimerTickMax then
+			timer.destroy()
+		end
+		if getProcessIDFromProcessName(PROCESS_NAME) ~= nil then
+			timer.destroy()
+			openProcess(PROCESS_NAME)
+		end
+		autoAttachTimerTicks = autoAttachTimerTicks + 1
+	end
+	autoAttachTimer = createTimer(MainForm)
+	autoAttachTimer.Interval = autoAttachTimerInterval
+	autoAttachTimer.OnTimer = autoAttachTimer_tick
+end
+
+function FormClose(sender)
+	----
+	---- comment this out when editing the form
+	closeCE()
+	return caFree --Possible options: caHide, caFree, caMinimize, caNone
+	----
+	---- uncomment this when editing the form
+	-- return caHide --Possible options: caHide, caFree, caMinimize, caNone
+end&lt;/pre>
+
+So for the about button let's just start with a simple string that will be printed.
+&lt;pre>---- About button
+function AboutButtonClick(sender)
+	print(AboutText)
+end&lt;/pre>
+
+Now for the cheats. So we'll just pass ''sender'' and a script to ''enableCheat''.
+&lt;pre>
+---- All
+function CheatAllToggleBoxChange(sender)
+	if CheatForm ~= nil then
+		CheatForm.Cheat1ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat2ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat3ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat4ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat5ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat6ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat7ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat8ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat1ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat2ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat3ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat4ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat5ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat6ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat7ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat8ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat8Edit.Enabled = not sender.Checked
+	end
+end
+
+---- Step 2
+function Cheat1ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+23B00)
+define(step2Bytes, 89 83 80 04 00 00)
+
+[ENABLE]
+aobScanModule(aobStep2Hook, Tutorial-i386.exe, 8Dxxxx8Bxxxxxxxxxx29xx89xxxxxxxxxx8DxxxxE8xxxxxxxx8Bxxxx8BxxxxxxxxxxE8xxxxxxxx83xxxxxxxxxxxx)
+define(injStep2Hook, aobStep2Hook+B)
+assert(injStep2Hook, step2Bytes)
+registerSymbol(injStep2Hook)
+
+alloc(memStep2Hook, 0x400, injStep2Hook)
+
+label(ptrStep2Hook)
+registerSymbol(ptrStep2Hook)
+
+label(step2n_code)
+label(step2o_code)
+label(step2exit)
+label(step2return)
+
+memStep2Hook:
+	ptrStep2Hook:
+		dd 0
+	align 10 CC
+	step2n_code:
+		mov [ptrStep2Hook],ebx
+		mov eax,(int)1000
+	step2o_code:
+		mov [ebx+00000480],eax
+	step2exit:
+		jmp step2return
+
+injStep2Hook:
+	jmp step2n_code
+	nop
+	step2return:
+
+[DISABLE]
+injStep2Hook:
+	db step2Bytes
+
+unregisterSymbol(injStep2Hook)
+unregisterSymbol(ptrStep2Hook)
+dealloc(memStep2Hook)
+]])
+end
+
+---- Step 3
+function Cheat2ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+23FE1)
+define(step3OldBytes, 83 C0 01 89 C3 29)
+	// add eax,01
+	// mov ebx,eax
+	// sub // sub [esi+00000484],ebx
+define(step3NewBytes, BB 88 13 00 00 89)
+	// mov ebx,00001388 // mov ebx,(int)5000
+	// mov // mov [esi+00000484],ebx
+
+[ENABLE]
+aobScanModule(aobStep3Hook, Tutorial-i386.exe, 83xxxx89xx29xxxxxxxxxx8Bxxxxxxxxxx8Dxxxxxxxxxx8BxxxxxxxxxxE8xxxxxxxx83xxxxxxxxxxxx)
+define(injStep3Hook, aobStep3Hook)
+assert(injStep3Hook, step3OldBytes)
+registerSymbol(injStep3Hook)
+
+injStep3Hook:
+	db step3NewBytes
+
+[DISABLE]
+injStep3Hook:
+	db step3OldBytes
+
+unregisterSymbol(injStep3Hook)
+]])
+end
+
+---- Step 4
+function Cheat3ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+2481F)
+define(step4Bytes, D9 9E 94 04 00 00)
+
+[ENABLE]
+aobScanModule(aobStep4Hook, Tutorial-i386.exe, DBxxxxDBxxxxxxxxD9xxxxD9xxxxD8xxxxxxxxxxD9xxxxxxxxxxFFxxxxxxxxxx8DxxxxxxB9xxxxxxxxBAxxxxxxxxB8xxxxxxxx)
+define(injStep4Hook, aobStep4Hook+14)
+assert(injStep4Hook, step4Bytes)
+registerSymbol(injStep4Hook)
+
+alloc(memStep4Hook, 0x400, injStep4Hook)
+
+label(ptrStep4Hook)
+registerSymbol(ptrStep4Hook)
+
+label(step4n_code)
+label(step4o_code)
+label(step4exit)
+label(step4return)
+
+memStep4Hook:
+	dq (double)5000
+	align 10 CC
+	ptrStep4Hook:
+		dd 0
+	align 10 CC
+	step4n_code:
+		mov [ptrStep4Hook],esi
+		fstp st(0)
+		mov [esi+494],(float)5000
+		fld qword ptr [memStep4Hook]
+		fstp qword ptr [esi+498]
+	step4o_code:
+		// fstp dword ptr [esi+00000494]
+	step4exit:
+		jmp step4return
+
+injStep4Hook:
+	jmp step4n_code
+	nop
+	step4return:
+
+[DISABLE]
+injStep4Hook:
+	db step4Bytes
+
+unregisterSymbol(injStep4Hook)
+unregisterSymbol(ptrStep4Hook)
+dealloc(memStep4Hook)
+]])
+end
+
+---- Step 5
+function Cheat4ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+24AE8)
+define(step5Bytes, 89 10)
+
+[ENABLE]
+aobScanModule(aobStep5Hook, Tutorial-i386.exe, 8Bxxxx8Bxxxxxxxxxx8Bxxxx89xx8Bxxxx8Bxxxxxxxxxx8Bxx3Bxxxx)
+define(injStep5Hook, aobStep5Hook+C)
+assert(injStep5Hook, step5Bytes)
+registerSymbol(injStep5Hook)
+
+injStep5Hook:
+	db 90 90
+
+[DISABLE]
+injStep5Hook:
+	db step5Bytes
+
+unregisterSymbol(injStep5Hook)
+]])
+end
+
+---- Step 6
+function Cheat5ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+24F01)
+define(step6Bytes, 89 02)
+
+[ENABLE]
+aobScanModule(aobStep6Hook, Tutorial-i386.exe, 8Bxxxx3Bxxxx74xxEBxx8Bxxxxxxxxxx8Bxxxx89xxA1xxxxxxxx8Bxx3Bxxxx)
+define(injStep6Hook, aobStep6Hook+13)
+assert(injStep6Hook, step6Bytes)
+registerSymbol(injStep6Hook)
+
+injStep6Hook:
+	db 90 90
+
+[DISABLE]
+injStep6Hook:
+	db step6Bytes
+
+unregisterSymbol(injStep6Hook)
+]])
+end
+
+---- Step 7
+function Cheat6ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+2553D)
+define(step7OldBytes, 83 AB 78 04 00 00 01)
+	// sub dword ptr [ebx+00000478],01
+define(step7NewBytes, 83 83 78 04 00 00 02)
+	// add dword ptr [ebx+00000478],02
+
+[ENABLE]
+aobScanModule(aobStep7Hook, Tutorial-i386.exe, 8Bxxxxxxxxxx83xxxxxxxxxxxx8Bxxxxxxxxxx8DxxxxE8xxxxxxxx8Bxxxx8BxxxxxxxxxxE8xxxxxxxx8Bxxxxxxxxxx)
+define(injStep7Hook, aobStep7Hook+6)
+assert(injStep7Hook, step7OldBytes)
+registerSymbol(injStep7Hook)
+
+injStep7Hook:
+	db step7NewBytes
+
+[DISABLE]
+injStep7Hook:
+	db step7OldBytes
+
+unregisterSymbol(injStep7Hook)
+]])
+end
+
+---- Step 8
+function Cheat7ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address2, Tutorial-i386.exe+26108)
+define(step8WrtBytes, 89 42 18 8B 45 DC)
+
+[ENABLE]
+aobScanModule(aobStep8WrtHook, Tutorial-i386.exe, 8Bxxxx89xxxx8Bxxxx8Bxxxx8DxxxxE8xxxxxxxx8Bxxxx8Bxxxx8Bxxxxxxxxxx)
+define(injStep8WrtHook, aobStep8WrtHook+3)
+assert(injStep8WrtHook, step8WrtBytes)
+registerSymbol(injStep8WrtHook)
+
+alloc(memStep8WrtHook, 0x400, injStep8WrtHook)
+
+label(ptrStep8WrtHook)
+registerSymbol(ptrStep8WrtHook)
+
+label(step8wrtn_code)
+label(step8wrto_code)
+label(step8wrtexit)
+label(step8wrtreturn)
+
+memStep8WrtHook:
+	ptrStep8WrtHook:
+		dd 0
+	align 10 CC
+	step8wrtn_code:
+		mov [ptrStep8WrtHook],edx
+		mov eax,(int)5000
+	step8wrto_code:
+		mov [edx+18],eax
+		mov eax,[ebp-24]
+	step8wrtexit:
+		jmp step8wrtreturn
+
+injStep8WrtHook:
+	jmp step8wrtn_code
+	nop
+	step8wrtreturn:
+
+[DISABLE]
+injStep8WrtHook:
+	db step8WrtBytes
+
+unregisterSymbol(injStep8WrtHook)
+unregisterSymbol(ptrStep8WrtHook)
+dealloc(memStep8WrtHook)
+]])
+end
+
+---- All
+function Cheat8ToggleBoxChange(sender)
+	local script = [[{$STRICT}
+define(address, Tutorial-i386.exe+26534)
+define(step9Bytes, 8B 45 FC 89 43 04)
+
+[ENABLE]
+aobScanModule(aobStep9Hook, Tutorial-i386.exe, 8Bxxxx89xxxx8Bxxxx89xxxxxxxxD9xxxxxxxxxxxxxx7Axx75xx8Bxxxx)
+define(injStep9Hook, aobStep9Hook+6)
+assert(injStep9Hook, step9Bytes)
+registerSymbol(injStep9Hook)
+
+alloc(memStep9Hook, 0x400, injStep9Hook)
+
+label(ptrStep9Hook)
+registerSymbol(ptrStep9Hook)
+
+label(step9n_code)
+label(step9o_code)
+label(step9exit)
+label(step9return)
+
+memStep9Hook:
+	ptrStep9Hook:
+		dd 0
+		dd 0
+	align 10 CC
+	step9n_code:
+		pushfd
+		cmp [ebx+10],1
+		jne @f
+			mov eax,(float)${Value}
+			jmp step9o_code
+		@@:
+		mov eax,0
+	step9o_code:
+		// mov eax,[ebp-04]
+		mov [ebx+04],eax
+	step9exit:
+		popfd
+		jmp step9return
+
+injStep9Hook:
+	jmp step9n_code
+	nop
+	step9return:
+
+[DISABLE]
+injStep9Hook:
+	db step9Bytes
+
+unregisterSymbol(injStep9Hook)
+unregisterSymbol(ptrStep9Hook)
+dealloc(memStep9Hook)
+]]
+	enableCheat(sender, script:gsub('${Value}', CheatForm.Cheat8Edit.Text))
+	CheatForm.Cheat8Edit.Enabled = not sender.Checked
+end&lt;/pre>
+
+&lt;br>
+=== Showing the form ===
+Then we just need to hide the CE main form and ''show'' the cheat form, but we'll want to use a timer to hide the forms.
+&lt;pre>CheatForm.Show()
+timer = createTimer(MainForm)
+timer.Interval = 50
+timer.OnTimer = function(timer)
+	timer.destroy()
+	hideAllCEWindows()
+end
+&lt;/pre>
+
+
+&lt;br>
+=== The full script ===
+&lt;pre>PROCESS_NAME = 'Tutorial-i386.exe'
+
+local AboutText = [[Author: TIMMY
+
+This is a tutorial cheat form made for the Cheat Engine tutorial ("Tutorial-i386.exe").
+]]
+
+local disableInfo = {}
+
+local autoAttachTimer = nil
+local autoAttachTimerInterval = 100
+local autoAttachTimerTicks = 0
+local autoAttachTimerTickMax = 5000
+
+
+local function enableCheat(sender, script)
+	local assembled = false
+	if sender.Checked then
+		assembled, disableInfo[sender.Name] = autoAssemble(script)
+		if not assembled then
+			-- disableInfo[sender.Name] = nil
+			sender.Checked = false
+		end
+	elseif disableInfo[sender.Name] ~= nil then
+		assembled, disableInfo[sender.Name] = autoAssemble(script, disableInfo[sender.Name])
+		if assembled then
+			disableInfo[sender.Name] = nil
+		end
+	end
+	return assembled
+end
+
+
+--
+---- Form
+function FormShow(sender)
+	local function autoAttachTimer_tick(timer)
+		if autoAttachTimerTickMax > 0 and autoAttachTimerTicks >= autoAttachTimerTickMax then
+			timer.destroy()
+		end
+		if getProcessIDFromProcessName(PROCESS_NAME) ~= nil then
+			timer.destroy()
+			openProcess(PROCESS_NAME)
+		end
+		autoAttachTimerTicks = autoAttachTimerTicks + 1
+	end
+	autoAttachTimer = createTimer(MainForm)
+	autoAttachTimer.Interval = autoAttachTimerInterval
+	autoAttachTimer.OnTimer = autoAttachTimer_tick
+end
+
+function FormClose(sender)
+	----
+	---- comment this out when editing the form
+	closeCE()
+	return caFree --Possible options: caHide, caFree, caMinimize, caNone
+	----
+	---- uncomment this when editing the form
+	-- return caHide --Possible options: caHide, caFree, caMinimize, caNone
+end
+
+
+---- About button
+function AboutButtonClick(sender)
+	print(AboutText)
+end
+
+---- All
+function CheatAllToggleBoxChange(sender)
+	if CheatForm ~= nil then
+		CheatForm.Cheat1ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat2ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat3ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat4ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat5ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat6ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat7ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat8ToggleBox.Checked = sender.Checked
+		CheatForm.Cheat1ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat2ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat3ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat4ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat5ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat6ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat7ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat8ToggleBox.Enabled = not sender.Checked
+		CheatForm.Cheat8Edit.Enabled = not sender.Checked
+	end
+end
+
+---- Step 2
+function Cheat1ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+23B00)
+define(step2Bytes, 89 83 80 04 00 00)
+
+[ENABLE]
+aobScanModule(aobStep2Hook, Tutorial-i386.exe, 8Dxxxx8Bxxxxxxxxxx29xx89xxxxxxxxxx8DxxxxE8xxxxxxxx8Bxxxx8BxxxxxxxxxxE8xxxxxxxx83xxxxxxxxxxxx)
+define(injStep2Hook, aobStep2Hook+B)
+assert(injStep2Hook, step2Bytes)
+registerSymbol(injStep2Hook)
+
+alloc(memStep2Hook, 0x400, injStep2Hook)
+
+label(ptrStep2Hook)
+registerSymbol(ptrStep2Hook)
+
+label(step2n_code)
+label(step2o_code)
+label(step2exit)
+label(step2return)
+
+memStep2Hook:
+	ptrStep2Hook:
+		dd 0
+	align 10 CC
+	step2n_code:
+		mov [ptrStep2Hook],ebx
+		mov eax,(int)1000
+	step2o_code:
+		mov [ebx+00000480],eax
+	step2exit:
+		jmp step2return
+
+injStep2Hook:
+	jmp step2n_code
+	nop
+	step2return:
+
+[DISABLE]
+injStep2Hook:
+	db step2Bytes
+
+unregisterSymbol(injStep2Hook)
+unregisterSymbol(ptrStep2Hook)
+dealloc(memStep2Hook)
+]])
+end
+
+---- Step 3
+function Cheat2ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+23FE1)
+define(step3OldBytes, 83 C0 01 89 C3 29)
+	// add eax,01
+	// mov ebx,eax
+	// sub // sub [esi+00000484],ebx
+define(step3NewBytes, BB 88 13 00 00 89)
+	// mov ebx,00001388 // mov ebx,(int)5000
+	// mov // mov [esi+00000484],ebx
+
+[ENABLE]
+aobScanModule(aobStep3Hook, Tutorial-i386.exe, 83xxxx89xx29xxxxxxxxxx8Bxxxxxxxxxx8Dxxxxxxxxxx8BxxxxxxxxxxE8xxxxxxxx83xxxxxxxxxxxx)
+define(injStep3Hook, aobStep3Hook)
+assert(injStep3Hook, step3OldBytes)
+registerSymbol(injStep3Hook)
+
+injStep3Hook:
+	db step3NewBytes
+
+[DISABLE]
+injStep3Hook:
+	db step3OldBytes
+
+unregisterSymbol(injStep3Hook)
+]])
+end
+
+---- Step 4
+function Cheat3ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+2481F)
+define(step4Bytes, D9 9E 94 04 00 00)
+
+[ENABLE]
+aobScanModule(aobStep4Hook, Tutorial-i386.exe, DBxxxxDBxxxxxxxxD9xxxxD9xxxxD8xxxxxxxxxxD9xxxxxxxxxxFFxxxxxxxxxx8DxxxxxxB9xxxxxxxxBAxxxxxxxxB8xxxxxxxx)
+define(injStep4Hook, aobStep4Hook+14)
+assert(injStep4Hook, step4Bytes)
+registerSymbol(injStep4Hook)
+
+alloc(memStep4Hook, 0x400, injStep4Hook)
+
+label(ptrStep4Hook)
+registerSymbol(ptrStep4Hook)
+
+label(step4n_code)
+label(step4o_code)
+label(step4exit)
+label(step4return)
+
+memStep4Hook:
+	dq (double)5000
+	align 10 CC
+	ptrStep4Hook:
+		dd 0
+	align 10 CC
+	step4n_code:
+		mov [ptrStep4Hook],esi
+		fstp st(0)
+		mov [esi+494],(float)5000
+		fld qword ptr [memStep4Hook]
+		fstp qword ptr [esi+498]
+	step4o_code:
+		// fstp dword ptr [esi+00000494]
+	step4exit:
+		jmp step4return
+
+injStep4Hook:
+	jmp step4n_code
+	nop
+	step4return:
+
+[DISABLE]
+injStep4Hook:
+	db step4Bytes
+
+unregisterSymbol(injStep4Hook)
+unregisterSymbol(ptrStep4Hook)
+dealloc(memStep4Hook)
+]])
+end
+
+---- Step 5
+function Cheat4ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+24AE8)
+define(step5Bytes, 89 10)
+
+[ENABLE]
+aobScanModule(aobStep5Hook, Tutorial-i386.exe, 8Bxxxx8Bxxxxxxxxxx8Bxxxx89xx8Bxxxx8Bxxxxxxxxxx8Bxx3Bxxxx)
+define(injStep5Hook, aobStep5Hook+C)
+assert(injStep5Hook, step5Bytes)
+registerSymbol(injStep5Hook)
+
+injStep5Hook:
+	db 90 90
+
+[DISABLE]
+injStep5Hook:
+	db step5Bytes
+
+unregisterSymbol(injStep5Hook)
+]])
+end
+
+---- Step 6
+function Cheat5ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+24F01)
+define(step6Bytes, 89 02)
+
+[ENABLE]
+aobScanModule(aobStep6Hook, Tutorial-i386.exe, 8Bxxxx3Bxxxx74xxEBxx8Bxxxxxxxxxx8Bxxxx89xxA1xxxxxxxx8Bxx3Bxxxx)
+define(injStep6Hook, aobStep6Hook+13)
+assert(injStep6Hook, step6Bytes)
+registerSymbol(injStep6Hook)
+
+injStep6Hook:
+	db 90 90
+
+[DISABLE]
+injStep6Hook:
+	db step6Bytes
+
+unregisterSymbol(injStep6Hook)
+]])
+end
+
+---- Step 7
+function Cheat6ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address, Tutorial-i386.exe+2553D)
+define(step7OldBytes, 83 AB 78 04 00 00 01)
+	// sub dword ptr [ebx+00000478],01
+define(step7NewBytes, 83 83 78 04 00 00 02)
+	// add dword ptr [ebx+00000478],02
+
+[ENABLE]
+aobScanModule(aobStep7Hook, Tutorial-i386.exe, 8Bxxxxxxxxxx83xxxxxxxxxxxx8Bxxxxxxxxxx8DxxxxE8xxxxxxxx8Bxxxx8BxxxxxxxxxxE8xxxxxxxx8Bxxxxxxxxxx)
+define(injStep7Hook, aobStep7Hook+6)
+assert(injStep7Hook, step7OldBytes)
+registerSymbol(injStep7Hook)
+
+injStep7Hook:
+	db step7NewBytes
+
+[DISABLE]
+injStep7Hook:
+	db step7OldBytes
+
+unregisterSymbol(injStep7Hook)
+]])
+end
+
+---- Step 8
+function Cheat7ToggleBoxChange(sender)
+	enableCheat(sender, [[{$STRICT}
+define(address2, Tutorial-i386.exe+26108)
+define(step8WrtBytes, 89 42 18 8B 45 DC)
+
+[ENABLE]
+aobScanModule(aobStep8WrtHook, Tutorial-i386.exe, 8Bxxxx89xxxx8Bxxxx8Bxxxx8DxxxxE8xxxxxxxx8Bxxxx8Bxxxx8Bxxxxxxxxxx)
+define(injStep8WrtHook, aobStep8WrtHook+3)
+assert(injStep8WrtHook, step8WrtBytes)
+registerSymbol(injStep8WrtHook)
+
+alloc(memStep8WrtHook, 0x400, injStep8WrtHook)
+
+label(ptrStep8WrtHook)
+registerSymbol(ptrStep8WrtHook)
+
+label(step8wrtn_code)
+label(step8wrto_code)
+label(step8wrtexit)
+label(step8wrtreturn)
+
+memStep8WrtHook:
+	ptrStep8WrtHook:
+		dd 0
+	align 10 CC
+	step8wrtn_code:
+		mov [ptrStep8WrtHook],edx
+		mov eax,(int)5000
+	step8wrto_code:
+		mov [edx+18],eax
+		mov eax,[ebp-24]
+	step8wrtexit:
+		jmp step8wrtreturn
+
+injStep8WrtHook:
+	jmp step8wrtn_code
+	nop
+	step8wrtreturn:
+
+[DISABLE]
+injStep8WrtHook:
+	db step8WrtBytes
+
+unregisterSymbol(injStep8WrtHook)
+unregisterSymbol(ptrStep8WrtHook)
+dealloc(memStep8WrtHook)
+]])
+end
+
+---- All
+function Cheat8ToggleBoxChange(sender)
+	local script = [[{$STRICT}
+define(address, Tutorial-i386.exe+26534)
+define(step9Bytes, 8B 45 FC 89 43 04)
+
+[ENABLE]
+aobScanModule(aobStep9Hook, Tutorial-i386.exe, 8Bxxxx89xxxx8Bxxxx89xxxxxxxxD9xxxxxxxxxxxxxx7Axx75xx8Bxxxx)
+define(injStep9Hook, aobStep9Hook+6)
+assert(injStep9Hook, step9Bytes)
+registerSymbol(injStep9Hook)
+
+alloc(memStep9Hook, 0x400, injStep9Hook)
+
+label(ptrStep9Hook)
+registerSymbol(ptrStep9Hook)
+
+label(step9n_code)
+label(step9o_code)
+label(step9exit)
+label(step9return)
+
+memStep9Hook:
+	ptrStep9Hook:
+		dd 0
+		dd 0
+	align 10 CC
+	step9n_code:
+		pushfd
+		cmp [ebx+10],1
+		jne @f
+			mov eax,(float)${Value}
+			jmp step9o_code
+		@@:
+		mov eax,0
+	step9o_code:
+		// mov eax,[ebp-04]
+		mov [ebx+04],eax
+	step9exit:
+		popfd
+		jmp step9return
+
+injStep9Hook:
+	jmp step9n_code
+	nop
+	step9return:
+
+[DISABLE]
+injStep9Hook:
+	db step9Bytes
+
+unregisterSymbol(injStep9Hook)
+unregisterSymbol(ptrStep9Hook)
+dealloc(memStep9Hook)
+]]
+	enableCheat(sender, script:gsub('${Value}', CheatForm.Cheat8Edit.Text))
+	CheatForm.Cheat8Edit.Enabled = not sender.Checked
+end
+
+CheatForm.Show()
+timer = createTimer(MainForm)
+timer.Interval = 50
+timer.OnTimer = function(timer)
+	timer.destroy()
+	hideAllCEWindows()
+end
+&lt;/pre>
+
+
+And that's a basic cheat form for the Cheat Engine tutorial (x32).
+
+&lt;br>
+== See Also ==
+{{TutorialsCE}}
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Template:TutorialsCE" title="Template:TutorialsCE">Template:TutorialsCE</a> (<a href="https://wiki.cheatengine.org/index.php?title=Template:TutorialsCE&amp;action=edit" title="Template:TutorialsCE">edit</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI" title="Tutorial:LuaFormGUI">Tutorial:LuaFormGUI</a>.</p>
+<br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI">https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Tutorial%3ALuaFormGUI&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Tutorial%3ALuaFormGUI&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Tutorial:LuaFormGUI&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI">Read</a></span></li><li id="ca-edit" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&amp;action=edit" title="Edit this page">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Tutorial:LuaFormGUI" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Tutorial:LuaFormGUI" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":416});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:LuaFormGUI&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 18:58:20 GMT -->
+</html>

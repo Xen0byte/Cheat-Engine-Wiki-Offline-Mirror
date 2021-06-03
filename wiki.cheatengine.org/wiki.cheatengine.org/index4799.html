@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:26:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Lua - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lua","wgTitle":"Lua","wgCurRevisionId":7019,"wgRevisionId":0,"wgArticleId":455,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Lua","wgRelevantArticleId":455,"wgRequestId":"bc5773902599bcb613615d2c","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loadc219.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Lua&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Lua&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Lua rootpage-Lua skin-vector action-edit">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">View source for Lua</h1>			<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">← <a href="https://wiki.cheatengine.org/index.php?title=Lua" title="Lua">Lua</a></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="https://wiki.cheatengine.org/index.php?title=Special:Preferences" title="Special:Preferences">user preferences</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;!-- Updated to 6.7 celua.text TheyCallMeTim13 -->
+[[Category:Lua]]
+Cheat Engine comes with an extensive set of Lua functions you can use inside cheat tables, trainers and standalone scripts.
+
+
+= Variables =
+
+== Globals ==
+* [[Lua:TrainerOrigin|TrainerOrigin]]: A variable that contains the path of the trainer that launched cheat engine (Only set when launched as a trainer)
+* [[Lua:process|process]]: A variable that contains the main modulename of the currently opened process
+* [[Lua:MainForm|MainForm]]: The main Cheat Engine gui
+* [[Lua:AddressList|AddressList]]: The address list of the main Cheat Engine gui
+
+== Variables ==
+* [[Lua:Debug_Variables|Debug Variables]]
+** EFLAGS
+** '''32/64-bit''': EAX, EBX, ECX, EDX, EDI, ESI, EBP, ESP, EIP
+** '''64-bit only''': RAX, RBX, RCX, RDX, RDI, RSI, RBP, RSP, RIP, R8, R9, R10, R11, R12, R13, R14, R15 : The value of the register
+
+= Functions =
+
+== Cheat table ==
+These functions help manage the cheat table.
+
+* [[Lua:getAddressList|getAddressList]]: Returns the cheat table [[Lua:Class:Addresslist|Addresslist]] object
+* [[Lua:findTableFile|findTableFile]]: Returns a [[Lua:Class:TableFile|TableFile]] stored in the cheat table
+* [[Lua:createTableFile|createTableFile]]: Add a new file to a cheat table
+* [[Lua:loadTable|loadTable]]: Loads a ".ct" or ".cetrainer" file or stream
+* [[Lua:saveTable|saveTable]]: Saves the current table
+
+== Trainers ==
+* [[Lua:registerEXETrainerFeature|registerEXETrainerFeature]]: Adds a new feature to the exe trainer generator window, and calls your function when the user builds an .exe trainer
+* [[Lua:unregisterEXETrainerFeature|unregisterEXETrainerFeature]]: Unregisters the trainer feature
+
+
+== Protection ==
+* [[Lua:activateProtection|activateProtection]]: Prevents basic memory scanners from opening the cheat engine process
+* [[Lua:enableDRM|enableDRM]]: Prevents normal memory scanners from reading the Cheat Engine process (kernelmode)
+* [[Lua:encodeFunction|encodeFunction]]: Converts a given function into an encoded string that you can pass on to [[Lua:decodeFunction|decodeFunction]]
+* [[Lua:decodeFunction|decodeFunction]]: Converts an encoded string back into a function
+
+
+== Scanning ==
+These functions control Cheat Engine's scanning.
+
+* [[Lua:AOBScan|AOBScan]]: Scans the currently opened process and returns a [[Lua:Class:StringList|StringList]] object containing all the results
+* [[Lua:getCurrentMemscan|getCurrentMemscan]]: Returns the currently active scan session as a [[Lua:Class:MemScan|MemScan]] object
+
+
+== Process ==
+* [[Lua:createProcess|createProcess]]: Creates a process with or without debugging
+* [[Lua:openProcess|openProcess]]: Causes cheat engine to open the given processname or id
+* [[Lua:onOpenProcess|onOpenProcess]]: Called by CE when it opens a process (userdefined)
+* [[Lua:getForegroundProcess|getForegroundProcess]]: Returns the process ID of the process that is currently on top
+* [[Lua:getOpenedProcessID|getOpenedProcessID]]: Returns the currently opened process
+* [[Lua:getProcessIDFromProcessName|getProcessIDFromProcessName]]: Returns a processid
+* [[Lua:openFileAsProcess|openFileAsProcess]]: Causes cheat engine to open the file with memory access as if it's a process
+* [[Lua:saveOpenedFile|saveOpenedFile]]: Saves the changes of the opened file
+* [[Lua:setPointerSize|setPointerSize]]: Sets the size cheat engine will deal with pointers in bytes. (Some 64-bit processes can only use 32-bit addresses)
+* [[Lua:setAssemblerMode|setAssemblerMode]]: Sets the assembler's bit size mode (0=32-bit, 1=64-bit)
+* [[Lua:getProcesslist|getProcesslist]]: Returns a processlist of the system
+* [[Lua:getWindowlist|getWindowlist]]: Returns the top-window list of the system
+* [[Lua:pause|pause]]: Pauses the current opened process
+* [[Lua:unpause|unpause]]: Resumes the current opened process
+* [[Lua:targetIs64Bit|targetIs64Bit]]: Returns true if the target process is 64-bit, false if 32-bit
+* [[Lua:enumModules|enumModules]]: Returns a table containing information about each module in the current process, or the specified process ID
+* [[Lua:closeRemoteHandle|closeRemoteHandle]]: Closes the handle of a process
+
+
+== Threads ==
+* [[Lua:getCPUCount|getCPUCount]]: Returns the number of CPU's
+* [[Lua:getThreadlist|getThreadlist]]: Fills a List object with the threadlist of the currently opened process
+* [[Lua:inMainThread|inMainThread]]: Returns true if the current code is running inside the main thread (6.4+)
+* [[Lua:synchronize|synchronize]]: Calls the given function from the main thread. Returns the return value of the given function
+* [[Lua:queue|queue]]: Calls the given function from the main thread. Does not wait for the result
+* [[Lua:checkSynchronize|checkSynchronize]]: Call this from an infinite loop in the main thread when using threading and synchronize calls
+
+
+== Handles ==
+* [[Lua:getHandleList|getHandleList]]: Returns a table with all the handles in the system
+
+
+== Addresses ==
+These functions help convert between memory addresses and [[symbol]]s/[[CEAddressString]]s.
+
+* [[Lua:getAddress|getAddress]]: Returns the address of a symbol. Can be a modulename or an export
+* [[Lua:getAddressSafe|getAddressSafe]]: Returns the address of a symbol, or nil if not found. Similar to getAddress when errorOnLookup is false, but returns nil instead
+* [[Lua:getNameFromAddress|getNameFromAddress]]: Returns the given address in string form, returning the symbol representation if possible
+* [[Lua:registerSymbol|registerSymbol]]: Assign the specified symbolname to an address
+* [[Lua:unregisterSymbol|unregisterSymbol]]: Remove the name from the address
+* [[Lua:getSymbolInfo|getSymbolInfo]]: Returns a table as defined by the [[Lua:Class:SymbolList|SymbolList]] class object (module name, search key, address, size)
+* [[Lua:reinitializeSymbolhandler|reinitializeSymbolhandler]]: Reinitializes the symbolhandler. E.g when new modules have been loaded
+* [[Lua:inModule|inModule]]: Returns true if the given address is inside a module
+* [[Lua:inSystemModule|inSystemModule]]: Returns true if the given address is inside a system module
+* [[Lua:getModuleSize|getModuleSize]]: Returns the size of a given module (Use getAddress to get the base address)
+* [[Lua:errorOnLookupFailure|errorOnLookupFailure]]: Set whether address lookups will throw errors, or just return 0.
+* [[Lua:registerSymbolLookupCallback|registerSymbolLookupCallback]]: Registers a function to be called when a a symbol is parsed
+* [[Lua:unregisterSymbolLookupCallback|unregisterSymbolLookupCallback]]: Removes the callback
+* [[Lua:registerAddressLookupCallback|registerAddressLookupCallback]]: Registers a function to be called when the name of an address is requested
+* [[Lua:unregisterAddressLookupCallback|unregisterAddressLookupCallback]]: Removes the callback
+* [[Lua:reinitializeDotNetSymbolhandler|reinitializeDotNetSymbolhandler]]: Reinitializes only the DotNet part of the symbol list
+
+
+== Memory ==
+* [[Lua:allocateMemory|allocateMemory]]: Allocates some memory into the target process
+* [[Lua:deAlloc|deAlloc]]: Frees allocated memory
+* [[Lua:allocateSharedMemory|allocateSharedMemory]]: Creates a shared memory object of the given size if it doesn't exist yet
+* [[Lua:createSection|createSection]]: Creates a 'section' in memory
+* [[Lua:mapViewOfSection|mapViewOfSection]]: Maps the section to memory
+* [[Lua:unMapViewOfSection|unMapViewOfSection]]: Unmaps a section from memory
+* [[Lua:copyMemory|copyMemory]]: Copies memory from the given address to the destination address
+* [[Lua:allocateKernelMemory|allocateKernelMemory]]: Allocates a block of nonpaged memory and returns the address
+* [[Lua:freeKernelMemory|freeKernelMemory]]: Frees the given memory region
+* [[Lua:mapMemory|mapMemory]]: Maps a specific address to the usermode context from the given PID to the given PID
+* [[Lua:unmapMemory|unmapMemory]]: 
+* [[Lua:createMemoryStream|createMemoryStream]]: 
+
+These functions read/write memory from the opened process.
+
+=== Reading ===
+* [[Lua:readBytes|readBytes]]: Returns the bytes at the given address. If ReturnAsTable is true it will return a table instead of multiple bytes
+* [[Lua:readSmallInteger|readSmallInteger]]: Reads a 16-bit integer from the specified address.
+* [[Lua:readInteger|readInteger]]: Reads a 32-bit integer from the specified address.
+* [[Lua:readQword|readQword]]: Reads a 64-bit integer from the specified address.
+* [[Lua:readPointer|readPointer]]: In a 64-bit target this equals readQword, in a 32-bit target readInteger().
+* [[Lua:readFloat|readFloat]]: Reads a single precision floating point value from the specified address
+* [[Lua:readDouble|readDouble]]: Reads a double precision floating point value from the specified address
+* [[Lua:readString|readString]]: Reads a string from memory until it hits a 0-terminator. maxlength is just so you won't freeze for too long
+* [[Lua:readRegionFromFile|readRegionFromFile]]: Writes the given file to a specific address
+
+* [[Lua:readBytesLocal|readBytesLocal]]: See readBytes but then it's for Cheat engine's memory
+* [[Lua:readSmallIntegerLocal|readSmallIntegerLocal]]: Reads a 16-bit integer from the specified address in CE's memory
+* [[Lua:readIntegerLocal|readIntegerLocal]]: Reads a 32-bit integer from the specified address in CE's memory
+* [[Lua:readQwordLocal|readQwordLocal]]: Reads a 64-bit integer from the specified address in CE's memory
+* [[Lua:readPointerLocal|readPointerLocal]]: [[Lua:ReadQwordLocal|ReadQwordLocal]]/[[Lua:ReadIntegerLocal|ReadIntegerLocal]] depending on the cheat engine build
+* [[Lua:readFloatLocal|readFloatLocal]]: Reads a single precision floating point value from the specified address in CE's memory
+* [[Lua:readDoubleLocal|readDoubleLocal]]: Reads a double precision floating point value from the specified address in CE's memory
+* [[Lua:readStringLocal|readStringLocal]]: Reads a string from CE's memory until it hits a 0-terminator
+
+
+=== Writing ===
+* [[Lua:writeBytes|writeBytes]]: Write the given bytes to the given address from a table
+* [[Lua:writeSmallInteger|writeSmallInteger]]: Writes a 16-bit integer to the specified address. Returns true on success.
+* [[Lua:writeInteger|writeInteger]]: Writes a 32-bit integer to the specified address. Returns true on success.
+* [[Lua:writeQword|writeQword]]: Write a 64-bit integer to the specified address. Returns true on success.
+* [[Lua:writeFloat|writeFloat]]: Writes a single precision floating point to the specified address. Returns true on success.
+* [[Lua:writeDouble|writeDouble]]: Writes a double precision floating point to the specified address. Returns true on success.
+* [[Lua:writeString|writeString]]: Write a string to the specified address. Returns true on success.
+* [[Lua:writeRegionToFile|writeRegionToFile]]: Writes the given region to a file. Returns the number of bytes written.
+
+* [[Lua:writeSmallIntegerLocal|writeSmallIntegerLocal]]: Writes a 16-bit integer to the specified address in CE's memory. Returns true on success
+* [[Lua:writeIntegerLocal|writeIntegerLocal]]: Writes a 32-bit integer to the specified address in CE's memory. Returns true on success
+* [[Lua:writeQwordLocal|writeQwordLocal]]: Writes a 64-bit integer to the specified address in CE's memory. Returns true on success
+* [[Lua:writeFloatLocal|writeFloatLocal]]: Writes a single precision floating point to the specified address in CE's memory. Returns true on success
+* [[Lua:writeDoubleLocal|writeDoubleLocal]]: Writes a double precision floating point to the specified address in CE's memory. Returns true on success
+* [[Lua:writeStringLocal|writeStringLocal]]: Write a string to the specified address. Returns true on success.
+* [[Lua:writeBytesLocal|writeBytesLocal]]: See writeBytes but then it's for Cheat Engine's memory
+
+** [[Lua:readSmallInteger|readSmallInteger]], [[Lua:readInteger|readInteger]], [[Lua:readSmallIntegerLocal|readSmallIntegerLocal]], [[Lua:readIntegerLocal|readIntegerLocal]] can also have second boolean parameter. If true, value will be signed.
+
+== Conversions ==
+* [[Lua:ansiToUtf8|ansiToUtf8]]: Converts a string in ANSI encoding to UTF8
+* [[Lua:utf8ToAnsi|utf8ToAnsi]]: Converts a string in UTF8 encoding to ANSI
+* [[Lua:stringToMD5String|stringToMD5String]]: Returns an MD5 hash string from the provided string
+* [[Lua:integerToUserData|integerToUserData]]: Converts a given integer to a userdata variable
+* [[Lua:userDataToInteger|userDataToInteger]]: Converts a given userdata variable to an integer
+
+=== To Byte Table ===
+* [[Lua:wordToByteTable|wordToByteTable]]: Converts a word to a bytetable
+* [[Lua:dwordToByteTable|dwordToByteTable]]: Converts a dword to a bytetable
+* [[Lua:qwordToByteTable|qwordToByteTable]]: Converts a qword to a bytetable
+* [[Lua:floatToByteTable|floatToByteTable]]: Converts a float to a bytetable
+* [[Lua:doubleToByteTable|doubleToByteTable]]: Converts a double to a bytetable
+* [[Lua:stringToByteTable|stringToByteTable]]: Converts a string to a bytetable
+* [[Lua:wideStringToByteTable|wideStringToByteTable]]: Converts a string to a widestring and converts that to a bytetable
+
+=== From Byte Table ===
+* [[Lua:byteTableToWord|byteTableToWord]]: Converts a bytetable to a word
+* [[Lua:byteTableToDword|byteTableToDword]]: Converts a bytetable to a dword
+* [[Lua:byteTableToQword|byteTableToQword]]: Converts a bytetable to a qword
+* [[Lua:byteTableToFloat|byteTableToFloat]]: Converts a bytetable to a float
+* [[Lua:byteTableToDouble|byteTableToDouble]]: Converts a bytetable to a double
+* [[Lua:byteTableToString|byteTableToString]]: Converts a bytetable to a string
+* [[Lua:byteTableToWideString|byteTableToWideString]]: Converts a bytetable to a widestring and converts that to a string
+
+
+=== Binary ===
+* [[Lua:bOr|bOr]]: Binary Or
+* [[Lua:bXor|bXor]]: Binary Xor
+* [[Lua:bAnd|bAnd]]: Binary And
+* [[Lua:bShl|bShl]]: Binary shift left
+* [[Lua:bShr|bShr]]: Binary shift right
+* [[Lua:bNot|bNot]]: Binary not
+
+== Input devices ==
+These functions get/set keyboard/mouse input.
+
+* [[Lua:getMousePos|getMousePos]]: Returns the ''X'' and ''Y'' coordinates of the mouse
+* [[Lua:setMousePos|setMousePos]]: Sets the mouse position
+* [[Lua:isKeyPressed|isKeyPressed]]: Returns true if the specified key is currently pressed
+* [[Lua:keyDown|keyDown]]: Causes the key to go into down state
+* [[Lua:keyUp|keyUp]]: Causes the key to go up
+* [[Lua:doKeyPress|doKeyPress]]: Simulates a key press
+* [[Lua:mouse_event|mouse_event]]: The Windows' API ''"mouse_event"''. [https://msdn.microsoft.com/en-us/library/windows/desktop/ms646260(v=vs.85).aspx msdn.microsoft.com/en-us/library/windows/desktop/ms646260(v=vs.85).aspx]
+* [[Lua:setGlobalKeyPollInterval|setGlobalKeyPollInterval]]: Sets the global keypoll interval
+* [[Lua:setGlobalDelayBetweenHotkeyActivation|setGlobalDelayBetweenHotkeyActivation]]: Sets the minimum delay between the activation of the same hotey in milliseconds
+
+=== Game Controller ===
+* [[Lua:getXBox360ControllerState|getXBox360ControllerState]]: Fetches the state of the connected XBox controller
+* [[Lua:setXBox360ControllerVibration|setXBox360ControllerVibration]]: Sets the speed of the left and right vibrating motor inside the controller
+
+=== Clipboard ===
+* [[Lua:writeToClipboard|writeToClipboard]]: Writes the given text to the clipboard
+* [[Lua:readFromClipboard|readFromClipboard]]: Reads the text from the clipboard
+
+
+== Screen ==
+* [[Lua:getScreenHeight|getScreenHeight]]: Returns the screen height
+* [[Lua:getScreenWidth|getScreenWidth]]: Returns the screen  width
+* [[Lua:getWorkAreaHeight|getWorkAreaHeight]]: Returns the work area height
+* [[Lua:getWorkAreaWidth|getWorkAreaWidth]]: Returns the work area width
+* [[Lua:getScreenCanvas|getScreenCanvas]]: Returns a Canvas object you can use to write to the screen (Note: Not as useful as you may think)
+* [[Lua:getPixel|getPixel]]: Returns the RGB value of the pixel at the specific screen coordinate
+
+
+== Sounds ==
+* [[Lua:playSound|playSound]]: Plays a sound file
+* [[Lua:beep|beep]]: Plays the fabulous beep/ping sound!
+* [[Lua:speak|speak]]: Speaks a given text using the given flags [https://msdn.microsoft.com/en-us/library/speechplatform_speakflags.aspx msdn.microsoft.com/en-us/library/speechplatform_speakflags.aspx]
+* [[Lua:speakEnglish|speakEnglish]]: Will try the English voice by wrapping the given text into an XML statement specifying the English voice
+
+=== xmplayer ===
+* [[Lua:xmplayer_playXM|xmplayer_playXM]]: Plays the given filename using the xmplayer
+* [[Lua:xmplayer_pause|xmplayer_pause]]: Pauses the current xm audio file
+* [[Lua:xmplayer_resume|xmplayer_resume]]: Resumes the current xm audio file
+* [[Lua:xmplayer_stop|xmplayer_stop]]: Stops the current xm audio file
+* [[Lua:xmplayer_isPlaying|xmplayer_isPlaying]]: Returns true if there is currently an xm audio file being played
+
+== Text to Speech ==
+* [[Lua:speak|speak]]: Speaks a given text.
+* [[Lua:speakEnglish|speakEnglish]]: Speaks a given text with English voice.
+
+
+== Fonts ==
+
+* [[Lua:loadFontFromStream|loadFontFromStream]]: Loads a font from a memory stream and returns an id (handle) to the font for use with [[unloadLoadedFont]]
+* [[Lua:unloadLoadedFont|unloadLoadedFont]]: Unloads a font from a memory stream
+
+
+== Forms and Windows ==
+
+* [[Lua:findWindow|findWindow]]: Finds a window with the given classname and/or windowname
+* [[Lua:getWindow|getWindow]]: Gets a specific window based on the given window (Check MSDN getWindow for the command description)
+* [[Lua:getWindowCaption|getWindowCaption]]: Returns the caption of the window
+* [[Lua:getWindowClassName|getWindowClassName]]: Returns the classname of the window
+* [[Lua:getWindowProcessID|getWindowProcessID]]: Returns the processid of the process this window belongs to
+* [[Lua:getForegroundWindow|getForegroundWindow]]: Returns the windowhandle of the topmost window
+* [[Lua:sendMessage|sendMessage]]: Sends a message to a window
+* [[Lua:hookWndProc|hookWndProc]]: Hooks a window's wndproc procedure
+* [[Lua:unhookWndProc|unhookWndProc]]: Called when done with the hook from [[Lua:hookWndProc|hookWndProc]]
+
+
+== Cheat Engine ==
+These functions help manage Cheat Engine itself.
+
+* [[Lua:getCEVersion|getCEVersion]]: Returns a floating point value specifying the version of cheat engine
+* [[Lua:getCheatEngineFileVersion|getCheatEngineFileVersion]]: Returns the full version data of the cheat engine version. A raw integer, and a table containing major, minor, release and build
+* [[Lua:getFreezeTimer|getFreezeTimer]]: Returns the Timer object responsible for freezing values
+* [[Lua:getUpdateTimer|getUpdateTimer]]: Returns the Timer object responsible for updating the value list
+* [[Lua:getCommonModuleList|getCommonModuleList]]: Returns the commonModuleList [[Lua:Class:StringList|StringList]] object
+* [[Lua:getCheatEngineProcessID|getCheatEngineProcessID]]: Returns the processid of cheat engine
+* [[Lua:cheatEngineIs64Bit|cheatEngineIs64Bit]]: Returns true if Cheat Engine is 64-bit, false if 32-bit
+* [[Lua:closeCE|closeCE]]: Closes Cheat Engine
+* [[Lua:getAutoAttachList|getAutoAttachList]]: Returns the AutoAttach [[Lua:Class:StringList|StringList]] object
+* [[Lua:connectToCEServer|connectToCEServer]]: Connects to the given host and port. On success, most commands subsequent will be handled by the server
+* [[Lua:supportCheatEngine|supportCheatEngine]]: Will show an advertising window which will help keep the development of Cheat Engine going.
+* [[Lua:fuckCheatEngine|fuckCheatEngine]]: Removes the ad window if it was showing
+* [[Lua:getCheatEngineDir|getCheatEngineDir]]: Returns the folder Cheat Engine (or the trainer) is located at.
+* [[Lua:getComment|getComment]]: Gets the userdefined comment at the specified address
+* [[Lua:setComment|setComment]]: Sets a userdefined comment at the specifried address
+* [[Lua:getHeader|getHeader]]: Gets the userdefined header at the specified address
+* [[Lua:setHeader|setHeader]]: Sets the userdefined header at the specified address
+* [[Lua:registerBinUtil|registerBinUtil]]: Registers a binutils toolset with Cheat Engine
+* [[Lua:reloadSettingsFromRegistry|reloadSettingsFromRegistry]]: This will cause cheat engine to reload the settings from the registry and apply them
+* [[Lua:loadPlugin|loadPlugin]]: Loads the given plugin
+* [[Lua:getSettings|getSettings]]: Returns a settings object
+
+=== Forms ===
+* [[Lua:getFormCount|getFormCount]]: Returns the total number of forms assigned to the main CE application
+* [[Lua:getForm|getForm]]: Returns the form at the specific index
+* [[Lua:getMemoryViewForm|getMemoryViewForm]]: Returns the first Memoryview form class object
+* [[Lua:getMainForm|getMainForm]]: Returns the first Mainform class object
+* [[Lua:getSettingsForm|getSettingsForm]]: Returns the main settings form
+* [[Lua:getLuaEngine|getLuaEngine]]: Returns the lua engine form object (Creates it if needed)
+* [[Lua:unhideMainCEwindow|unhideMainCEwindow]]: Shows the main Cheat Engine window
+* [[Lua:hideAllCEWindows|hideAllCEWindows]]: Makes all normal Cheat Engine windows invisible (e.g trainer table)
+* [[Lua:registerFormAddNotification|registerFormAddNotification]]: Registers a function to be called when a form is attached to Cheat Engine's form list
+* [[Lua:unregisterFormAddNotification|unregisterFormAddNotification]]: unregister the FormAddNotification call back
+
+=== Messages ===
+* [[Lua:showMessage|showMessage]]: Shows a message box with the given text
+* [[Lua:messageDialog|messageDialog]]: Pops up a message box
+* [[Lua:outputDebugString|outputDebugString]]: Outputs a message using the windows OutputDebugString message
+* [[Lua:processMessages|processMessages]]: Lets the main eventhandler process the new messages (allows for new button clicks)
+
+=== Input ===
+* [[Lua:inputQuery|inputQuery]]: Shows a dialog where the user can input a string. This function returns the given string, or nil on cancel  (CE6.4+)
+
+=== Shortcuts ===
+* [[Lua:shortCutToText|shortCutToText]]: Returns the textual representation of the given shortcut value (integer) (6.4+)
+* [[Lua:textToShortCut|textToShortCut]]: Returns an shortcut integer that the given string represents.  (6.4+)
+* [[Lua:convertKeyComboToString|convertKeyComboToString]]: Returns a string representation of the given keys like the hot-key handler does
+
+=== Speed Hack ===
+* [[Lua:speedhack_setSpeed|speedhack_setSpeed]]: Enables the speed hack if it was not active yet and sets the given speed
+* [[Lua:speedhack_getSpeed|speedhack_getSpeed]]: Returns the last set speed
+
+
+== Lua ==
+These functions help manage Lua itself.
+
+* [[Lua:resetLuaState|resetLuaState]]: This will create a new Lua state that will be used.
+* [[Lua:sleep|sleep]]: Pauses for the number of specified milliseconds
+* [[Lua:createRef|createRef]]: Integer - Returns an integer reference that you can use with getRef
+* [[Lua:getRef|getRef]]: Returns whatever the reference points out
+* [[Lua:destroyRef|destroyRef]]: Removes the reference
+
+
+== Types ==
+These functions help structure a process's memory into datatypes.
+
+* [[Lua:onAutoGuess|onAutoGuess]]: Registers an function to be called whenever autoguess is used to predict a variable type.
+* [[Lua:registerCustomTypeLua|registerCustomTypeLua]]: Registers a [[custom type]] based on Lua functions.
+* [[Lua:registerCustomTypeAutoAssembler|registerCustomTypeAutoAssembler]]: Registers a custom type based on an auto assembler script.
+
+
+== Object-oriented ==
+These functions determine how a Lua object fits in the class hierarchy.
+
+* [[Lua:inheritsFromObject|inheritsFromObject]]: Returns true if given any class
+* [[Lua:inheritsFromComponent|inheritsFromComponent]]: Returns true if the given object inherits from the Component class
+* [[Lua:inheritsFromControl|inheritsFromControl]]: Returns true if the given object inherits from the Control class
+* [[Lua:inheritsFromWinControl|inheritsFromWinControl]]: Returns true if the given object inherits from the WinControl class
+
+
+== Assembly ==
+
+These functions help work with the x86 machine code as assembly.
+
+* [[Lua:autoAssemble|autoAssemble]]: Runs the auto assembler with the given text
+* [[Lua:autoAssembleCheck|autoAssembleCheck]]: Checks the script for syntax errors. Returns true on succes, false with an error message on failure
+* [[Lua:disassemble|disassemble]]: Disassembles the given address and returns a string in the format of "address - bytes - opcode  extra"
+* [[Lua:splitDisassembledString|splitDisassembledString]]: Returns 4 strings. The address, bytes, opcode and extra field
+* [[Lua:getInstructionSize|getInstructionSize]]: Returns the size of an instruction
+* [[Lua:getPreviousOpcode|getPreviousOpcode]]: Returns the address of the previous opcode (guess)
+* [[Lua:registerAssembler|registerAssembler]]: Registers a function to be called when the single line assembler is invoked to convert an instruction to a list of bytes
+* [[Lua:unregisterAssembler|unregisterAssembler]]: Unregisters the registered assembler
+
+
+== Auto Assembler ==
+* [[Lua:registerAutoAssemblerCommand|registerAutoAssemblerCommand]]: Registers an auto assembler command to call the specified function
+* [[Lua:unregisterAutoAssemblerCommand|unregisterAutoAssemblerCommand]]: Unregisters an auto assembler command
+* [[Lua:registerAutoAssemblerPrologue|registerAutoAssemblerPrologue]]: Registers a function to be called when the auto assembler is about to parse an auto assembler script
+* [[Lua:unregisterAutoAssemblerPrologue|unregisterAutoAssemblerPrologue]]: Unregisters an auto assembler prologue
+* [[Lua:fullAccess|fullAccess]]: Changes the protection of a block of memory to writable and executable
+
+
+=== Scripts ===
+* [[Lua:registerAutoAssemblerTemplate|registerAutoAssemblerTemplate]]: Registers a template for the auto assembler
+* [[Lua:unregisterAutoAssemblerTemplate|unregisterAutoAssemblerTemplate]]: Unregisters a template for the auto assembler
+* [[Lua:generateCodeInjectionScript|generateCodeInjectionScript]]: Adds a default code injection script to the given script
+* [[Lua:generateAOBInjectionScript|generateAOBInjectionScript]]: Adds an AOB injection script to the given script
+* [[Lua:generateFullInjectionScript|generateFullInjectionScript]]: Adds a Full Injection script to the given script
+* [[Lua:generateAPIHookScript|generateAPIHookScript]]: Generates an auto assembler script which will hook the given address when executed
+
+
+== Debugger ==
+These functions manage the debugger. See ''[[Lua Debugging]]''.
+
+* [[Lua:debug_isDebugging|debug_isDebugging]]: Returns true if the debugger has been started
+* [[Lua:debug_getCurrentDebuggerInterface|debug_getCurrentDebuggerInterface]]: Returns the current debuggerinterface used (1=windows, 2=VEH 3=Kernel, nil=no debugging active)
+* [[Lua:debug_canBreak|debug_canBreak]]: Returns true if there is a possibility the target can stop on a breakpoint. 6.4+
+* [[Lua:debug_isBroken|debug_isBroken]]: Returns true if the debugger is currently halted on a thread
+* [[Lua:debug_getBreakpointList|debug_getBreakpointList]]: Returns a lua table containing all the breakpoint addresses
+* [[Lua:debugProcess|debugProcess]]: Debugs the currently attached process
+* [[Lua:debug_setBreakpoint|debug_setBreakpoint]]: Sets a breakpoint of a specific size at the given address
+* [[Lua:debugger_onBreakpoint|debugger_onBreakpoint]]: Called by CE when a breakpoint hits (userdefined)
+* [[Lua:debug_removeBreakpoint|debug_removeBreakpoint]]: Removes a breakpoint
+* [[Lua:debug_continueFromBreakpoint|debug_continueFromBreakpoint]]: Continues the debugger when it's halted on a breakpoint
+* [[Lua:debug_setLastBranchRecording|debug_setLastBranchRecording]]: Tells the kernelmode debugger to record the last few branches before the breakpoint got hit
+* [[Lua:debug_getMaxLastBranchRecord|debug_getMaxLastBranchRecord]]: Returns the maximum number of branch records this cpu supports
+* [[Lua:debug_getLastBranchRecord|debug_getLastBranchRecord]]: Returns the value of the Last Branch Record at the given index (when handling a breakpoint)
+* [[Lua:debugger_onModuleLoad|debugger_onModuleLoad]]: Called by CE when the windows debugger interface loads a module (userdefined)
+* [[Lua:debug_getContext|debug_getContext]] (since 6.5): Force-update the Lua variables representing the registers?
+* [[Lua:debug_setContext|debug_setContext]] (since 6.5[http://www.cheatengine.org/forum/viewtopic.php?p=5639331&amp;sid=755d2d512f48af1f29382048087761b9#5639331]): Force-update the registers to the Lua variables which represent them?
+* [[Lua:debug_updateGUI|debug_updateGUI]]: Will refresh the userinterface to reflect the new context if the debugger was broken
+* [[Lua:detachIfPossible|detachIfPossible]]: Detaches the debugger from the target process (if it was attached)
+* [[Lua:debug_addThreadToNoBreakList|debug_addThreadToNoBreakList]]: This will cause breakpoints on the provided thread to be ignored
+* [[Lua:debug_removeThreadFromNoBreakList|debug_removeThreadFromNoBreakList]]: removed the threadid from the list
+* [[Lua:debug_getXMMPointer|debug_getXMMPointer]]: Returns the address of the specified xmm register of the thread that is currently broken
+* [[Lua:debugger_onModuleLoad|debugger_onModuleLoad]]: This routine is called when a module is loaded. Only works for the windows debugger
+
+
+== DBK ==
+* [[Lua:dbk_initialize|dbk_initialize]]: Loads the DBK driver into memory if possible
+* [[Lua:dbk_useKernelmodeOpenProcess|dbk_useKernelmodeOpenProcess]]: Switches the internal pointer of the OpenProcess api to dbk_OpenProcess
+* [[Lua:dbk_useKernelmodeProcessMemoryAccess|dbk_useKernelmodeProcessMemoryAccess]]: Switches the internal pointer to the ReadProcessMemory and WriteProcessMemory apis to dbk_ReadProcessMemory and dbk_WriteProcessMemory
+* [[Lua:dbk_useKernelmodeQueryMemoryRegions|dbk_useKernelmodeQueryMemoryRegions]]: Switches the internal pointer to the QueryVirtualMemory api to dbk_QueryVirtualMemory
+* [[Lua:dbk_getPEProcess|dbk_getPEProcess]]: Returns the pointer of the EProcess structure of the selected processid
+* [[Lua:dbk_getPEThread|dbk_getPEThread]]: Gets the pointer to the EThread structure of a threadid
+* [[Lua:dbk_readMSR|dbk_readMSR]]: Reads the msr using the dbk driver
+* [[Lua:dbk_writeMSR|dbk_writeMSR]]: Writes the msr using the dbk driver
+* [[Lua:dbk_executeKernelMemory|dbk_executeKernelMemory]]: Executes a routine from kernelmode (e.g a routine written there with auto assembler)
+* [[Lua:dbk_getCR0|dbk_getCR0]]: Returns Control Register 0
+* [[Lua:dbk_getCR3|dbk_getCR3]]: Returns Control Register 3 of the currently opened process
+* [[Lua:dbk_getCR4|dbk_getCR4]]: Returns Control Register 4
+* [[Lua:dbk_getPhysicalAddress|dbk_getPhysicalAddress]]: Returns the physical address of the given address
+* [[Lua:dbk_writesIgnoreWriteProtection|dbk_writesIgnoreWriteProtection]]: Set to true if you do not wish to initiate copy-on-write behaviour
+
+
+== DBVM ==
+* [[Lua:dbvm_initialize|dbvm_initialize]]: Initializes the dbvm functions
+* [[Lua:dbvm_addMemory|dbvm_addMemory]]: Adds memory to DBVM
+* [[Lua:dbvm_readMSR|dbvm_readMSR]]: Reads the msr using dbvm (bypasses the driver)
+* [[Lua:dbvm_writeMSR|dbvm_writeMSR]]: Writes the msr using dbvm (bypasses the driver)
+* [[Lua:dbvm_getCR4|dbvm_getCR4]]: Returns the real Control Register 4 state
+* [[Lua:dbvm_readPhysicalMemory|dbvm_readPhysicalMemory]]: Reads physical memory using DBVM
+* [[Lua:dbvm_writePhysicalMemory|dbvm_writePhysicalMemory]]: Writes physical memory using DBVM
+* [[Lua:dbvm_watch_writes|dbvm_watch_writes]]: Starts memory region write monitoring
+* [[Lua:dbvm_watch_reads|dbvm_watch_reads]]: Starts memory region read monitoring
+* [[Lua:dbvm_watch_retrievelog|dbvm_watch_retrievelog]]: Receives the result of memory region monitoring
+* [[Lua:dbvm_watch_disable|dbvm_watch_disable]]: Disables memory region monitoring
+* [[Lua:dbvm_cloak_activate|dbvm_cloak_activate]]: Cloak a page so changes to it will become invisible
+* [[Lua:dbvm_cloak_deactivate|dbvm_cloak_deactivate]]: Undo the cloak. Also undoes changes
+* [[Lua:dbvm_cloak_readOriginal|dbvm_cloak_readOriginal]]: Read the memory that gets executed in a cloaked region
+* [[Lua:dbvm_cloak_writeOriginal|dbvm_cloak_writeOriginal]]: Writes the memory that gets executed in a cloaked region
+* [[Lua:dbvm_changeregonbp|dbvm_changeregonbp]] : Cloaks and sets a breakpoint at the given address and change registers when executed
+* [[Lua:dbvm_removechangeregonbp|dbvm_removechangeregonbp]]: Removes a change reg on bp breakpoint
+* [[Lua:dbvm_log_cr3_start|dbvm_log_cr3_start]] : Start logging CR3 values
+* [[Lua:dbvm_log_cr3_stop|dbvm_log_cr3_stop]] : Stop logging CR3 values
+* [[Lua:dbvm_speedhack_setSpeed|dbvm_speedhack_setSpeed]] : sets the systemwide speedhack
+* [[Lua:dbvm_setTSCAdjust|dbvm_setTSCAdjust]] : Lets you specify what happens when a program tries to detect a virtual machine by calling rdtsc
+
+== Translation ==
+* [[Lua:getTranslationFolder|getTranslationFolder]]: Returns the path of the current translation files, empty if there is no translation going on
+* [[Lua:loadPOFile|loadPOFile]]: Loads a ''".PO"'' file used for translation
+* [[Lua:translate|translate]]: Returns a translation of the string, returns the same string if it can't be found
+* [[Lua:translateID|translateID]]: Returns a translation of the string ID
+
+
+== Files ==
+* [[Lua:getFileVersion|getFileVersion]]: Returns the 64-bit file version, and a table that has split up the file version into major, minor, release and build
+* [[Lua:getFileList|getFileList]]: Returns an indexed table with filenames
+* [[Lua:getDirectoryList|getDirectoryList]]: Returns an indexed table with directory names
+
+
+== Structures ==
+* [[Lua:registerStructureDissectOverride|registerStructureDissectOverride]]: same as [[Lua:onAutoGuess|onAutoGuess]], but is called by the structure dissect window when the user chooses to let cheat engine guess the structure for them
+* [[Lua:unregisterStructureDissectOverride|unregisterStructureDissectOverride]]: unregisters the structure dissect auto guess override
+* [[Lua:registerStructureNameLookup|registerStructureNameLookup]]: Registers a function to be called when dissect data asks the user for the name of a new structure define
+* [[Lua:unregisterStructureNameLookup|unregisterStructureNameLookup]]: 
+
+
+== Miscellaneous ==
+* [[Lua:injectDll|injectDll]]: Injects a dll
+* [[Lua:shellExecute|shellExecute]]: Executes a given command
+* [[Lua:executeCode|executeCode]]: Executes a stdcall function with 1 parameter at the given address in the target process and wait for it to return
+* [[Lua:executeCodeEx|executeCodeEx]]:
+* [[Lua:executeCodeLocal|executeCodeLocal]]: Executes a stdcall function with 1 parameter at the given address in the target process
+* [[Lua:executeCodeLocalEx|executeCodeLocalEx]]: 
+* [[Lua:onAPIPointerChange|onAPIPointerChange]]: Registers a callback when an api pointer is changed
+* [[Lua:setAPIPointer|setAPIPointer]]: Sets the pointer of the given api to the given address
+* [[Lua:md5memory|md5memory]]: Returns a md5 sum calculated from the provided memory
+* [[Lua:md5file|md5file]]: Returns a md5 sum calculated from the file
+* [[Lua:getSystemMetrics|getSystemMetrics]]: Retrieves the specified system metric or system configuration setting [https://msdn.microsoft.com/en-us/library/windows/desktop/ms724385.aspx msdn.microsoft.com/en-us/library/windows/desktop/ms724385.aspx]
+* [[Lua:getTickCount|getTickCount]]: Returns the current tickcount since windows was started. Each tick is one millisecond
+* [[Lua:getUserRegistryEnvironmentVariable|getUserRegistryEnvironmentVariable]]: Returns the environment variable stored in the user registry environment
+* [[Lua:setUserRegistryEnvironmentVariable|setUserRegistryEnvironmentVariable]]: Sets the environment variable stored in the user registry environment
+* [[Lua:broadcastEnvironmentUpdate|broadcastEnvironmentUpdate]]: Call this when you've changed the environment variables in the registry
+* [[Lua:getApplication|getApplication]]: Returns the application object (the titlebar)
+* [[Lua:getInternet|getInternet]]: Returns an internet class object.  The string provided will be the name of the client provided
+
+= Classes =
+Besides the above functions, Cheat Engine also implements some classes.
+
+* [[Lua:Class:Addresslist|Addresslist]]: The addresslist class is a container for memory records
+* [[Lua:Class:Bitmap|Bitmap]]: Bitmap based Graphic object
+* [[Lua:Class:Brush|Brush]]: The brush class is part of the Canvas object. It's used to fill surfaces
+* [[Lua:Class:Button|Button]]: The button class is a visual component in the shape of a button.
+* [[Lua:Class:ButtonControl|ButtonControl]]: Common ancestor of several button like objects.
+* [[Lua:Class:Canvas|Canvas]]: The canvas class is a graphical class. It allows you do draw lines, pictures, and text on top of other object. Usually used in onPaint events and other graphical events
+* [[Lua:Class:Calendar|Calendar]]: 
+* [[Lua:Class:CEForm|CEForm]]: 
+* [[Lua:Class:CheatComponent|CheatComponent]]: The cheatcomponent class is the component used in Cheat Engine 5.x trainers
+* [[Lua:Class:CheckBox|CheckBox]]: The Checkbox is a visual component that lets the user click it and change state between checked, unchecked, and if possible, grayed
+* [[Lua:Class:Component|Component]] : Base class for all components that need owner-owned functionality.
+* [[Lua:Class:Control|Control]] : Base class for visible controls.
+* [[Lua:Class:Collection|Collection]]: The Collection class is an abstract class that the ListColumns class implements (And perhaps other classes as well)
+* [[Lua:Class:CollectionItem|CollectionItem]]:  Basic object that is managed by a Collection class
+* [[Lua:Class:ComboBox|ComboBox]]: The Combobox is like an edit field with a ListBox attached to it
+* [[Lua:Class:CriticalSection|CriticalSection]]: 
+* [[Lua:Class:CustomControl|CustomControl]]: Base class for windowed controls which paint themselves
+* [[Lua:Class:CustomType|CustomType]]: The custom type is an convertor of raw data, to a human readable interpretation.
+* [[Lua:Class:D3DHOOK|D3DHOOK]]: The d3dhook functions provide a method to render graphics and text inside the game, as long as it is running in directx9, 10 or 11
+* [[Lua:Class:D3DHook_FontMap|D3DHook_FontMap]]: A fontmap is a texture that contains extra data regarding the characters
+* [[Lua:Class:D3DHook_Texture|D3DHook_Texture]]: This class controls the texture in memory. Without a sprite to use it, it won't show
+* [[Lua:Class:D3Dhook_TextContainer|D3Dhook_TextContainer]]: A d3dhook_sprite class draws a piece of text on the screen based on the used fontmap
+* [[Lua:Class:D3DHook_RenderObject|D3DHook_RenderObject]]: The renderobject is the abstract class used to control in what manner objects are rendered.
+* [[Lua:Class:D3DHook_Sprite|D3DHook_Sprite]]: A d3dhook_sprite class is a visible texture on the screen
+* [[Lua:Class:Disassembler|Disassembler]]: 
+* [[Lua:Class:Disassemblerview|Disassemblerview]]: The visual disassembler used in the memory view window
+* [[Lua:Class:DisassemblerviewLine|DisassemblerviewLine]]: 
+* [[Lua:Class:DissectCode|DissectCode]]: 
+* [[Lua:Class:Edit|Edit]]: The Edit class is a visual component that lets the user type in data (Use control_getCaption to get the user input)
+* [[Lua:Class:Event|Event]]: 
+* [[Lua:Class:FileStream|FileStream]]: The FileStream class is a Stream class that is linked to an open file on disk
+* [[Lua:Class:FileDialog|FileDialog]]: 
+* [[Lua:Class:FindDialog|FindDialog]]: 
+* [[Lua:Class:Font|Font]]: Class that defines a font
+* [[Lua:Class:Form|Form]]: Class that defines a window
+* [[Lua:Class:FoundList|FoundList]]: The foundlist is an companion class to MemScan. It opens the current memscan's result file and provides an interface for reading out the addresses
+* [[Lua:Class:GenericHotkey|GenericHotkey]]: Lets you register hotkeys to Cheat Engine's internal hotkey handler
+* [[Lua:Class:Graphic|Graphic]]: Base class for dealing with Graphic images (Abstract)
+* [[Lua:Class:GraphicControl|GraphicControl]]: Class that supports simple lightweight controls that do not need the ability to accept keyboard input or contain other controls. 
+* [[Lua:Class:GroupBox|GroupBox]]: The groupbox class is like a Panel, but then has a header on top
+* [[Lua:Class:Hexadecimal|Hexadecimal]]: The visual hexadecimal object used on the memory view window
+* [[Lua:Class:Hexadecimalview|Hexadecimalview]]: The visual hexadecimal object used on the memory view window
+* [[Lua:Class:Icon|Icon]]: 
+* [[Lua:Class:Image|Image]]: The Image class is a visual component that lets you show an image
+* [[Lua:Class:Internet|Internet]]: 
+* [[Lua:Class:JpegImage|JpegImage]]: 
+* [[Lua:Class:Label|Label]]: The Label class is a visual component that lets you display text
+* [[Lua:Class:LuaPipe|LuaPipe]]: Abstract class that [[Lua:Class:LuaPipeServer|LuaPipeServer]] and [[Lua:Class:LuaPipeclient|LuaPipeclient]] inherit from
+* [[Lua:Class:LuaPipeClient|LuaPipeClient]]: Class implementing a client that connects to a pipe
+* [[Lua:Class:LuaPipeServer|LuaPipeServer]]: Class launching the server side of a pipe
+* [[Lua:Class:ListBox|ListBox]]: The listbox class is a visual component with a list of selectable strings
+* [[Lua:Class:ListColumn|ListColumn]]: The listcolumn class is an implemented CollectionItem class which is used by the ListColumns class of the listview class
+* [[Lua:Class:ListColumns|ListColumns]]: The ListColumns class contains the Column class objects of a ListView object
+* [[Lua:Class:ListItem|ListItem]]: The ListItem class object is an entry in a ListView
+* [[Lua:Class:ListItems|ListItems]]: The listItems class is a container for the ListItem class objects of a Listview
+* [[Lua:Class:Listview|Listview]]: The listview class lets you have a listbox like component with resizable columns
+* [[Lua:Class:MainMenu|MainMenu]]: The menu at the top of a form
+* [[Lua:Class:Memo|Memo]]: The Memo class is a multiline edit field
+* [[Lua:Class:MemScan|MemScan]]: The memscan class is the memory scanner of Cheat engine
+* [[Lua:Class:Menu|Menu]]: Common Class ancestor for the MainMenu and PopupMenu classes
+* [[Lua:Class:MenuItem|MenuItem]]: Holds the menuitems of a Menu, PopupMenu or even another MenuItem
+* [[Lua:Class:MemoryRecord|MemoryRecord]]: The Memoryrecord class object describes a Cheat Table's Cheat Entry.
+* [[Lua:Class:MemoryRecordHotkey|MemoryRecordHotkey]]: The memoryRecordHotkey class object is part of a MemoryRecord class. It's used as an interface to each individual hotkey inside a Cheat Table
+* [[Lua:Class:MemoryStream|MemoryStream]]: The memorystream class is a Stream class that is stored completely in memory. Because it's a stream there are multiple functions that can work with it
+* [[Lua:Class:Memoryview|Memoryview]]: The memoryview class is the Memory view window of Cheat Engine. Use this as a basis to access the objects inside this window
+* [[Lua:Class:MultiReadExclusiveWriteSynchronizer|MultiReadExclusiveWriteSynchronizer]]: 
+* [[Lua:Class:Object|Object]]: Most basic class. All classes inherit from this class
+* [[Lua:Class:PaintBox|PaintBox]]: 
+* [[Lua:Class:PageControl|PageControl]]: This is an object that can hold multiple pages
+* [[Lua:Class:Panel|Panel]]: The Panel class is like a form which can contain visual components.
+* [[Lua:Class:Pen|Pen]]: The Pen class is part of the Canvas object. It's used to draw lines
+* [[Lua:Class:Picture|Picture]]: Container for the Graphic class
+* [[Lua:Class:PopupMenu|PopupMenu]]: The menu that shows when rightclicking on an object
+* [[Lua:Class:PortableNetworkGraphic|PortableNetworkGraphic]]: 
+* [[Lua:Class:ProgressBar|ProgressBar]]: The progressbar class is a visual representation for a bar that can show the current progress on something
+* [[Lua:Class:RadioGroup|RadioGroup]]: The radiogroup is like a GroupBox but autopopulated using the Items(Strings object)
+* [[Lua:Class:RasterImage|RasterImage]]: Base class for some graphical controls
+* [[Lua:Class:RIPRelativeScanner|RIPRelativeScanner]]: 
+* [[Lua:Class:OpenDialog|OpenDialog]]: The OpenDialog class is used for selecting files to open.
+* [[Lua:Class:SaveDialog|SaveDialog]]: The SaveDialog class is based on the OpenDialog class but is used to select a file for saving
+* [[Lua:Class:SelectDirectoryDialog|SelectDirectoryDialog]]: 
+* [[Lua:Class:Semaphore|Semaphore]]: 
+* [[Lua:Class:Settings|Settings]]: This class can be used to read out and set settings of cheat engine and of plugins, and store your own data
+* [[Lua:Class:Splitter|Splitter]]: The Splitter class is a visual component that lets the user re-size neighboring components)
+* [[Lua:Class:Stringlist|Stringlist]]: Class that holds a list of strings
+* [[Lua:Class:Strings|Strings]]: Abstract class that some text based classes make use of
+* [[Lua:Class:StringStream|StringStream]]:
+* [[Lua:Class:Structure|Structure]]: 
+* [[Lua:Class:StructureElement|StructureElement]]: 
+* [[Lua:Class:StructureFrm|StructureFrm]]: 
+* [[Lua:Class:structGroup|structGroup]]: 
+* [[Lua:Class:SymbolList|SymbolList]]: This class can be used to look up an address to a symbolname, and a symbolname to an address
+* [[Lua:Class:TabSheet|TabSheet]]: Part of a page control
+* [[Lua:Class:TableFile|TableFile]]: Tablefiles are files stored into a Cheat Table. You can access the data of such a file using this class
+* [[Lua:Class:Thread|Thread]]: 
+* [[Lua:Class:Timer|Timer]]: The timer class is an non visual component that when active triggers an onTimer event every few milliseconds, based on the given interval
+* [[Lua:Class:ToggleBox|ToggleBox]]: The togglebox is like a button, but can stay down. Use with the checkbox methods
+* [[Lua:Class:TrackBar|TrackBar]]: The trackbar class is a slider you can drag arround and read/set the state
+* [[Lua:Class:TreeNode|TreeNode]]: 
+* [[Lua:Class:TreeNodes|TreeNodes]]: 
+* [[Lua:Class:Treeview|Treeview]]: 
+* [[Lua:Class:WinControl|WinControl]]: Base class for controls which can contain other controls.
+* [[Lua:Class:xmplayer|xmplayer]]: 
+
+
+== SQL Classes ==
+* [[Lua:SQL:CustomConnection|CustomConnection]]: 
+* [[Lua:SQL:Database|Database]]: 
+* [[Lua:SQL:SQLConnection|SQLConnection]]: 
+* [[Lua:SQL:SQLite3Connection|SQLite3Connection]]: 
+* [[Lua:SQL:ODBCConnection|ODBCConnection]]: 
+* [[Lua:SQL:DBTransaction|DBTransaction]]: 
+* [[Lua:SQL:SQLTransaction|SQLTransaction]]: 
+* [[Lua:SQL:Param|Param]]: 
+* [[Lua:SQL:Params|Params]]: 
+* [[Lua:SQL:Fields|Fields]]: 
+* [[Lua:SQL:Dataset|Dataset]]: 
+* [[Lua:SQL:DBDataset|DBDataset]]: 
+* [[Lua:SQL:CustomBufDataset|CustomBufDataset]]: 
+* [[Lua:SQL:CustomSQLQuery|CustomSQLQuery]]: 
+* [[Lua:SQL:SQLQuery|SQLQuery]]: 
+
+
+== Class Helper Functions ==
+* [[Lua:inheritsFromObject|inheritsFromObject]]: Returns true if given any class
+* [[Lua:inheritsFromComponent|inheritsFromComponent]]: Returns true if the given object inherits from the Component class
+* [[Lua:inheritsFromControl|inheritsFromControl]]: Returns true if the given object inherits from the Control class
+* [[Lua:inheritsFromWinControl|inheritsFromWinControl]]: Returns true if the given object inherits from the WinControl class
+* [[Lua:createClass|createClass]]: Creates an object of the specified class (Assuming it's a registered class and has a default constructor)
+* [[Lua:createComponentClass|createComponentClass]]: Creates an object of the specified component inherited class 
+
+== Undefined Class Property Functions ==
+Not all properties of all classes have been explicitly exposed to lua, but if you know the name of a property of a specific class you can still access them (assuming they are declared as published in the pascal class declaration)
+
+* [[Lua:getPropertyList|getPropertyList]]: Returns a [[Lua:Class:StringList|StringList]] object containing all the published properties of the specified class
+* [[Lua:setProperty|setProperty]]: Sets the value of a published property of a class (Won't work for method properties)
+* [[Lua:getProperty|getProperty]]: Gets the value of a published property of a class (Won't work for method properties)
+* [[Lua:setMethodProperty|setMethodProperty]]: Sets the method property to the specific function
+* [[Lua:getMethodProperty|getMethodProperty]]: Returns a function you can use to call the original function
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://wiki.cheatengine.org/index.php?title=Lua" title="Lua">Lua</a>.</p>
+<br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Lua">https://wiki.cheatengine.org/index.php?title=Lua</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Lua&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Lua&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Lua&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua">Read</a></span></li><li id="ca-edit" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua&amp;action=edit" title="Edit this page">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Lua&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Lua" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Lua" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Lua&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":402});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Lua&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 17:26:44 GMT -->
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:39:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Tutorials:Auto Assembler:Example 1 - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Auto_Assembler:Example_1","wgTitle":"Tutorials:Auto Assembler:Example 1","wgCurRevisionId":4764,"wgRevisionId":0,"wgArticleId":1296,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Auto_Assembler:Example_1","wgRelevantArticleId":1296,"wgRequestId":"5676ec313b0252a531805d8a","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="loadc219.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Auto_Assembler_Example_1 rootpage-Tutorials_Auto_Assembler_Example_1 skin-vector action-edit">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">View source for Tutorials:Auto Assembler:Example 1</h1>			<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">← <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1" title="Tutorials:Auto Assembler:Example 1">Tutorials:Auto Assembler:Example 1</a></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="https://wiki.cheatengine.org/index.php?title=Special:Preferences" title="Special:Preferences">user preferences</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:Tutorial]]
+[[Category:Assembler]]
+{{DISPLAYTITLE:Auto Assembler - Example 1}}
+Let's look at that the following example.
+&lt;!-- &lt;pre>define(someValue, (int)100)
+alloc(someMemory, 512)
+label(someCode)
+label(someData)
+registerSymbol(someMemory)
+registerSymbol(someData)
+
+someMemory:
+    someCode:
+        mov eax,[00400000]
+        mov [someData],eax
+        mov [someData+4],123
+        mov [someData+8],$123
+        mov [someData+C],#123
+        mov [someData+10],(int)123
+        mov [someData+14],(float)123
+        mov [someData+18],someValue
+        mov [someData+1C],'Hey!'
+        mov byte ptr [someData+20],0
+    ret
+
+    someData:
+
+createThread(someCode)
+// End of script
+&lt;/pre> -->
+&lt;p style="line-height:1.15em;white-space:pre;font-family:'Lucida Console';display:block;overflow-x:auto;padding:0.5em;background:rgb(35, 36, 31);color:rgb(248, 248, 242);">&lt;span style="color:rgb(166, 226, 46);">define&lt;/span>(someValue, (&lt;span style="color:rgb(249, 38, 114);">int&lt;/span>)&lt;span style="color:rgb(174, 129, 255);">100&lt;/span>)
+&lt;span style="color:rgb(166, 226, 46);">alloc&lt;/span>(someMemory, &lt;span style="color:rgb(174, 129, 255);">512&lt;/span>)
+&lt;span style="color:rgb(166, 226, 46);">label&lt;/span>(someCode)
+&lt;span style="color:rgb(166, 226, 46);">label&lt;/span>(someData)
+&lt;span style="color:rgb(166, 226, 46);">registerSymbol&lt;/span>(someMemory)
+&lt;span style="color:rgb(166, 226, 46);">registerSymbol&lt;/span>(someData)
+
+&lt;span style="color:rgb(102, 217, 239);">someMemory:&lt;/span>
+    &lt;span style="color:rgb(102, 217, 239);">someCode:&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> &lt;span style="color:rgb(230, 219, 116);">eax&lt;/span>,[&lt;span style="color:rgb(174, 129, 255);">00400000&lt;/span>]
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData],&lt;span style="color:rgb(230, 219, 116);">eax&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">4&lt;/span>],&lt;span style="color:rgb(174, 129, 255);">123&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">8&lt;/span>],&lt;span style="color:rgb(249, 38, 114);">$&lt;/span>&lt;span style="color:rgb(174, 129, 255);">123&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">C&lt;/span>],&lt;span style="color:rgb(249, 38, 114);">#&lt;/span>&lt;span style="color:rgb(174, 129, 255);">123&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">10&lt;/span>],(&lt;span style="color:rgb(249, 38, 114);">int&lt;/span>)&lt;span style="color:rgb(174, 129, 255);">123&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">14&lt;/span>],(&lt;span style="color:rgb(249, 38, 114)">float&lt;/span>)&lt;span style="color:rgb(174, 129, 255);">123&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">18&lt;/span>],someValue
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> [someData+&lt;span style="color:rgb(174, 129, 255);">1C&lt;/span>],&lt;span style="color:rgb(230, 219, 116);">'Hey!'&lt;/span>
+        &lt;span style="color:rgb(249, 38, 114);">mov&lt;/span> byte ptr [someData+&lt;span style="color:rgb(174, 129, 255);">20&lt;/span>],&lt;span style="color:rgb(174, 129, 255);">0&lt;/span>
+    &lt;span style="color:rgb(249, 38, 114);">ret&lt;/span>
+
+    &lt;span style="color:rgb(102, 217, 239);">someData:&lt;/span>
+
+&lt;span style="color:rgb(166, 226, 46);">createThread&lt;/span>(someCode)
+&lt;span style="color:rgb(117, 113, 94);">// End of script&lt;/span>
+&lt;/p>
+
+
+So let's brack this script down.
+
+
+'''define(someValue, (int)100)'''
+:; [[Auto_Assembler:define|define]]
+:: This allows use to define a constant of sorts.
+:; someValue
+:: This will be the name or symbol, so any where this name is used it will be replaced with the value.
+:; (int)100
+:: This is the value, here tell it that the value is 100 in decimal (base 10) format (by default all numbers are hexadecimal).
+
+
+'''alloc(someMemory, 512)'''
+:; [[Auto_Assembler:alloc|alloc]]
+:: This allocates memory in the attached process.
+:; someMemory
+:: This will be the name or symbol, it can be used as an address.
+:; 512
+:: This is the number of bytes to be allocated in decimal format, so we are allocating 512 bytes, this is one of the few places that a number is seen as decimal by default.
+
+
+'''label(someCode)'''
+:; [[Auto_Assembler:label|label]]
+:: This allows us to declare a label of a location, but we will still need to place the label to assign it to an address in memory.
+:; someCode
+:: This will be the name or symbol of the label.
+
+; label(someData)
+: Same as before just with the symbol 'someData'.
+
+
+'''registerSymbol(someMemory)'''
+:; [[Auto_Assembler:registerSymbol|registerSymbol]]
+:: This allow use to register (add a symbol to the ''user defined symbols list''), this will allow use to use the symbol in other scripts and in the address list.
+:; someMemory
+:: This is the symbol to be registered.
+
+; registerSymbol(someData)
+: Same as before just with the symbol 'someData'.
+
+
+; someMemory&amp;#58;
+: This tells auto assembler to start assembling at where 'someMemory' was allocated.
+
+; someCode&amp;#58;
+: This is how we place the label (assign it's address), here we place it at the start of the assembled memory. This is not needed, 'someMemory' will be the same address as 'someCode'.
+
+
+'''mov eax,[00400000]'''
+:; [[Assembler:Commands:MOV|mov]]
+:: This is assembly, it allows use to move or assign a value to anther location. Here we are moving the value at the address of '00400000'.
+:; eax
+:: This is the destination operand, this is where the value will be moved to, here we are moving the value to the EAX [[Assembler#Registers|register]].
+:; [00400000]
+:: This is the source operand, this is where the value will come from, here we are moving the value at the address of '00400000'. The square brackets ('[', ']') designates that we want to use the value of an address.
+
+; mov [someData+4],123
+: Same as before except that we are moving the value '123' in hex to the address of 'someData+4'.
+
+; mov [someData+8],$123
+: Same as before except that we are moving the value '123' in hex, denoted by the '$', to the address of 'someData+8'.
+
+; mov [someData+C],#123
+: Same as before except that we are moving the value '123' in decimal, denoted by the '#', to the address of 'someData+C'.
+
+; mov [someData+10],(int)123
+: Same as before except that we are moving the value '123' in decimal, denoted by '(int)', to the address of 'someData+10'.
+
+; mov [someData+14],(float)123
+: Same as before except that we are moving the value '123' as a float, denoted by '(float)', to the address of 'someData+14'.
+
+; mov [someData+18],someValue
+: Same as before except that we are moving the value of the symbol 'someValue' to the address of 'someData+18'.
+
+; mov [someData+1C],'Hey!'
+: Same as before except that we are moving the value of a string 'Hey!', denoted by the quotations (both single and double work), to the address of 'someData+20'.
+
+; mov byte ptr [someData+20],0
+: Same as before except that we are moving a single byte of zero, denoted by 'byte ptr', to the address of 'someData+20'. This is to add a null character to the end of the string.
+
+
+; [[Assembler:Commands:RET|ret]]
+; This is a return for a [[Assembler:Commands:CALL|call]].
+
+
+; someData&amp;#58;
+: This is how we place the label (assign it's address), and here we place it at the end of the assembled memory.
+
+
+'''createThread(someCode)'''
+:; [[Auto_Assembler:createThread|createThread]]
+:: This allows us to create a thread in the attached process, and [[Assembler:Commands:CALL|CALL]]s the given address or symbol. A [[Assembler:Commands:RET|ret]] is required to release the thread.
+:; someCode
+:: This is the address or symbol to call with the created thread.
+
+
+; // End of script
+: This is a comment, denoted by the '//', they are not interpreted or executed.
+
+
+This is how the script is assembled in the process's memory.
+&lt;pre>
+someMemory   - A1 00004000                - mov eax,[00400000]          :  [00905A4D]
+00200005     - A3 5B002000                - mov [someData],eax          :  [77]
+0020000A     - C7 05 5F002000 23010000    - mov [0020005F],00000123     :  [35]
+00200014     - C7 05 63002000 23010000    - mov [00200063],00000123     :  [35]
+0020001E     - C7 05 67002000 7B000000    - mov [00200067],0000007B     :  [123]
+00200028     - C7 05 6B002000 7B000000    - mov [0020006B],0000007B     :  [123]
+00200032     - C7 05 6F002000 0000F642    - mov [0020006F],42F60000     :  [0]
+0020003C     - C7 05 73002000 64000000    - mov [00200073],00000064     :  [100]
+00200046     - C7 05 77002000 48657921    - mov [00200077],21796548     :  ["Hey!"]
+00200050     - C7 05 7B002000 00000000    - mov [0020007B],00000000     :  [0]
+0020005A     - C3                         - ret
+someData     - 4D 5A 90 00
+someData+4   - 23 01 00 00
+someData+8   - 23 01 00 00
+someData+C   - 7B 00 00 00
+someData+10  - 7B 00 00 00
+someData+14  - 00 00 F6 42
+someData+18  - 64 00 00 00
+someData+1C  - 48 65 79 21
+someData+20  - 00 00 00 00
+&lt;/pre>
+
+
+You can add the addresses for someData manually, see [[Tutorials:Add_address_to_list|How to add addresses to the address list]] for details.
+
+Or you can just copy the XML code below and paste it in the address list of a table to add the addresses for 'someData'.
+&lt;!-- &lt;pre>&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;CheatTable>
+  &lt;CheatEntries>
+    &lt;CheatEntry>
+      &lt;ID>0&lt;/ID>
+      &lt;Description>"someMemory"&lt;/Description>
+      &lt;LastState Value="" RealAddress="00000000"/>
+      &lt;VariableType>Array of byte&lt;/VariableType>
+      &lt;ByteLength>0&lt;/ByteLength>
+      &lt;Address>someMemory&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>1&lt;/ID>
+      &lt;Description>"someData"&lt;/Description>
+      &lt;ShowAsHex>1&lt;/ShowAsHex>
+      &lt;VariableType>Array of byte&lt;/VariableType>
+      &lt;ByteLength>4&lt;/ByteLength>
+      &lt;Address>someData&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>5&lt;/ID>
+      &lt;Description>"someData+4"&lt;/Description>
+      &lt;VariableType>4 Bytes&lt;/VariableType>
+      &lt;Address>someData+4&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>4&lt;/ID>
+      &lt;Description>"someData+8"&lt;/Description>
+      &lt;VariableType>4 Bytes&lt;/VariableType>
+      &lt;Address>someData+8&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>3&lt;/ID>
+      &lt;Description>"someData+C"&lt;/Description>
+      &lt;VariableType>4 Bytes&lt;/VariableType>
+      &lt;Address>someData+C&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>2&lt;/ID>
+      &lt;Description>"someData+10"&lt;/Description>
+      &lt;VariableType>4 Bytes&lt;/VariableType>
+      &lt;Address>someData+10&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>6&lt;/ID>
+      &lt;Description>"someData+14"&lt;/Description>
+      &lt;VariableType>Float&lt;/VariableType>
+      &lt;Address>someData+14&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>7&lt;/ID>
+      &lt;Description>"someData+18"&lt;/Description>
+      &lt;VariableType>4 Bytes&lt;/VariableType>
+      &lt;Address>someData+18&lt;/Address>
+    &lt;/CheatEntry>
+    &lt;CheatEntry>
+      &lt;ID>8&lt;/ID>
+      &lt;Description>"someData+1C"&lt;/Description>
+      &lt;VariableType>String&lt;/VariableType>
+      &lt;Length>60&lt;/Length>
+      &lt;Unicode>0&lt;/Unicode>
+      &lt;ZeroTerminate>1&lt;/ZeroTerminate>
+      &lt;Address>someData+1C&lt;/Address>
+    &lt;/CheatEntry>
+  &lt;/CheatEntries>
+&lt;/CheatTable>
+&lt;/pre> -->
+&lt;p style="line-height:1.15em;white-space:pre;font-family:'Lucida Console';display:block; overflow-x:auto; padding:0.5em; background:rgb(35, 36, 31); color:rgb(248, 248, 242);">&lt;span style="color:rgb(117, 113, 94);">&amp;lt;?xml version="1.0" encoding="utf-8"?&amp;gt;&lt;/span>
+&lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatTable&lt;/span>&amp;gt;&lt;/span>
+  &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntries&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>0&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someMemory"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">LastState&lt;/span> &lt;span style="color:rgb(249, 38, 114);">Value&lt;/span>=&lt;span style="color:rgb(230, 219, 116);">""&lt;/span> &lt;span style="color:rgb(249, 38, 114);">RealAddress&lt;/span>=&lt;span style="color:rgb(230, 219, 116);">"00000000"&lt;/span>/&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>Array of byte&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ByteLength&lt;/span>&amp;gt;&lt;/span>0&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ByteLength&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someMemory&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>1&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ShowAsHex&lt;/span>&amp;gt;&lt;/span>1&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ShowAsHex&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>Array of byte&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ByteLength&lt;/span>&amp;gt;&lt;/span>4&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ByteLength&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>5&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+4"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>4 Bytes&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+4&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>4&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+8"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>4 Bytes&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+8&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>3&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+C"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>4 Bytes&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+C&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>2&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+10"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>4 Bytes&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+10&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>6&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+14"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>Float&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+14&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>7&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+18"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>4 Bytes&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+18&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>8&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ID&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>"someData+1C"&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Description&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>String&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">VariableType&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Length&lt;/span>&amp;gt;&lt;/span>60&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Length&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Unicode&lt;/span>&amp;gt;&lt;/span>0&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Unicode&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">ZeroTerminate&lt;/span>&amp;gt;&lt;/span>1&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">ZeroTerminate&lt;/span>&amp;gt;&lt;/span>
+      &lt;span style="color:rgb(248, 248, 242);">&amp;lt;&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>someData+1C&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">Address&lt;/span>&amp;gt;&lt;/span>
+    &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntry&lt;/span>&amp;gt;&lt;/span>
+  &lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatEntries&lt;/span>&amp;gt;&lt;/span>
+&lt;span style="color:rgb(248, 248, 242);">&amp;lt;/&lt;span style="color:rgb(249, 38, 114);">CheatTable&lt;/span>&amp;gt;&lt;/span>
+&lt;/p>
+
+
+If you execute the script and add the address to the address list, you should see some thing like this.
+
+[[File:AutoAssembler.Example01.01.png|border]]
+
+
+== See also ==
+* [[Assembler]]
+* [[Assembler:Commands|Assembler Commands]]
+* [[Cheat_Engine:Auto Assembler|Auto Assembler]]
+* [[Tutorials:Auto_Assembler:Templates|Auto Assembler Templates]]
+* [[Tutorials:Auto_Assembler:Injection_basic|Code Injection Basic]]
+* [[Tutorials:Auto_Assembler:Injection_full|Code Injection Full]]
+
+==== Syntax Highlighter ====
+* [http://pinetools.com/syntax-highlighter pinetools.com/syntax-highlighter]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1" title="Tutorials:Auto Assembler:Example 1">Tutorials:Auto Assembler:Example 1</a>.</p>
+<br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1">https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Tutorials%3AAuto+Assembler%3AExample+1&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Tutorials%3AAuto+Assembler%3AExample+1&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Tutorials:Auto_Assembler:Example_1&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1">Read</a></span></li><li id="ca-edit" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&amp;action=edit" title="Edit this page">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Tutorials:Auto_Assembler:Example_1" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Tutorials:Auto_Assembler:Example_1" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":410});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Auto_Assembler:Example_1&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:39:44 GMT -->
+</html>

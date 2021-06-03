@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:Stack by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 16:53:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial - The Stack - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorial:Stack","wgTitle":"Tutorial:Stack","wgCurRevisionId":6697,"wgRevisionId":6697,"wgArticleId":1875,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial","Auto Assembler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorial:Stack","wgRelevantArticleId":1875,"wgRequestId":"f11bd6db7cd1ca4fb92c6087","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index6e38.html?title=Tutorial:Stack&amp;action=edit"/>
+<link rel="edit" title="Edit" href="index6e38.html?title=Tutorial:Stack&amp;action=edit"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_Stack rootpage-Tutorial_Stack skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Tutorial - The Stack</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+If you're unfamiliar with registries please start here: <a href="indexb4c4.html?title=Assembler#Registers" title="Assembler">Registers</a>
+</p><p>So what is <i>the stack</i>?
+</p><p>Well I hate to use the word in the definition, but it's just a metaphorical <i>stack of bytes</i>; or an abstract data type that serves as a collection of elements, with two principal operations. 
+</p>
+<dl><dt>PUSH</dt>
+<dd>Adds an element to the collection.</dd>
+<dt>POP</dt>
+<dd>Removes the most recently added element that was not yet removed.</dd></dl>
+<p>The stack is primarily used to store values for a process. It uses a <b>LIFO</b> (last in, first out) behavior. So if we <a href="index9352.html?title=Assembler:Commands:PUSH" title="Assembler:Commands:PUSH">PUSH</a> value A onto the stack and then <a href="index9352.html?title=Assembler:Commands:PUSH" title="Assembler:Commands:PUSH">PUSH</a> value B, when we <a href="index1331.html?title=Assembler:Commands:POP" title="Assembler:Commands:POP">POP</a> it will be value B first then value A with the second <a href="index1331.html?title=Assembler:Commands:POP" title="Assembler:Commands:POP">POP</a>.<a rel="nofollow" class="external autonumber" href="https://wikipedia.org/wiki/Stack_(abstract_data_type)">[1]</a>
+</p><p><a href="index4796.html?title=File:Lifo_stack.png" class="image" title="LIFO"><img alt="LIFO" src="images/b/b4/Lifo_stack.png" width="387" height="270" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Working_with_the_Stack"><span class="tocnumber">1</span> <span class="toctext">Working with the Stack</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Code_step_1"><span class="tocnumber">1.1</span> <span class="toctext">Code step 1</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Code_step_2"><span class="tocnumber">1.2</span> <span class="toctext">Code step 2</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Code_step_3"><span class="tocnumber">1.3</span> <span class="toctext">Code step 3</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Code_step_4"><span class="tocnumber">1.4</span> <span class="toctext">Code step 4</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Code_step_5"><span class="tocnumber">1.5</span> <span class="toctext">Code step 5</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Code_step_6"><span class="tocnumber">1.6</span> <span class="toctext">Code step 6</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Code_step_7"><span class="tocnumber">1.7</span> <span class="toctext">Code step 7</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Working_with_the_registries"><span class="tocnumber">2</span> <span class="toctext">Working with the registries</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Working_with_the_Flags_registry"><span class="tocnumber">3</span> <span class="toctext">Working with the Flags registry</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">See Also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Sources"><span class="tocnumber">5</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Working_with_the_Stack">Working with the Stack</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index9e56.html?title=Tutorial:Stack&amp;action=edit&amp;section=1" title="Edit section: Working with the Stack">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>So let's just dig in, if we have some code like this.
+</p>
+<pre>push 123ABC
+push 00DEAD
+push 00BEEF
+
+pop dword ptr [TestVals]
+pop dword ptr [TestVals+4]
+pop dword ptr [TestVals+8]
+</pre>
+<p>And if we assemble this in some memory.<br />
+<a href="indexd9db.html?title=File:TutorialStack.01.png" class="image" title="Assembled opcode"><img alt="Assembled opcode" src="images/7/7e/TutorialStack.01.png" width="649" height="124" class="thumbborder" /></a>
+</p><p>So let's set a breakpoint and watch the stack as we step though the opcode.
+</p>
+<dl><dd>Note: You can select a line of opcode in the memory view form and press <i>F5</i> to set a breakpoint.</dd>
+<dd>Note: Step though opcode in the memory view form by pressing <i>F7</i>, after a breakpoint has been hit.</dd></dl>
+<dl><dd>Note: to view the stack you may need to select it for viewing.</dd></dl>
+<p><a href="index1b39.html?title=File:StackView.01.png" class="image" title="stack view"><img alt="stack view" src="images/7/7a/StackView.01.png" width="910" height="857" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Code_step_1">Code step 1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index97a6.html?title=Tutorial:Stack&amp;action=edit&amp;section=2" title="Edit section: Code step 1">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="indexe56a.html?title=File:TutorialStack.02.png" class="image" title="step 1"><img alt="step 1" src="images/4/47/TutorialStack.02.png" width="900" height="809" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_2">Code step 2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexfcb6.html?title=Tutorial:Stack&amp;action=edit&amp;section=3" title="Edit section: Code step 2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>So it's here that we start to see the values on the stack.
+<a href="indexfb27.html?title=File:TutorialStack.03.png" class="image" title="step 2"><img alt="step 2" src="images/9/92/TutorialStack.03.png" width="897" height="805" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_3">Code step 3</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index7b38.html?title=Tutorial:Stack&amp;action=edit&amp;section=4" title="Edit section: Code step 3">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="indexcd6d.html?title=File:TutorialStack.04.png" class="image" title="step 3"><img alt="step 3" src="images/d/d1/TutorialStack.04.png" width="900" height="809" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_4">Code step 4</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="indexdc6c.html?title=Tutorial:Stack&amp;action=edit&amp;section=5" title="Edit section: Code step 4">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="indexec17.html?title=File:TutorialStack.05.png" class="image" title="step 4"><img alt="step 4" src="images/0/06/TutorialStack.05.png" width="898" height="892" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_5">Code step 5</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index70a2.html?title=Tutorial:Stack&amp;action=edit&amp;section=6" title="Edit section: Code step 5">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>And here we can start to see the values being popped in the reverse order that they were pushed.
+<a href="indexf658.html?title=File:TutorialStack.06.png" class="image" title="step 5"><img alt="step 5" src="images/1/1a/TutorialStack.06.png" width="899" height="891" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_6">Code step 6</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index0200-2.html?title=Tutorial:Stack&amp;action=edit&amp;section=7" title="Edit section: Code step 6">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="indexce51.html?title=File:TutorialStack.07.png" class="image" title="step 6"><img alt="step 6" src="images/9/9a/TutorialStack.07.png" width="899" height="894" class="thumbborder" /></a>
+</p>
+<h3><span class="mw-headline" id="Code_step_7">Code step 7</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index2790.html?title=Tutorial:Stack&amp;action=edit&amp;section=8" title="Edit section: Code step 7">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="indexc19d.html?title=File:TutorialStack.08.png" class="image" title="step 7"><img alt="step 7" src="images/a/a0/TutorialStack.08.png" width="900" height="891" class="thumbborder" /></a>
+</p><p><br />
+And that's really all there is to the basics of the stack.
+</p><p>The thing to remember is that if you push in some injected code then you will need to pop in order to clean (or sanitize) the stack.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Working_with_the_registries">Working with the registries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index4f3f.html?title=Tutorial:Stack&amp;action=edit&amp;section=9" title="Edit section: Working with the registries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>We can <a href="index9352.html?title=Assembler:Commands:PUSH" title="Assembler:Commands:PUSH">PUSH</a> and <a href="index1331.html?title=Assembler:Commands:POP" title="Assembler:Commands:POP">POP</a> most registries, this is useful for saving and restoring stuff in injected code. The x86 architecture has 8 General-Purpose Registers (GPR), 6 Segment Registers, 1 Flags Register and an Instruction Pointer. 64-bit x86 has additional registers.<a rel="nofollow" class="external autonumber" href="https://wikibooks.org/wiki/X86_Assembly/X86_Architecture">[2]</a>
+</p>
+<pre>push eax
+push ebx
+push ecx
+push edx
+push esi
+push edi
+push ebp
+push esp
+
+pop esp
+pop ebp
+pop edi
+pop esi
+pop edx
+pop ecx
+pop ebx
+pop eax
+</pre>
+<p>There is the <a href="index0d4a.html?title=Assembler:Commands:PUSHAD" title="Assembler:Commands:PUSHAD">PUSHAD</a> and <a href="indexa26c.html?title=Assembler:Commands:POPAD" title="Assembler:Commands:POPAD">POPAD</a> to save and restore all the generic registries. So the above code could just be written like this.
+</p>
+<pre>pushad
+
+popad
+</pre>
+<dl><dd>Note: <a href="index0d4a.html?title=Assembler:Commands:PUSHAD" title="Assembler:Commands:PUSHAD">PUSHAD</a> and <a href="indexa26c.html?title=Assembler:Commands:POPAD" title="Assembler:Commands:POPAD">POPAD</a> are not available in 64 bit mode.</dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Working_with_the_Flags_registry">Working with the Flags registry</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index9bfa.html?title=Tutorial:Stack&amp;action=edit&amp;section=10" title="Edit section: Working with the Flags registry">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>We can even <a href="index9352.html?title=Assembler:Commands:PUSH" title="Assembler:Commands:PUSH">PUSH</a> and <a href="index1331.html?title=Assembler:Commands:POP" title="Assembler:Commands:POP">POP</a> the Flags registry, using <a href="index253e.html?title=Assembler:Commands:PUSHF" title="Assembler:Commands:PUSHF">PUSHF</a> and <a href="indexfa38.html?title=Assembler:Commands:POPF" title="Assembler:Commands:POPF">POPF</a> (for 16 bit registry). This allows us to save and restore the Flags when doing compares (conditional opcodes). The FLAGS register is the status register in Intel x86 microprocessors that contains the current state of the processor. This register is 16 bits wide. Its successors, the EFLAGS and RFLAGS registers, are 32 bits and 64 bits wide, respectively. The wider registers retain compatibility with their smaller predecessors.<a rel="nofollow" class="external autonumber" href="https://wikipedia.org/wiki/FLAGS_register">[3]</a>
+</p>
+<dl><dd>Note: when in 32 bit mode you should use <a href="index24d3.html?title=Assembler:Commands:PUSHFD" title="Assembler:Commands:PUSHFD">PUSHFD</a> and <a href="index5684.html?title=Assembler:Commands:POPFD" title="Assembler:Commands:POPFD">POPFD</a> to manipulate the full 32 bits of the EFlags registry.</dd>
+<dd>Note: when in 64 bit mode you should use <a href="index3b77.html?title=Assembler:Commands:PUSHFQ" title="Assembler:Commands:PUSHFQ">PUSHFQ</a> and <a href="indexe23f.html?title=Assembler:Commands:POPFQ" title="Assembler:Commands:POPFQ">POPFQ</a> to manipulate the full 32 bits of the EFlags registry.</dd></dl>
+<pre>pushfd
+cmp eax,ebx
+movcc eax,ecx
+popfd
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index0750.html?title=Tutorial:Stack&amp;action=edit&amp;section=11" title="Edit section: See Also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="index81eb.html?title=Tutorials:Value_types" title="Tutorials:Value types">Value Types</a></li>
+<li><a href="index85b2.html?title=Tutorials:Pointers" title="Tutorials:Pointers">Pointers</a></li>
+<li><a class="mw-selflink selflink">The Stack</a></li>
+<li><a href="index03a3.html?title=Tutorials:AOBs" title="Tutorials:AOBs">AOBs</a></li></ul>
+<ul><li><a href="indexacf4.html?title=Tutorials:AttachToProcess" title="Tutorials:AttachToProcess">How to attach to a process</a></li>
+<li><a href="index0c48.html?title=Tutorials:AddScriptToTable" title="Tutorials:AddScriptToTable">How to add script to table</a></li>
+<li><a href="index9d35.html?title=Tutorials:Add_address_to_list" title="Tutorials:Add address to list">How to add addresses to the address list</a></li></ul>
+<ul><li><a href="indexda78.html?title=Tutorials:Cheat_Engine_Tutorial_Guide_x32" title="Tutorials:Cheat Engine Tutorial Guide x32">Cheat Engine Tutorial Guide (x32)</a></li>
+<li><a href="index60f0.html?title=Tutorials:Cheat_Engine_Tutorial_Guide_x64" title="Tutorials:Cheat Engine Tutorial Guide x64">Cheat Engine Tutorial Guide (x64)</a></li></ul>
+<ul><li><a href="index9a31.html?title=Tutorials:Finding_values:Integers" title="Tutorials:Finding values:Integers">Finding values - Integers</a></li>
+<li><a href="index61e7.html?title=Tutorials:Finding_values:Floats" title="Tutorials:Finding values:Floats">Finding values - Floats</a></li>
+<li><a href="index6925.html?title=Tutorials:Break_and_trace&amp;action=edit&amp;redlink=1" class="new" title="Tutorials:Break and trace (page does not exist)">How to break and trace code in a process</a></li></ul>
+<ul><li><a href="indexda45.html?title=Tutorial:LuaFormGUI" title="Tutorial:LuaFormGUI">Tutorial - Cheat Form</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Sources">Sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="index88e7.html?title=Tutorial:Stack&amp;action=edit&amp;section=12" title="Edit section: Sources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol><li><a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/Stack_(abstract_data_type)">wikipedia.org/wiki/Stack_(abstract_data_type)</a></li>
+<li><a rel="nofollow" class="external text" href="https://wikibooks.org/wiki/X86_Assembly/X86_Architecture">wikibooks.org/wiki/X86_Assembly/X86_Architecture</a></li>
+<li><a rel="nofollow" class="external text" href="https://wikipedia.org/wiki/FLAGS_register">wikipedia.org/wiki/FLAGS_register</a></li></ol>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602014016
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.086 seconds
+Real time usage: 0.141 seconds
+Preprocessor visited node count: 91/1000000
+Preprocessor generated node count: 154/1000000
+Post‐expand include size: 743/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 354/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.187      1 Template:TutorialsCE
+100.00%    2.187      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1875-0!canonical and timestamp 20210602014015 and revision id 6697
+ -->
+</div><br><br><center><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="indexb509.html?title=Tutorial:Stack&amp;oldid=6697">https://wiki.cheatengine.org/index.php?title=Tutorial:Stack&amp;oldid=6697</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="index6036.html?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li><li><a href="index4485.html?title=Category:Auto_Assembler" class="mw-redirect" title="Category:Auto Assembler">Auto Assembler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="index6dc0.html?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="index077d.html?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="index72fb.html?title=Special:CreateAccount&amp;returnto=Tutorial%3AStack" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="index338e.html?title=Special:UserLogin&amp;returnto=Tutorial%3AStack" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="index2bb5.html?title=Tutorial:Stack" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="index1f5f.html?title=Talk:Tutorial:Stack&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="index2bb5.html?title=Tutorial:Stack">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="index6e38.html?title=Tutorial:Stack&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="index2712.html?title=Tutorial:Stack&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="index4875.html?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="index4875.html?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="indexa414.html?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="index9b60.html?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="indexc7f8.html?title=Special:WhatLinksHere/Tutorial:Stack" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="index4075.html?title=Special:RecentChangesLinked/Tutorial:Stack" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="indexc7ac.html?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="index3043.html?title=Tutorial:Stack&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="indexb509.html?title=Tutorial:Stack&amp;oldid=6697" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="index1358.html?title=Tutorial:Stack&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 March 2019, at 15:10.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="index60df.html?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="index789b.html?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="index665d.html?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.086","walltime":"0.141","ppvisitednodes":{"value":91,"limit":1000000},"ppgeneratednodes":{"value":154,"limit":1000000},"postexpandincludesize":{"value":743,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":354,"limit":5000000},"timingprofile":["100.00%    2.187      1 Template:TutorialsCE","100.00%    2.187      1 -total"]},"cachereport":{"timestamp":"20210602014016","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":353});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorial:Stack by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 16:53:37 GMT -->
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&oldid=6979 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 20:16:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Creating a cheat table - Health Hack - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials:Create_cheat_table_full:health_hack","wgTitle":"Tutorials:Create cheat table full:health hack","wgCurRevisionId":6979,"wgRevisionId":6979,"wgArticleId":1444,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials:Create_cheat_table_full:health_hack","wgRelevantArticleId":1444,"wgRequestId":"02b73cd794866df7a3563714","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Create_cheat_table_full_health_hack rootpage-Tutorials_Create_cheat_table_full_health_hack skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Creating a cheat table - Health Hack</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 08:57, 14 August 2020 by <a href="https://wiki.cheatengine.org/index.php?title=User:Dykis&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Dykis (page does not exist)"><bdi>Dykis</bdi></a> <span class="mw-usertoollinks">(<a href="https://wiki.cheatengine.org/index.php?title=User_talk:Dykis&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Dykis (page does not exist)">talk</a> | <a href="https://wiki.cheatengine.org/index.php?title=Special:Contributions/Dykis" class="mw-usertoollinks-contribs" title="Special:Contributions/Dykis">contribs</a>)</span> <span class="comment">(<a href="#One_hit_kills">→</a>‎<span dir="auto"><span class="autocomment">One hit kills: </span> &quot;sense&quot; -&gt; &quot;since&quot;.</span>)</span></div><div id="mw-revision-nav">(<a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;diff=prev&amp;oldid=6979" title="Tutorials:Create cheat table full:health hack">diff</a>) <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;direction=prev&amp;oldid=6979" title="Tutorials:Create cheat table full:health hack">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+This page is a sub page of: <a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full" title="Tutorials:Create cheat table full">Creating a cheat table - Full guide</a>
+</p><p>Now after a restart, this is what my table looks like.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.01.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.01.png" src="https://wiki.cheatengine.org/images/3/3b/Tutorials.Dishonored.HealthHack.01.png" width="877" height="458" class="thumbborder" /></a>
+</p><p><br />
+And if you have followed along then you already have the health address so lets just start with the hook.
+</p>
+<ul><li>Else you will need to complete these sections first:
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:coordinates" title="Tutorials:Create cheat table full:coordinates">Finding the player coordinates</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:Finding_player_base" title="Tutorials:Create cheat table full:Finding player base">Finding the Player base</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health" title="Tutorials:Create cheat table full:health">Finding the player health</a></li></ul></li>
+<li>And the super speed and super jump hacks include stuff that I will not be going over, and are required information.
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:movement_speed" title="Tutorials:Create cheat table full:movement speed">Write a Super Speed hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:jump_height" title="Tutorials:Create cheat table full:jump height">Write a Super Jump hack</a></li></ul></li></ul>
+<p>But all we really need is the health address to start.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Step_1"><span class="tocnumber">1</span> <span class="toctext">Step 1</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Step_2"><span class="tocnumber">2</span> <span class="toctext">Step 2</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Step_3"><span class="tocnumber">3</span> <span class="toctext">Step 3</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Step_4"><span class="tocnumber">4</span> <span class="toctext">Step 4</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Debugging_your_script"><span class="tocnumber">4.1</span> <span class="toctext">Debugging your script</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#One_hit_kills"><span class="tocnumber">5</span> <span class="toctext">One hit kills</span></a></li>
+<li class="toclevel-1"><a href="#Links"><span class="tocnumber">6</span> <span class="toctext">Links</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Step_1">Step 1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=1" title="Edit section: Step 1">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With the health address in the address list let's check to see what accesses the address, in both normal conditions and when in combat.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.02.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.02.png" src="https://wiki.cheatengine.org/images/f/fb/Tutorials.Dishonored.HealthHack.02.png" width="814" height="599" class="thumbborder" /></a>
+</p><p>So here is what I found, the green is normal conditions, purple is when the player hits a combatant, and red is the player being hit by a combatant.
+</p><p><br />
+And it looks like we found the player's death check. But these may just be checks the compiler or engine put in place to stop arithmetic problems.
+</p>
+<pre>cmp dword ptr [ecx+00000344],00
+cmp dword ptr [ebx+00000344],00</pre>
+<p>Top is when hitting a combatant, and the bottom is when being hit:
+<a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.03.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.03.png" src="https://wiki.cheatengine.org/images/7/77/Tutorials.Dishonored.HealthHack.03.png" width="814" height="599" class="thumbborder" /></a>
+</p><p><br />
+</p><p>So let's start with the player hit death check (bottom death check), select the instruction and click the <i>Show disassembler</i> button. And in the memory view form right click the instruction line and select <i>Find out what addresses this instruction accesses</i>.
+</p><p>And here is what I found.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.04.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.04.png" src="https://wiki.cheatengine.org/images/7/7d/Tutorials.Dishonored.HealthHack.04.png" width="425" height="450" class="thumbborder" /></a>
+</p><p><br />
+So this instruction works on the player's and the combatants' health, probably shared by all actor objects in the game. So I think that the actor class will hold some kind of "Decrease Health" function that the player inherits.
+</p><p>When the game or engine is written, actors and players might be written like this.
+</p>
+<p style="line-height:1.15em;white-space:pre;font-family:&#39;Lucida Console&#39;;display:block;overflow-x:auto;padding:0.5em;background:rgb(35, 36, 31);color:rgb(248, 248, 242);"><span style="color:rgb(117, 113, 94);">//// Actor, base for all actors</span>
+<span style="color:rgb(249, 38, 114);">class</span> <span style="color:rgb(166, 226, 46);">Actor</span><span style="color:rgb(248, 248, 242);">(object)</span>{
+    <span style="color:rgb(249, 38, 114);">string</span> Name = <span style="color:rgb(230, 219, 116);">'Actor'</span>;
+    <span style="color:rgb(117, 113, 94);">...</span>
+    <span style="color:rgb(249, 38, 114);">int</span> Health = <span style="color:rgb(174, 129, 255);">70</span>;
+    <span style="color:rgb(117, 113, 94);">...</span>
+    <span style="color:rgb(249, 38, 114);">function <span style="color: rgb(166, 226, 46);">decreaseHealth</span><span style="color: rgb(248, 248, 242);">(self, amount)</span> </span>{
+        <span style="color:rgb(117, 113, 94);">...</span>
+        <span style="color: rgb(249, 38, 114);">if</span> (self.Health == <span style="color: rgb(174, 129, 255);">0</span>) {
+            self.Die()
+        }
+    }
+}
+<span style="color:rgb(117, 113, 94);">//// Player</span>
+<span style="color:rgb(249, 38, 114);">class</span> <span style="color:rgb(166, 226, 46);">Player</span><span style="color:rgb(248, 248, 242);">(Actor)</span>{ <span style="color:rgb(117, 113, 94);">//// Player inherits form Actor</span>
+    <span style="color:rgb(249, 38, 114);">string</span> Name = <span style="color:rgb(230, 219, 116);">'Player'</span>;
+    <span style="color:rgb(117, 113, 94);">...</span>
+}
+</p>
+<p><br />
+Now there are different ways of handling shared instructions, we could look at the structures to find a unique identifier. But since we have a good base address for the player we can just check against that to determine if the actor is the player, no need for guess work here.
+</p>
+<h3><span class="mw-headline" id="Step_2">Step 2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=2" title="Edit section: Step 2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>So lets get a base script up, and then work from there.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.05.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.05.png" src="https://wiki.cheatengine.org/images/e/ed/Tutorials.Dishonored.HealthHack.05.png" width="796" height="1145" class="thumbborder" /></a>
+</p><p><br />
+So if the base address was a multi-level pointer then to check it we would need some thing like this:
+</p>
+<pre>n_code:
+    push esi
+    mov esi,[ptrCoordBase]
+    test exi,esi
+    jz @f  // jump forward to the next label (@b is jmp back).
+        mov esi,[esi+{the base offset}]
+        test esi,esi
+        jz @f
+            cmp esi,ebx
+            jne @f
+                mov [ebx+{health offset}],(int)100
+    @@:
+    pop esi
+o_code:
+    cmp dword ptr [ebx+00000344],00
+</pre>
+<p><br />
+But our base address is at the same level as the health address, so this is all we need.
+</p><p>Note: The "Coord. Hook" must be enabled to have access to the "ptrCoordBase" symbol, if not enabled then this script will fail on syntax check and on injection.
+</p><p>Note: Later I will set the "Coord. Hook" as a primary script with the other script(s) as it's child record(s), or in the table Lua script, to be run first.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.06.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.06.png" src="https://wiki.cheatengine.org/images/8/88/Tutorials.Dishonored.HealthHack.06.png" width="796" height="1144" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Step_3">Step 3</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=3" title="Edit section: Step 3">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>But if we look back at the debugger form we see that 1 instruction is constantly checking the player health, and another is constantly writing to the player health. My bet is that some where in there it checks to see if we are over the maximum health and the the other sets it to the maximum if over.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.07.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.07.png" src="https://wiki.cheatengine.org/images/d/d9/Tutorials.Dishonored.HealthHack.07.png" width="815" height="598" class="thumbborder" /></a>
+</p><p><br />
+So let's look for our health maximum, in the memory view form.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.08.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.08.png" src="https://wiki.cheatengine.org/images/3/36/Tutorials.Dishonored.HealthHack.08.png" width="694" height="437" class="thumbborder" /></a>
+</p><p><br />
+And here I am betting that the "+348" is our health max which is just 4 bytes down from our health (this is so common that I always check around the value's address for it's maximum, but this was my process when first learning) so let's add that to the table. If it looks good then let's add it to the script, so if the health maximum goes up the script will still fill it. 
+Now some people will just cram a large value in the address, but I have even seen this done on a 2 byte address with a 3 byte number being used, so there was <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Integer_overflow">numeric overflow</a> that would corrupt the game saves (and that's no good, plus if it overflows to say the health maximum then that would get set very low and that is the opposite of what I am looking for, at least with this hack).
+</p><p>So let's work on that script again.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.09.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.09.png" src="https://wiki.cheatengine.org/images/d/de/Tutorials.Dishonored.HealthHack.09.png" width="999" height="1145" class="thumbborder" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Step_4">Step 4</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=4" title="Edit section: Step 4">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>And let's test the script (remember to save your tables before injections just in case, even saving be for AOB scans is a good idea to me).
+</p><p>But mine didn't work and if you just copied mine then I bet yours didn't work too.
+</p><p><br />
+</p>
+<h4><span class="mw-headline" id="Debugging_your_script">Debugging your script</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=5" title="Edit section: Debugging your script">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Now I found my type-o but lets debug our script to find the problem. So lets look at that instruction when injecting to see that it is, in fact, injecting to the right spot.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.10.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.10.png" src="https://wiki.cheatengine.org/images/c/c7/Tutorials.Dishonored.HealthHack.10.png" width="715" height="259" class="thumbborder" /></a>
+</p><p>Now re-enable the script while looking at the memory view form.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.11.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.11.png" src="https://wiki.cheatengine.org/images/3/35/Tutorials.Dishonored.HealthHack.11.png" width="583" height="272" class="thumbborder" /></a>
+</p><p>Then let's follow that to our assembled memory for the health hack. So right click the instruction line and select <i>Follow</i>.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.12.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.12.png" src="https://wiki.cheatengine.org/images/2/2f/Tutorials.Dishonored.HealthHack.12.png" width="651" height="105" class="thumbborder" /></a>
+</p><p><br />
+Then on the first line "cmp [ptrCoordBase],ebx" let's see what's going on, so right click and select <i>Find out what addresses this instruction accesses</i>, and go back to the game and get hit again to test. 
+</p><p>Now since we are looking at a base address let's view it in hexadecimal format, so right click the debugger form and select <i>Show as hexadecimal</i>.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.13.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.13.png" src="https://wiki.cheatengine.org/images/9/98/Tutorials.Dishonored.HealthHack.13.png" width="425" height="318" class="thumbborder" /></a>
+</p><p><br />
+Now let's check the registry so in the debugger form right click the address and select <i>Show register states</i>.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.14.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.14.png" src="https://wiki.cheatengine.org/images/a/a5/Tutorials.Dishonored.HealthHack.14.png" width="425" height="319" class="thumbborder" /></a>
+</p><p><br />
+<a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.15.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.15.png" src="https://wiki.cheatengine.org/images/e/e1/Tutorials.Dishonored.HealthHack.15.png" width="656" height="319" class="thumbborder" /></a>
+</p><p>So I first check <b>EDX</b> and see that the address is wrong, but I see that <b>EBX</b> is the right address and then see that I used the wrong registry, so lets disable the script and then make the correction.
+</p>
+<pre>n_code:
+    cmp [ptrCoordBase],ebx  // here I typed the right one
+    jne @f
+        push eax
+        mov eax,[edx+348]  // wrong one used here
+        mov [edx+344],eax  // wrong one used here again
+        pop eax
+o_code:
+    cmp dword ptr [ebx+00000344],00
+</pre>
+<p>Now, having written to an unknown address or addresses, I will be closing the game to keep from screwing up the game or hack testing (I will close it with task manager or the form close button if in windowed mode, knowing that it doesn't save then, to insure nothing gets saved). And because Cheat Engine can't account for my mistakes, I will also be restarting Cheat Engine to make sure I didn't mess it up too.
+</p><p><br />
+So let's restart (the game and Cheat Engine) and correct the script re-inject and retest the script.
+</p><p>So here is my corrected script.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.16.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.16.png" src="https://wiki.cheatengine.org/images/6/6f/Tutorials.Dishonored.HealthHack.16.png" width="1000" height="1145" class="thumbborder" /></a>
+</p><p>So let's retest that script, don't just test to see if you have infinite health also test if the combatants can still be killed.
+</p><p><br />
+So I will kill a combatant (try both standard sword kill and an animated stealth kill) and then stand in the middle of a group for a minute to see how this works out.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.17.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.17.png" src="https://wiki.cheatengine.org/images/3/36/Tutorials.Dishonored.HealthHack.17.png" width="724" height="418" class="thumbborder" /></a>
+</p><p>And I now have a working health hack.
+</p><p>This was after about 20 hits, now we could look for a better spot so our meter stays filled, but I am fine with it so moving on.
+</p><p>Tip: The best place to insure that the display value and the real value match is in a write instruction.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="One_hit_kills">One hit kills</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;section=6" title="Edit section: One hit kills">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>And sense this instruction handles all actors health let's just set this up as a primary script with 2 flags one for the player and the second for the combatants.
+</p><p>So here is the new script.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.18.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.18.png" src="https://wiki.cheatengine.org/images/5/5d/Tutorials.Dishonored.HealthHack.18.png" width="904" height="1392" class="thumbborder" /></a>
+</p><p><br />
+Now add the flags to the address list right click the player health flag and select <i>Set/Change dropdown selection options</i>.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.19.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.19.png" src="https://wiki.cheatengine.org/images/7/74/Tutorials.Dishonored.HealthHack.19.png" width="881" height="729" class="thumbborder" /></a>
+</p><p>And set it like this.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.20.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.20.png" src="https://wiki.cheatengine.org/images/8/87/Tutorials.Dishonored.HealthHack.20.png" width="313" height="283" class="thumbborder" /></a>
+</p><p><br />
+Then right click the combatant health flag and select <i>Set/Change dropdown selection options</i>.
+</p><p>And set it like this.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.21.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.21.png" src="https://wiki.cheatengine.org/images/e/ec/Tutorials.Dishonored.HealthHack.21.png" width="316" height="283" class="thumbborder" /></a>
+</p><p><br />
+We could also add a toggle script for the flags:
+</p>
+<pre>////
+//// ------------------------------ ENABLE ------------------------------
+[ENABLE]
+flgPlayerHealthHook:
+    db 01
+////
+//// ------------------------------ DISABLE ------------------------------
+[DISABLE]
+flgPlayerHealthHook:
+    db 00
+</pre>
+<pre>////
+//// ------------------------------ ENABLE ------------------------------
+[ENABLE]
+flgCombatantHealthHook:
+    db 01
+////
+//// ------------------------------ DISABLE ------------------------------
+[DISABLE]
+flgCombatantHealthHook:
+    db 00
+</pre>
+<p><br />
+Now time to test. So let's inject the new script, and set a flag to test it out.
+</p><p>Let's test the infinite health first, then one hit kills, then disable infinite health with one hit kills enabled to make sure we are not subject to one hit kills.
+</p><p>So It looks like the infinite health works but one hit kills is not working, so let's have look at the other death check instruction.
+</p><p>But in checking what addresses that instruction accesses I find only the player's health, so what we want is instruction that writes to actor health, this is where I had to just try different ones until I found the right area, test what addresses the instruction accesses to find a write that has all health run thought it.
+</p><p>This is the one hit kills script that ended up working.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.22.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.22.png" src="https://wiki.cheatengine.org/images/8/82/Tutorials.Dishonored.HealthHack.22.png" width="794" height="1047" class="thumbborder" /></a>
+</p><p><br />
+And this is the cleaned up infinite health script.
+</p><p><a href="https://wiki.cheatengine.org/index.php?title=File:Tutorials.Dishonored.HealthHack.23.png" class="image"><img alt="Tutorials.Dishonored.HealthHack.23.png" src="https://wiki.cheatengine.org/images/7/76/Tutorials.Dishonored.HealthHack.23.png" width="913" height="1070" class="thumbborder" /></a>
+</p><p><br />
+So I will be doing a little more testing (the best kind of testing), to insure it is working be for moving one. I also like to test going though load screens to insure no crashes for new scripts that write values.
+</p><p><br />
+And, with every thing working, on to the next hack.
+</p><p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Links">Links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Tutorials:Create_cheat_table_full:links&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials" title="Tutorials">Tutorials</a>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full" title="Tutorials:Create cheat table full">Creating a cheat table - Full guide</a>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:coordinates" title="Tutorials:Create cheat table full:coordinates">Finding the player coordinates</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:Finding_player_base" title="Tutorials:Create cheat table full:Finding player base">Finding the player base</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health" title="Tutorials:Create cheat table full:health">Finding the player health</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:movement_speed" title="Tutorials:Create cheat table full:movement speed">Write a Super Speed Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:jump_height" title="Tutorials:Create cheat table full:jump height">Write a Super Jump Hack</a></li>
+<li><a class="mw-selflink selflink">Write a Health Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:money_hack" title="Tutorials:Create cheat table full:money hack">Write a Money Hack</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:runes_coins_hook" title="Tutorials:Create cheat table full:runes coins hook">Write a Money and Runes Hook</a></li></ul></li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602005216
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.113 seconds
+Real time usage: 0.236 seconds
+Preprocessor visited node count: 91/1000000
+Preprocessor generated node count: 212/1000000
+Post‐expand include size: 768/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1229/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.379      1 Template:Tutorials:Create_cheat_table_full:links
+100.00%    2.379      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1444-0!canonical and timestamp 20210602005216 and revision id 6979
+ -->
+</div><br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;oldid=6979">https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;oldid=6979</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.cheatengine.org/index.php?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.cheatengine.org/index.php?title=Category:Tutorial" title="Category:Tutorial">Tutorial</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Tutorials%3ACreate+cheat+table+full%3Ahealth+hack&amp;returntoquery=oldid%3D6979" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Tutorials%3ACreate+cheat+table+full%3Ahealth+hack&amp;returntoquery=oldid%3D6979" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Tutorials:Create_cheat_table_full:health_hack&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Tutorials:Create_cheat_table_full:health_hack" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Tutorials:Create_cheat_table_full:health_hack" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;oldid=6979&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;oldid=6979" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 14 August 2020, at 08:57.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.113","walltime":"0.236","ppvisitednodes":{"value":91,"limit":1000000},"ppgeneratednodes":{"value":212,"limit":1000000},"postexpandincludesize":{"value":768,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1229,"limit":5000000},"timingprofile":["100.00%    2.379      1 Template:Tutorials:Create_cheat_table_full:links","100.00%    2.379      1 -total"]},"cachereport":{"timestamp":"20210602005216","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":397});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Tutorials:Create_cheat_table_full:health_hack&oldid=6979 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 20:16:19 GMT -->
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Scripting:Asm&oldid=6656 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:35:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Scripting:Asm - Cheat Engine</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting:Asm","wgTitle":"Scripting:Asm","wgCurRevisionId":6656,"wgRevisionId":6656,"wgArticleId":1778,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting:Asm","wgRelevantArticleId":1778,"wgRequestId":"684b9e575a8d36f9de75b216","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="load6cab.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.32.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit"/>
+<link rel="edit" title="Edit" href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit"/>
+<link rel="shortcut icon" href="https://wiki.cheatengine.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cheatengine.org/opensearch_desc.php" title="Cheat Engine (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cheatengine.org/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/publicdomain/"/>
+<link rel="alternate" type="application/atom+xml" title="Cheat Engine Atom feed" href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-2965724121945476", enable_page_level_ads: true });</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "position": "top",
+  "content": {
+    "message": "This site makes use of the Google services Adsense Analytics, and other third party advertisers which use Cookies to collect data about you, and which will be shared with third parties. By continuing to use this site you consent to the storage of these cookies",
+    "dismiss": "I Agree",
+    "href": "http://www.google.com/intl/en/policies/privacy/partners/"
+  }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Scripting_Asm rootpage-Scripting_Asm skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Scripting:Asm</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Cheat Engine</div>				<div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:08, 18 March 2019 by <a href="https://wiki.cheatengine.org/index.php?title=User:Dark_Byte" class="mw-userlink" title="User:Dark Byte"><bdi>Dark Byte</bdi></a> <span class="mw-usertoollinks">(<a href="https://wiki.cheatengine.org/index.php?title=User_talk:Dark_Byte" class="mw-usertoollinks-talk" title="User talk:Dark Byte">talk</a> | <a href="https://wiki.cheatengine.org/index.php?title=Special:Contributions/Dark_Byte" class="mw-usertoollinks-contribs" title="Special:Contributions/Dark Byte">contribs</a>)</span> <span class="comment">(Reverted edits by <a href="https://wiki.cheatengine.org/index.php?title=Special:Contributions/This_content_is_not_available" title="Special:Contributions/This content is not available">This content is not available</a> (<a href="https://wiki.cheatengine.org/index.php?title=User_talk:This_content_is_not_available&amp;action=edit&amp;redlink=1" class="new" title="User talk:This content is not available (page does not exist)">Talk</a>) to last revision by <a href="https://wiki.cheatengine.org/index.php?title=User:OldCheatEngineUser" title="User:OldCheatEngineUser">OldCheatEngineUser</a>)</span></div><div id="mw-revision-nav">(<a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;diff=prev&amp;oldid=6656" title="Scripting:Asm">diff</a>) <a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;direction=prev&amp;oldid=6656" title="Scripting:Asm">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Getting_Values_.26_Address"><span class="tocnumber">1</span> <span class="toctext">Getting Values &amp; Address</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Get_Values_Without_Pointers"><span class="tocnumber">1.1</span> <span class="toctext">Get Values Without Pointers</span></a></li>
+<li class="toclevel-2"><a href="#Get_Addresses_Without_Pointers"><span class="tocnumber">1.2</span> <span class="toctext">Get Addresses Without Pointers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-2"><a href="#Loading_Pointers"><span class="tocnumber">2</span> <span class="toctext">Loading Pointers</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Load_Pointers_Into_Registers"><span class="tocnumber">2.1</span> <span class="toctext">Load Pointers Into Registers</span></a></li>
+<li class="toclevel-2"><a href="#Load_Pointers_From_Dissect_Data_.2F_Structures"><span class="tocnumber">2.2</span> <span class="toctext">Load Pointers From Dissect Data / Structures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Custom_Regeneration"><span class="tocnumber">3</span> <span class="toctext">Custom Regeneration</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Using_Address_.26_Offset"><span class="tocnumber">3.1</span> <span class="toctext">Using Address &amp; Offset</span></a></li>
+<li class="toclevel-2"><a href="#Using_Pointers"><span class="tocnumber">3.2</span> <span class="toctext">Using Pointers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Getting_Values_&amp;_Address"></span><span class="mw-headline" id="Getting_Values_.26_Address">Getting Values &amp; Address</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit&amp;section=1" title="Edit section: Getting Values &amp; Address">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>who needs a pointer anymore?</i>
+</p>
+<h3><span class="mw-headline" id="Get_Values_Without_Pointers">Get Values Without Pointers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:ValuesWithoutPointers&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>cant find pointers?</i>, <i>pointer scanner takes so long?</i>. <i>use this and change the requirements</i>, <i>dont forget to add VALUE as an address to your address-list</i>.
+</p><p><code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>aobscan</b>(symbol,01 23 45 67 89 AB CD EF)
+</code></p><p><code style="background:#FFFFFF"><b>alloc</b>(newmem,$1000)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(symbol)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(value)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(value)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(originalcode)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>newmem</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF">mov [value],eax
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>originalcode</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF">jmp exit
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>value</b>:
+</code></p><p><code style="background:#FFFFFF">dd 00
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">jmp newmem
+</code></p><p><code style="background:#FFFFFF">nop
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF"><br />
+[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(value)
+</code></p><p><code style="background:#FFFFFF"><b>dealloc</b>(newmem)
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(symbol)
+</code></p><p class="mw-empty-elt">
+</p>
+<h3><span class="mw-headline" id="Get_Addresses_Without_Pointers">Get Addresses Without Pointers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:AddressesWithoutPointers&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>cant find pointers?</i>, <i>pointer scanner takes so long?</i>. <i>use this and change the requirements</i>, <i>dont forget to add ADDRESS as an address to your address-list and change diplay type to HEXADECIMAL</i>.
+</p><p><code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>aobscan</b>(symbol,01 23 45 67 89 AB CD EF)
+</code></p><p><code style="background:#FFFFFF"><b>alloc</b>(newmem,$1000)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(symbol)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(address)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(address)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(originalcode)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>newmem</b>:
+</code></p><p><code style="background:#FFFFFF">lea eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF">mov [address],eax
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>originalcode</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF">jmp exit
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>address</b>:
+</code></p><p><code style="background:#FFFFFF">dd 00
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">jmp newmem
+</code></p><p><code style="background:#FFFFFF">nop
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF"><br />
+[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(address)
+</code></p><p><code style="background:#FFFFFF"><b>dealloc</b>(newmem)
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(symbol)
+</code></p><p class="mw-empty-elt">
+</p>
+<h2><span class="mw-headline" id="Loading_Pointers">Loading Pointers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit&amp;section=2" title="Edit section: Loading Pointers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>pointers are useful!</i>
+</p>
+<h3><span class="mw-headline" id="Load_Pointers_Into_Registers">Load Pointers Into Registers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:LoadPtrsToRegisters&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>in some cases you might need to load a pointer into a register</i>, <i>here how its done</i>.
+</p><p><code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>aobscan</b>(symbol,01 23 45 67 89 AB CD EF)
+</code></p><p><code style="background:#FFFFFF"><b>alloc</b>(newmem,$1000)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(symbol)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(originalcode)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>newmem</b>:
+</code></p><p><code style="background:#FFFFFF">lea eax,[[[[[["Executable.exe"+00123ABC]+4]+56]+0]+789]+DEF]
+</code></p><p><code style="background:#FFFFFF">// do some stuff here
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>originalcode</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF">jmp exit
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">jmp newmem
+</code></p><p><code style="background:#FFFFFF">nop
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF"><br />
+[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>dealloc</b>(newmem)
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">mov eax,[edx+110]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(symbol)
+</code></p><p class="mw-empty-elt">
+</p>
+<h3><span id="Load_Pointers_From_Dissect_Data_/_Structures"></span><span class="mw-headline" id="Load_Pointers_From_Dissect_Data_.2F_Structures">Load Pointers From Dissect Data / Structures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:LoadPtrsFromDissectToRegisters&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>sometimes you find valid compare points under pointers</i>, <i>but how to use pointers from dissect data / structures?</i>.
+</p><p><i>say: mov [ebx+04],eax is writing to your health address as well as your enemy, in dissect d/s CE shows at offset '54' there is a pointer.</i> and when expanding that pointer, shows at offset '10' there is a value we can build our compare on.
+</p><p><code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>aobscan</b>(symbol,01 23 45 67 89 AB CD EF)
+</code></p><p><code style="background:#FFFFFF"><b>alloc</b>(newmem,$1000)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(symbol)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(originalcode)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>newmem</b>:
+</code></p><p><code style="background:#FFFFFF">push eax
+</code></p><p><code style="background:#FFFFFF">mov eax,[ebx+54] // moving the pointer into eax
+</code></p><p><code style="background:#FFFFFF">cmp byte ptr [eax+10],01 // comparing pointer address + 10  with value of '1' which stands for player team
+</code></p><p><code style="background:#FFFFFF">pop eax
+</code></p><p><code style="background:#FFFFFF">jz exit
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>originalcode</b>:
+</code></p><p><code style="background:#FFFFFF">mov [ebx+04],eax
+</code></p><p><code style="background:#FFFFFF">jmp exit
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">jmp newmem
+</code></p><p><code style="background:#FFFFFF">nop
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF"><br />
+[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>dealloc</b>(newmem)
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>symbol</b>:
+</code></p><p><code style="background:#FFFFFF">mov [ebx+04],eax
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>unregistersymbol</b>(symbol)
+</code></p><p class="mw-empty-elt">
+</p>
+<h2><span class="mw-headline" id="Custom_Regeneration">Custom Regeneration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit&amp;section=3" title="Edit section: Custom Regeneration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>your game does not support health or mana regeneration?</i> .. <i>here is the solution!</i>
+</p>
+<h3><span id="Using_Address_&amp;_Offset"></span><span class="mw-headline" id="Using_Address_.26_Offset">Using Address &amp; Offset</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:CustomRegenUsingAnO&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>this script requires you to get the address &amp; the offset from another script</i>, <i>dont forget to globally allocate them or at least register them as a symbol</i>. <i>the script might not be injected in 32 bit processes</i>
+<i>example: [edx+110]</i>
+</p><p><i>mov [address],edx</i>
+</p><p><i>mov [offset],110</i>
+</p><p><br />
+<code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>alloc</b>(ReGen,$100)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>createthread</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(return)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>ReGen</b>:
+</code></p><p><code style="background:#FFFFFF">push 03E8
+</code></p><p><code style="background:#FFFFFF">call Kernel32.Sleep
+</code></p><p><code style="background:#FFFFFF">cmp byte ptr [exit],00 // add exit to your address list, default is '1' change it to '0' if you want to stop the regeneration.
+</code></p><p><code style="background:#FFFFFF">jz return
+</code></p><p><code style="background:#FFFFFF"><br />
+mov edx,[address]
+</code></p><p><code style="background:#FFFFFF">add edx,[offset]
+</code></p><p><code style="background:#FFFFFF">cmp dword ptr [edx],64 // say your health limit is 4-byte '100' once your health goes below '100' it will regenerate health
+</code></p><p><code style="background:#FFFFFF">jz ReGen
+</code></p><p><code style="background:#FFFFFF"><br />
+add [edx],01
+</code></p><p><code style="background:#FFFFFF">jmp ReGen
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>return</b>:
+</code></p><p><code style="background:#FFFFFF">ret
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF">db 01
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF">[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>dealloc</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>unregistersymbol</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>unregistersymbol</b>(exit)
+</code></p><p class="mw-empty-elt">
+</p>
+<h3><span class="mw-headline" id="Using_Pointers">Using Pointers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Template:Asm:CustomRegenUsingPtrs&amp;action=edit&amp;section=T-1" title="Edit section: ">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>we all love pointers</i>, <i>they have multiple uses</i>. <i>note that the script might not be injected in 32 bit processes</i>, <i>unless you remove push 03E8 and call Kernel32.Sleep</i>.
+<i>keep in mind you need to specify the data type if your value is a floating point value</i>, <i>add [edx],01 is not the same as add [edx],(float)1.0</i>.
+</p><p><br />
+<code style="background:#FFFFFF">
+[<i>enable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>alloc</b>(ReGen,$100)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>createthread</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(return)
+</code></p><p><code style="background:#FFFFFF"><b>label</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><b>registersymbol</b>(exit)
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>ReGen</b>:
+</code></p><p><code style="background:#FFFFFF">push 03E8
+</code></p><p><code style="background:#FFFFFF">call Kernel32.Sleep
+</code></p><p><code style="background:#FFFFFF">cmp byte ptr [exit],00 // add exit to your address list, default is '1' change it to '0' if you want to stop the regeneration.
+</code></p><p><code style="background:#FFFFFF">jz return
+</code></p><p><code style="background:#FFFFFF"><br />
+lea edx,[[[[[["Executable.exe"+00123ABC]+4]+56]+0]+789]+DEF]
+</code></p><p><code style="background:#FFFFFF">cmp dword ptr [edx],64 // say your health limit is 4-byte '100' once your health goes below '100' it will regenerate health
+</code></p><p><code style="background:#FFFFFF">jz ReGen
+</code></p><p><code style="background:#FFFFFF"><br />
+add [edx],01
+</code></p><p><code style="background:#FFFFFF">jmp ReGen
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>return</b>:
+</code></p><p><code style="background:#FFFFFF">ret
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF"><b>exit</b>:
+</code></p><p><code style="background:#FFFFFF">db 01
+</code></p><p><code style="background:#FFFFFF"><br />
+</code></p><p><code style="background:#FFFFFF">[<i>disable</i>]
+</code></p><p><code style="background:#FFFFFF"><br />
+<b>dealloc</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>unregistersymbol</b>(ReGen)
+</code></p><p><code style="background:#FFFFFF"><b>unregistersymbol</b>(exit)
+</code></p><p class="mw-empty-elt">
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit&amp;section=4" title="Edit section: See Also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Auto_Assembler" title="Cheat Engine:Auto Assembler">Auto Assembler</a></li>
+<li><a href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:Commands" title="Auto Assembler:Commands">Auto Assembler Commands</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20210602165030
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.061 seconds
+Real time usage: 0.067 seconds
+Preprocessor visited node count: 51/1000000
+Preprocessor generated node count: 104/1000000
+Post‐expand include size: 5737/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   13.014      1 -total
+ 17.90%    2.330      1 Template:Asm:ValuesWithoutPointers
+ 15.43%    2.008      1 Template:Asm:CustomRegenUsingPtrs
+ 15.41%    2.005      1 Template:Asm:LoadPtrsFromDissectToRegisters
+ 15.31%    1.992      1 Template:Asm:LoadPtrsToRegisters
+ 15.24%    1.983      1 Template:Asm:CustomRegenUsingAnO
+ 14.97%    1.948      1 Template:Asm:AddressesWithoutPointers
+-->
+
+<!-- Saved in parser cache with key wikidb-cew_:pcache:idhash:1778-0!canonical and timestamp 20210602165030 and revision id 6656
+ -->
+</div><br><br><center><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Wiki, bottom ad --><ins class="adsbygoogle"     style="display:inline-block;width:468px;height:60px"     data-ad-client="ca-pub-2965724121945476"     data-ad-slot="2855292098"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;oldid=6656">https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;oldid=6656</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.cheatengine.org/index.php?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.cheatengine.org/index.php?title=Category:Scripting&amp;action=edit&amp;redlink=1" class="new" title="Category:Scripting (page does not exist)">Scripting</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://wiki.cheatengine.org/index.php?title=Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://wiki.cheatengine.org/index.php?title=Special:CreateAccount&amp;returnto=Scripting%3AAsm&amp;returntoquery=oldid%3D6656" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.cheatengine.org/index.php?title=Special:UserLogin&amp;returnto=Scripting%3AAsm&amp;returntoquery=oldid%3D6656" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.cheatengine.org/index.php?title=Talk:Scripting:Asm&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.cheatengine.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Cheat Engine" title="Search Cheat Engine [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cheatengine.org/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="https://wiki.cheatengine.org/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.cheatengine.org/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.cheatengine.org/index.php?title=Special:WhatLinksHere/Scripting:Asm" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cheatengine.org/index.php?title=Special:RecentChangesLinked/Scripting:Asm" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cheatengine.org/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;oldid=6656&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;oldid=6656" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cheatengine.org/index.php?title=Scripting:Asm&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-" aria-labelledby="p--label">
+			<h3 id="p--label"></h3>
+			<div class="body">
+				<br><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wiki, left ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:240px"
+     data-ad-client="ca-pub-2965724121945476"
+     data-ad-slot="0419043812"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 18 March 2019, at 15:08.</li>
+								<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/publicdomain/">Public Domain</a> unless otherwise noted.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:Privacy_policy" title="Cheat Engine:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:About" class="mw-redirect" title="Cheat Engine:About">About Cheat Engine</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.cheatengine.org/index.php?title=Cheat_Engine:General_disclaimer" title="Cheat Engine:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/publicdomain/"><img src="https://wiki.cheatengine.org/resources/assets/licenses/public-domain.png" alt="Public Domain" width="88" height="31"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="https://wiki.cheatengine.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.061","walltime":"0.067","ppvisitednodes":{"value":51,"limit":1000000},"ppgeneratednodes":{"value":104,"limit":1000000},"postexpandincludesize":{"value":5737,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   13.014      1 -total"," 17.90%    2.330      1 Template:Asm:ValuesWithoutPointers"," 15.43%    2.008      1 Template:Asm:CustomRegenUsingPtrs"," 15.41%    2.005      1 Template:Asm:LoadPtrsFromDissectToRegisters"," 15.31%    1.992      1 Template:Asm:LoadPtrsToRegisters"," 15.24%    1.983      1 Template:Asm:CustomRegenUsingAnO"," 14.97%    1.948      1 Template:Asm:AddressesWithoutPointers"]},"cachereport":{"timestamp":"20210602165030","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":365});});</script>
+	</body>
+
+<!-- Mirrored from wiki.cheatengine.org/index.php?title=Scripting:Asm&oldid=6656 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jun 2021 19:35:58 GMT -->
+</html>
